@@ -20,7 +20,46 @@
     </header>
 
     <main class="page-main">
+      <h1 class="page-main__heading">Подбор программы</h1>
+      <p class="page-main__subline">Заполните анкету и мы подберем
+программу питания для вашего кота</p>
+      <form action="https://echo.htmlacademy.ru" class="page-main__form request-form">
+        <fieldset class="request-form__basics basics">
+          <label class="basics__label">Имя:*<input type="text" class="basics__input" value="Барсик" required></label>
+          <label class="basics__label">Вес (кг):*<input type="text" class="basics__input" value="7" required></label>
+          <label class="basics__label">Возраст (лет):<input type="text" class="basics__input" value="7"></label>
+        </fieldset>
 
+        <fieldset class="request-form__program program">
+          <input type="radio" class="program__choice" name="program" checked>Похудение
+          <input type="radio" class="program__choice" name="program">Набор массы
+          <input type="radio" class="program__choice" name="program">Не знаю (Нужен ваш совет)
+        </fieldset>
+
+        <fieldset class="request-form__contacts contacts">
+          <legend class="contacts__title">Контактные данные (владельца кота)</legend>
+          <label class="contacts__label">E-mail:*
+            <input type="email" class="contacts__input contacts__input--email" value="kuklachev@gmail.com" required>
+          </label>
+          <label class="contacts__label">Телефон:*
+            <input type="text" class="contacts__input contacts__input--phone" value="8 (960) 900-60-90" required>
+          </label>
+        </fieldset>
+
+        <fiedset class="request-form__comment comment">
+          <legend class="comment__title">Комментарий</legend>
+          <textarea name="comment" id="" cols="30" rows="10" class="comment_input" placeholder="Расскажите обо всех повадках кота"></textarea>
+        </fiedset>
+
+        <fieldset class="request-form__additional additional">
+          <label class="additional__label"><input type="checkbox" class="additional__input" checked>Сахарозаменитель</label>
+          <label class="additional__label"><input type="checkbox" class="additional__input">Питьевая вода</label>
+          <label class="additional__label"><input type="checkbox" class="additional__input">Молоко</label>
+          <label class="additional__label"><input type="checkbox" class="additional__input">Витамины</label>
+        </fieldset>
+        <button class="request-form__button btn" type="submit">Отправить заявку</button>
+        <span class="request-form__footnote">* — Обязательные поля</span>
+      </form>
     </main>
 
     <footer class="page-footer">
