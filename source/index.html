@@ -6,98 +6,112 @@
   </head>
   <body>
     <header class="page-header">
-      <a href="#" class="page-header__logo">
-        <img src="img/logo.svg" alt="Cat Energy Logo" class="page-header__logo-pic" width="34" height="42">
-        <img src="img/logo.svg" alt="Cat Energy Logo" class="page-header__logo-text" width="116" height="30">
-      </a>
-      <nav class="main-nav">
-        <ul class="main-nav__list site-list">
-          <li class="site-list__item site-list__item--active"><a href="#">Главная</a></li>
-          <li class="site-list__item"><a href="catalog.html">Каталог продукции</a></li>
-          <li class="site-list__item"><a href="form.html">Подбор программы</a></li>
-        </ul>
-      </nav>
+      <div class="page-header__content-center">
+        <a href="#" class="page-header__logo">
+          <img src="img/logo.svg" alt="Cat Energy Logo" class="page-header__logo-pic" width="34" height="42">
+          <img src="img/logo.svg" alt="Cat Energy Logo" class="page-header__logo-text" width="116" height="30">
+        </a>
+        <nav class="main-nav">
+          <ul class="main-nav__list site-list">
+            <li class="site-list__item site-list__item--active"><a class="site-list__link">Главная</a></li>
+            <li class="site-list__item"><a href="catalog.html" class="site-list__link">Каталог продукции</a></li>
+            <li class="site-list__item"><a href="form.html" class="site-list__link">Подбор программы</a></li>
+          </ul>
+        </nav>
+      </div>
     </header>
 
     <main class="page-main">
 
       <section class="hero">
-        <div class="hero__container">
-          <h1 class="hero__heading">Функциональное питание для котов</h1>
-          <p class="hero__subline">Занялся собой? Займись котом!</p>
+        <div class="hero__content-center">
+          <div class="hero__text-wrapper">
+            <h1 class="hero__heading">Функциональное питание для котов</h1>
+            <p class="hero__subline">Занялся собой? Займись котом!</p>
+          </div>
+          <img src="img/product.png" alt="Promoted product" class="hero__product">
+          <a href="form.html" class="btn hero__btn">Подобрать программу</a>
         </div>
-        <img src="img/product.png" alt="Promoted product" class="hero__product">
-        <a href="form.html" class="btn hero__btn">Подобрать программу</a>
       </section>
 
       <section class="programs">
-        <h2 class="visually-hidden">Программы</h2>
-        <div class="programs__teaser card">
-          <h3 class="card__title">Похудение</h3>
-          <p class="card__description">Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.</p>
-          <a href="catalog.html/slim" class="inline-link card__link">Каталог Slim</a>
-        </div>
-        <div class="programs__teaser card">
-          <h3 class="card__title">Набор массы</h3>
-          <p class="card__description">Заработать авторитет среди дворовых котов и даже собак?
-  Серия Cat Energy Pro поможет вашему коту нарастить необходимые мышцы!</p>
-          <a href="catalog.html/pro" class="inline-link card__link">Каталог pro</a>
+        <div class="programs__content-center">
+          <h2 class="visually-hidden">Программы</h2>
+          <div class="programs__teaser program-card">
+            <h3 class="program-card__title">Похудение</h3>
+            <p class="program-card__description">Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.</p>
+            <a href="catalog.html/slim" class="inline-link program-card__link">Каталог Slim</a>
+          </div>
+          <div class="programs__teaser program-card">
+            <h3 class="program-card__title">Набор массы</h3>
+            <p class="program-card__description">Заработать авторитет среди дворовых котов и даже собак?
+    Серия Cat Energy Pro поможет вашему коту нарастить необходимые мышцы!</p>
+            <a href="catalog.html/pro" class="inline-link program-card__link">Каталог pro</a>
+          </div>
         </div>
       </section>
 
       <section class="process">
-        <h2 class="process_heading">Как это работает</h2>
-        <ul class="process__list">
-          <li class="process__item process__item--leaf">
-            <p class="process_text">
-              Функциональное питание содержит только полезные питательные вещества.
-            </p>
-          </li>
-          <li class="process__item process__item--powder">
-            <p class="process_text">
-              Выпускается в виде порошка, который нужно лишь залить кипятком и готово.
-            </p>
-          </li>
-          <li class="process__item process__item--fork">
-            <p class="process_text">
-              Замените один-два приема обычной еды на наше фунцкциональное питание.
-            </p>
-          </li>
-          <li class="process__item process__item--time">
-            <p class="process_text">
-              Уже через месяц наслаждайтесь изменениями к лучшему вашего питомца!
-            </p>
-          </li>
-        </ul>
+        <div class="process__content-center">
+          <h2 class="process_heading">Как это работает</h2>
+          <ul class="process__list">
+            <li class="process__item process__item--leaf">
+              <p class="process__text">
+                Функциональное питание содержит только полезные питательные вещества.
+              </p>
+            </li>
+            <li class="process__item process__item--powder">
+              <p class="process__text">
+                Выпускается в виде порошка, который нужно лишь залить кипятком и готово.
+              </p>
+            </li>
+            <li class="process__item process__item--fork">
+              <p class="process__text">
+                Замените один-два приема обычной еды на наше фунцкциональное питание.
+              </p>
+            </li>
+            <li class="process__item process__item--time">
+              <p class="process__text">
+                Уже через месяц наслаждайтесь изменениями к лучшему вашего питомца!
+              </p>
+            </li>
+          </ul>
+        </div>
       </section>
 
       <section class="example">
-        <h2 class="example__heading">Живой пример</h2>
-        <p class="example__text">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.</p>
-        <table class="example__stats facts">
-          <tr>
-            <th class="facts__value">5 кг</th>
-            <th class="facts__value">60 дней</th>
-          </tr>
-          <tr>
-            <td class="facts_type">снижение веса</td>
-            <td class="facts_type">затрачено времени</td>
-          </tr>
-        </table>
-        <span class="example__expenses">Затраты на питание: 15 000 руб.</span>
-        <img class="example_cat-pic" src="img/boris.png" alt="Boris cat" width="280" height="250">
-        <button class="example__before" type="button">Было</button>
-        <button class="example__after" type="button">Стало</button>
+        <div class="example__content-center">
+          <h2 class="example__heading">Живой пример</h2>
+          <p class="example__text">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.</p>
+          <div class="example__stats facts">
+            <div class="facts__wrapper">
+              <span class="facts__value">5 кг</span>
+              <span class="facts__value">снижение веса</span>
+            </div>
+            <div class="facts__wrapper">
+              <span class="facts__type">60 дней</span>
+              <span class="facts__type">затрачено времени</span>
+            </div>
+          </div>
+          <span class="example__expenses">Затраты на питание: 15 000 руб.</span>
+          <div class="example__wrapper slider"></div>
+            <img class="example__cat-pic slider__cat-pic" src="img/boris.png" alt="Boris cat" width="280" height="250">
+            <button class="example__before slider__before" type="button">Было</button>
+            <button class="example__after slider__after" type="button">Стало</button>
+        </div>
+      </section>
+
+      <section class="contacts">
+        <div class="contacts__content-center">
+          <h3 class="contacts__title">приглашаем к сотрудничеству дилеров!</h3>
+          <p class="contacts__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
+        </div>
+        <div class="contacts__map"></div>
       </section>
 
     </main>
 
     <footer class="page-footer">
-      <div class="page-footer__contacts contacts">
-        <h3 class="contacts__title">приглашаем к сотрудничеству дилеров!</h3>
-        <p class="contacts__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
-      </div>
-      <div class="page-footer__map"></div>
 
       <img src="img/logo-text.png" alt="Logo text" class="page-footer__logo-text" width="136" height="30">
       <div class="page-footer__social social">
@@ -109,7 +123,9 @@
       </div>
       <div class="page-footer__copyright copyright">
         <p class="copyright__text">HTML Academy</p>
-        <img src="#" alt="HTML Academy logo" class="copyright__logo">
+        <a href="https://htmlacademy.ru/" class="copyright__link">
+          <img src="#" alt="HTML Academy logo" class="copyright__logo">
+        </a>
       </div>
     </footer>
 

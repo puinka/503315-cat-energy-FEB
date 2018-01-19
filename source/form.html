@@ -6,17 +6,19 @@
   </head>
   <body>
     <header class="page-header">
-      <a href="#" class="page-header__logo">
-        <img src="img/logo.svg" alt="Cat Energy Logo" class="page-header__logo-pic" width="34" height="42">
-        <img src="img/logo.svg" alt="Cat Energy Logo" class="page-header__logo-text" width="116" height="30">
-      </a>
-      <nav class="main-nav">
-        <ul class="main-nav__list site-list">
-          <li class="site-list__item"><a href="index.html">Главная</a></li>
-          <li class="site-list__item"><a href="catalog.html">Каталог продукции</a></li>
-          <li class="site-list__item site-list__item--active"><a href="#">Подбор программы</a></li>
-        </ul>
-      </nav>
+      <div class="page-header__content-center">
+        <a href="#" class="page-header__logo">
+          <img src="img/logo.svg" alt="Cat Energy Logo" class="page-header__logo-pic" width="34" height="42">
+          <img src="img/logo.svg" alt="Cat Energy Logo" class="page-header__logo-text" width="116" height="30">
+        </a>
+        <nav class="main-nav">
+          <ul class="main-nav__list site-list">
+            <li class="site-list__item"><a href="index.html" class="site-list__link">Главная</a></li>
+            <li class="site-list__item"><a href="catalog.html" class="site-list__link">Каталог продукции</a></li>
+            <li class="site-list__item site-list__item--active"><a class="site-list__link">Подбор программы</a></li>
+          </ul>
+        </nav>
+      </div>
     </header>
 
     <main class="page-main">
@@ -26,14 +28,14 @@
       <form action="https://echo.htmlacademy.ru" class="page-main__form request-form">
         <fieldset class="request-form__basics basics">
           <label class="basics__label">Имя:*<input type="text" class="basics__input" value="Барсик" required></label>
-          <label class="basics__label">Вес (кг):*<input type="text" class="basics__input" value="7" required></label>
-          <label class="basics__label">Возраст (лет):<input type="text" class="basics__input" value="7"></label>
+          <label class="basics__label">Вес (кг):*<input type="number" class="basics__input" value="7" required></label>
+          <label class="basics__label">Возраст (лет):<input type="number" class="basics__input" value="7"></label>
         </fieldset>
 
         <fieldset class="request-form__program program">
-          <input type="radio" class="program__choice" name="program" checked>Похудение
-          <input type="radio" class="program__choice" name="program">Набор массы
-          <input type="radio" class="program__choice" name="program">Не знаю (Нужен ваш совет)
+          <label class="program__label"><input type="radio" class="program__choice" name="program" checked>Похудение</label>
+          <label class="program__label"><input type="radio" class="program__choice" name="program">Набор массы</label>
+          <label class="program__label"><input type="radio" class="program__choice" name="program">Не знаю (Нужен ваш совет)</label>
         </fieldset>
 
         <fieldset class="request-form__contacts contacts">
@@ -42,7 +44,7 @@
             <input type="email" class="contacts__input contacts__input--email" value="kuklachev@gmail.com" required>
           </label>
           <label class="contacts__label">Телефон:*
-            <input type="text" class="contacts__input contacts__input--phone" value="8 (960) 900-60-90" required>
+            <input type="number" class="contacts__input contacts__input--phone" value="8 (960) 900-60-90" required>
           </label>
         </fieldset>
 
@@ -60,14 +62,17 @@
         <button class="request-form__button btn" type="submit">Отправить заявку</button>
         <span class="request-form__footnote">* — Обязательные поля</span>
       </form>
+
+      <section class="contacts">
+        <div class="contacts__content-center">
+          <h3 class="contacts__title">приглашаем к сотрудничеству дилеров!</h3>
+          <p class="contacts__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
+        </div>
+        <div class="contacts__map"></div>
+      </section>
     </main>
 
     <footer class="page-footer">
-      <div class="page-footer__contacts contacts">
-        <h3 class="contacts__title">приглашаем к сотрудничеству дилеров!</h3>
-        <p class="contacts__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
-      </div>
-      <div class="page-footer__map"></div>
 
       <img src="img/logo-text.png" alt="Logo text" class="page-footer__logo-text" width="136" height="30">
       <div class="page-footer__social social">
@@ -79,7 +84,9 @@
       </div>
       <div class="page-footer__copyright copyright">
         <p class="copyright__text">HTML Academy</p>
-        <img src="#" alt="HTML Academy logo" class="copyright__logo">
+        <a href="https://htmlacademy.ru/" class="copyright__link">
+          <img src="#" alt="HTML Academy logo" class="copyright__logo">
+        </a>
       </div>
     </footer>
 
