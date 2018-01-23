@@ -1,6 +1,10 @@
 .social {
 
-  &__list {}
+  &__list {
+    list-style: none;
+
+    display: flex;
+  }
 
   &__item {}
 }

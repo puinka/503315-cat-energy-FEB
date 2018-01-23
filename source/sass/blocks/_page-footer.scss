@@ -1,9 +1,24 @@
 .page-footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: var(--color-background-gray);
 
   &__logo-text {}
 
-  &__social {}
+  &__social {
 
-  &__copyright {}
+  }
+
+  &__copyright {
+    font-family: "Arial", sans-serif;
+    font-size: 1.6rem;
+    line-height: 1.6rem;
+
+    display: flex;
+    justify-content: space-between;
+
+    color: var(--color-icon-dark);
+  }
 
 }

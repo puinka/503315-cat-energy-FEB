@@ -1,8 +1,46 @@
 .facts {
+  display: flex;
+  justify-content: space-between;
 
-  &__wrapper {}
+  margin-top: 3rem;
 
-  &__value {}
+  &__wrapper {
+    position: relative;
 
-  &__type {}
+  }
+
+  &__value {
+    display: block;
+    font-size: 2.4rem;
+    line-height: 2.4rem;
+    text-transform: uppercase;
+    text-align: center;
+
+    width: 124px;
+
+    border: 1px solid var(--color-line-dark);
+    border-radius: 4px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+
+
+  }
+
+  &__type {
+    font-family: "Arial", sans-serif;
+    font-size: 1.2rem;
+    line-height: 1.2rem;
+    color: var(--color-text);
+
+    display: block;
+    width: 82px;
+    text-align: center;
+
+    position: absolute;
+    top: 58px;
+    left: 50%;
+    transform: translateX(-41px);
+    background-color: var(--color-background-gray);
+
+  }
 }

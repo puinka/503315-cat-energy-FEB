@@ -1,14 +1,33 @@
 .example {
+  padding: 2rem;
+  background-color: var(--color-background-gray);
 
   &__content-center {}
 
-  &__heading {}
+  &__heading {
+    font-size: 3.6rem;
+    line-height: 6rem;
+    font-weight: 400;
 
-  &__text {}
+    margin-bottom: 2rem;
+  }
+
+  &__text {
+    @include text-formatting;
+  }
 
   &__stats {}
 
-  &__expenses {}
+  &__expenses {
+    font-size: 1.4rem;
+    line-height: 2rem;
+    text-transform: uppercase;
+    text-align: center;
+
+    display: block;
+
+    margin-top: 3rem;
+  }
 
   &__wrapper {}
 

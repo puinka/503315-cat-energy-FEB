@@ -1,8 +1,30 @@
 .program-card {
+  background-color: var(--color-background-gray);
+  padding: 2rem;
 
-  &__title {}
+  &:not(:last-child) {
+    margin-bottom: 2rem;
+  }
 
-  &__description {}
+  &__title {
+    font-size: 2.4rem;
+    line-height: 3.8rem;
+    text-transform: uppercase;
+    font-weight: inherit;
 
-  &__link {}
+    color: var(--color-black);
+  }
+
+  &__description {
+    @include text-formatting;
+  }
+
+  &__link {
+    display: block;
+
+    padding-top: 2rem;
+    margin-top: 2rem;
+    border-top: 1px solid var(--color-line-light);
+
+  }
 }

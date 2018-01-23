@@ -4,30 +4,30 @@
   background-repeat: no-repeat;
   background-size: contain;
 
-  padding: 32px;
+  padding: 3.2rem;
 
   &__content-center {}
 
   &__text-wrapper {}
 
   &__heading {
-    font-size: 36px;
-    line-height: 36px;
+    font-size: 3.6rem;
+    line-height: 3.6rem;
     font-weight: inherit;
     text-align: center;
     color: var(--color-white);
   }
 
   &__subline {
-    font-size: 14px;
-    line-height: 14px;
+    font-size: 1.4rem;
+    line-height: 1.4rem;
 
     text-transform: uppercase;
     text-align: center;
     color: var(--color-white);
 
-    margin-top: 28px;
-    margin-bottom: 28px;
+    margin-top: 2.8rem;
+    margin-bottom: 2.8rem;
   }
 
   &__product {}

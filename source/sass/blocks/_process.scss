@@ -1,20 +1,35 @@
 .process {
 
+  padding: 2rem;
+
   &__content-center {}
 
-  &__heading {}
+  &__heading {
+    font-size: 3.6rem;
+    line-height: 6rem;
+    font-weight: 400;
+
+    margin-bottom: 2rem;
+  }
 
   &__list {}
 
 // the ITEM is somewhere else
 
-  &__text {}
+  &__text {
+    @include text-formatting;
+  }
 
 }
 
 // ITEM
 
 .process__item {
+  display: block;
+
+  &:not(:last-child) {
+    margin-bottom: 2rem;
+  }
 
   &--leaf {}
 
