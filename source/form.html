@@ -2,7 +2,10 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+
+    <link href="https://fonts.googleapis.com/css?family=Oswald:400,500&amp;subset=cyrillic,latin-ext" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
+
     <title>HTML Academy: Кэт энерджи Подбор программы</title>
   </head>
   <body>
@@ -22,11 +25,11 @@
       </div>
     </header>
 
-    <main class="page-main">
-      <h1 class="page-main__heading">Подбор программы</h1>
-      <p class="page-main__subline">Заполните анкету и мы подберем
+    <main class="form-main">
+      <h1 class="form-main__heading">Подбор программы</h1>
+      <p class="form-main__subline">Заполните анкету и мы подберем
 программу питания для вашего кота</p>
-      <form action="https://echo.htmlacademy.ru" class="page-main__form request-form">
+      <form action="https://echo.htmlacademy.ru" class="form-main__form request-form">
         <fieldset class="request-form__basics basics">
           <label class="basics__label">Имя:*<input type="text" class="basics__input" value="Барсик" required></label>
           <label class="basics__label">Вес (кг):*<input type="number" class="basics__input" value="7" required></label>
@@ -39,19 +42,19 @@
           <label class="program__label"><input type="radio" class="program__choice" name="program">Не знаю (Нужен ваш совет)</label>
         </fieldset>
 
-        <fieldset class="request-form__contacts contacts">
-          <legend class="contacts__title">Контактные данные (владельца кота)</legend>
-          <label class="contacts__label">E-mail:*
-            <input type="email" class="contacts__input contacts__input--email" value="kuklachev@gmail.com" required>
+        <fieldset class="request-form__contacts owner-contacts">
+          <legend class="owner-contacts__title">Контактные данные (владельца кота)</legend>
+          <label class="owner-contacts__label">E-mail:*
+            <input type="email" class="owner-contacts__input owner-contacts__input--email" value="kuklachev@gmail.com" required>
           </label>
-          <label class="contacts__label">Телефон:*
-            <input type="number" class="contacts__input contacts__input--phone" value="8 (960) 900-60-90" required>
+          <label class="owner-contacts__label">Телефон:*
+            <input type="number" class="owner-contacts__input owner-contacts__input--phone" value="8 (960) 900-60-90" required>
           </label>
         </fieldset>
 
         <fieldset class="request-form__comment comment">
           <legend class="comment__title">Комментарий</legend>
-          <textarea name="comment" id="comment" cols="30" rows="10" class="comment_input" placeholder="Расскажите обо всех повадках кота"></textarea>
+          <textarea name="comment" id="comment" cols="30" rows="10" class="comment__input" placeholder="Расскажите обо всех повадках кота"></textarea>
         </fieldset>
 
         <fieldset class="request-form__additional additional">

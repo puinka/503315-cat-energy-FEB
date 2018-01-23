@@ -1,3 +1,31 @@
-body {
-  background-color: red;
-}
+@import "blocks/page-additional.scss";
+@import "./blocks/basics.scss";
+@import "./blocks/btn.scss";
+@import "./blocks/catalog-main.scss";
+@import "./blocks/comment.scss";
+@import "./blocks/contacts.scss";
+@import "./blocks/copyright.scss";
+@import "./blocks/example.scss";
+@import "./blocks/facts.scss";
+@import "./blocks/form-main.scss";
+@import "./blocks/hero.scss";
+@import "./blocks/inline-link.scss";
+@import "./blocks/main-nav.scss";
+@import "./blocks/owner-contacts.scss";
+@import "./blocks/page-footer.scss";
+@import "./blocks/page-header.scss";
+@import "./blocks/page-main.scss";
+@import "./blocks/present.scss";
+@import "./blocks/process.scss";
+@import "./blocks/product-card.scss";
+@import "./blocks/products.scss";
+@import "./blocks/program-card.scss";
+@import "./blocks/program.scss";
+@import "./blocks/programs.scss";
+@import "./blocks/request-form.scss";
+@import "./blocks/show-more.scss";
+@import "./blocks/site-list.scss";
+@import "./blocks/slider.scss";
+@import "./blocks/social.scss";
+@import "./blocks/supplies.scss";
+@import "./blocks/visually-hidden.scss";

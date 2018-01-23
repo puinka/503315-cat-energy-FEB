@@ -1,0 +1,24 @@
+.process {
+
+  &__content-center {}
+
+  &__heading {}
+
+  &__list {}
+
+// the ITEM is somewhere else
+
+  &__text {}
+
+}
+
+// ITEM
+
+.process__item {
+
+  &--leaf {}
+
+  &--powder {}
+
+  &--fork {}
+}
