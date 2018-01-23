@@ -1,8 +1,25 @@
 .show-more {
+  @include content-center;
 
-  &__title {}
+  border-bottom: 1px solid var(--color-line-light);
 
-  &__text {}
+  &__title {
+    font-size: 1.6rem;
+    line-height: 2rem;
+    font-weight: inherit;
 
-  &__btn {}
+    text-transform: uppercase;
+
+    margin-bottom: 1.5rem;
+  }
+
+  &__text {
+    @include text-formatting;
+    margin-bottom: 2.2rem;
+  }
+
+  &__btn {
+    width: 90%;
+    margin-bottom: 2.5rem;
+  }
 }

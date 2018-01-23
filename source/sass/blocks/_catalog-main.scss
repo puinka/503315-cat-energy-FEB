@@ -1,8 +1,15 @@
 .catalog-main {
 
-  &__heading {}
 
-  &__products {}
+
+  &__heading {
+    @include heading;
+    margin-left: 5%;
+  }
+
+  &__products {
+    list-style: none;
+  }
 
   &__show-more {}
 

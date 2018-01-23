@@ -4,9 +4,12 @@
   background-repeat: no-repeat;
   background-size: contain;
 
-  padding: 3.2rem;
+  padding: 3.2rem 0;
 
-  &__content-center {}
+
+  &__content-center {
+    @include content-center;
+  }
 
   &__text-wrapper {}
 
