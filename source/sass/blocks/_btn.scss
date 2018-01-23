@@ -1,1 +1,16 @@
-.btn {}
+.btn {
+  display: block;
+
+  line-height: 18px;
+
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
+
+  padding: 12px;
+
+  &--green {
+    background-color: var(--color-green);
+    color: var(--color-white);
+  }
+}
