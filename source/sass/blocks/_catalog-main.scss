@@ -4,7 +4,8 @@
 
   &__heading {
     @include heading;
-    margin-left: 5%;
+    margin-left: 5vw;
+    margin-top: 2rem;
   }
 
   &__products {
