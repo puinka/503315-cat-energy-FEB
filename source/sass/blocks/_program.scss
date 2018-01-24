@@ -1,6 +1,18 @@
 .program {
 
-  &__label {}
+  width: 90vw;
+  display: flex;
 
-  &__choice {}
+  &__label {
+
+
+    @include form-label;
+
+    margin-bottom: 1.6rem;
+    padding-left: 4.4rem;
+  }
+
+  &__choice {
+
+  }
 }

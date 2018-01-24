@@ -18,4 +18,8 @@
   }
 
   &__map {}
+
+  &--form {
+    background-color: var(--color-background-gray);
+  }
 }

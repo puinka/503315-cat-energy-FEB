@@ -1,8 +1,18 @@
 .form-main {
 
-  &__heading {}
+  &__heading {
+    @include heading;
+    margin-left: 5vw;
+  }
 
-  &__subline {}
+  &__subline {
+    font-size: 1.4rem;
+    line-height: 1.8rem;
+    text-transform: uppercase;
+
+    margin-left: 5vw;
+    margin-bottom: 4.2rem;
+  }
 
   &__form {}
 }

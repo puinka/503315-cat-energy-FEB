@@ -1,6 +1,12 @@
 .comment {
 
-  &__title {}
+  &__title {
+    @include fieldset-title;
+  }
 
-  &__input {}
+  &__input {
+    width: 90vw;
+
+    border-color: var(--color-line-light);
+  }
 }

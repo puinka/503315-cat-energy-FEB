@@ -31,9 +31,9 @@
 программу питания для вашего кота</p>
       <form action="https://echo.htmlacademy.ru" class="form-main__form request-form">
         <fieldset class="request-form__basics basics">
-          <label class="basics__label">Имя:*<input type="text" class="basics__input" value="Барсик" required></label>
-          <label class="basics__label">Вес (кг):*<input type="number" class="basics__input" value="7" required></label>
-          <label class="basics__label">Возраст (лет):<input type="number" class="basics__input" value="7"></label>
+          <label class="basics__label">Имя:*<input type="text"  class="basics__input" value="Барсик" required></label>
+          <label class="basics__label">Вес (кг):*<input type="number"  class="basics__input" value="7" required></label>
+          <label class="basics__label">Возраст (лет):<input type="number"  class="basics__input" value="7"></label>
         </fieldset>
 
         <fieldset class="request-form__program program">
@@ -58,16 +58,17 @@
         </fieldset>
 
         <fieldset class="request-form__additional additional">
+          <legend class="additional__title">Дополнительно</legend>
           <label class="additional__label"><input type="checkbox" class="additional__input" checked>Сахарозаменитель</label>
           <label class="additional__label"><input type="checkbox" class="additional__input">Питьевая вода</label>
           <label class="additional__label"><input type="checkbox" class="additional__input">Молоко</label>
           <label class="additional__label"><input type="checkbox" class="additional__input">Витамины</label>
         </fieldset>
-        <button class="request-form__button btn" type="submit">Отправить заявку</button>
+        <button class="request-form__button btn btn--green" type="submit">Отправить заявку</button>
         <span class="request-form__footnote">* — Обязательные поля</span>
       </form>
 
-      <section class="contacts">
+      <section class="contacts contacts--form">
         <div class="contacts__content-center">
           <h3 class="contacts__title">приглашаем к сотрудничеству дилеров!</h3>
           <p class="contacts__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>

@@ -19,3 +19,17 @@
 
   margin-bottom: 2rem;
 }
+
+@mixin fieldset-title() {
+  font-size: 2.4rem;
+  line-height: 2.4rem;
+  font-weight: inherit;
+
+  margin-bottom: 3rem;
+}
+
+@mixin form-label() {
+  font-size: 1.6rem;
+  line-height: 1.8rem;
+  text-transform: uppercase;
+}
