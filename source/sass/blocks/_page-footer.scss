@@ -4,10 +4,19 @@
   align-items: center;
   background-color: var(--color-background-gray);
 
-  &__logo-text {}
+  &__logo-text {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
 
   &__social {
 
+    width: 80vw;
+    margin-left: 5vw;
+    margin-right: 5vw;
+
+    border-top: 1px solid var(--color-line-dark);
+    border-bottom: 1px solid var(--color-line-dark);
   }
 
   &__copyright {
@@ -15,10 +24,16 @@
     font-size: 1.6rem;
     line-height: 1.6rem;
 
+    width: 80vw;
+
     display: flex;
     justify-content: space-between;
+    align-items: center;
 
     color: var(--color-icon-dark);
+
+    margin-top: 2rem;
+    margin-bottom: 4rem;
   }
 
 }
