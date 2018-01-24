@@ -1,10 +1,31 @@
 .page-header {
 
-  &__content-center {}
+  &__content-center {
 
-  &__logo {}
+  }
 
-  &__logo-pic {}
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: nowrap;
 
-  &__logo-text {}
+    padding: 5vw;
+
+    border-bottom: 1px solid var(--color-line-light);
+
+
+  }
+
+  &__logo {
+
+  }
+
+  &__logo-pic {
+
+  }
+
+  &__logo-text {
+
+  }
 }
