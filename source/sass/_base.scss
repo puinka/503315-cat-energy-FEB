@@ -16,6 +16,27 @@ html {
   font-size: 62.5%; // 10px
 }
 
+/* oswald-regular - latin_cyrillic */
+@font-face {
+  font-family: 'Oswald';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Oswald Regular'), local('Oswald-Regular'),
+       url('../source/fonts/oswaldregular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+       url('../source/fonts/oswaldregular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* oswald-500 - latin_cyrillic */
+@font-face {
+  font-family: 'Oswald';
+  font-style: normal;
+  font-weight: 500;
+  src: local('Oswald Medium'), local('Oswald-Medium'),
+       url('../source/fonts/oswaldmedium.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+       url('../source/fonts/oswaldmedium.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+
+
 body {
   font-family: "Oswald", sans-serif;
   font-weight: 400;
