@@ -22,14 +22,42 @@
 
 .process__item {
   display: block;
+  padding-left: 70px;
+
+  position: relative;
+
+  &::before {
+    content: " ";
+
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 60px;
+    height: 60px;
+    background-color: var(--color-green);
+
+    background-repeat: no-repeat;
+    background-position: 4px 5px;
+  }
 
   &:not(:last-child) {
     margin-bottom: 2rem;
   }
 
-  &--leaf {}
+  &--leaf::before {
+    background-image: url("../img/advantage-leaf@1x.png");
 
-  &--powder {}
+  }
 
-  &--fork {}
+  &--powder::before {
+    background-image: url("../img/advantage-powder@1x.png");
+  }
+
+  &--fork::before {
+    background-image: url("../img/advantage-dining@1x.png");
+  }
+
+  &--clock::before {
+    background-image: url("../img/advantage-clock@1x.png");
+  }
 }
