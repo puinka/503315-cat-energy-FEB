@@ -1,5 +1,11 @@
 .additional {
 
+  &__content-center {
+    @include content-center;
+    display: flex;
+    flex-direction: column;
+  }
+
   &__title {
     @include fieldset-title;
 
@@ -10,7 +16,7 @@
     @include form-label;
 
     display: block;
-    width: 90vw;
+
 
     margin-bottom: 1.6rem;
     padding-left: 4.6rem;

@@ -1,5 +1,9 @@
 .owner-contacts {
 
+  &__content-center {
+    @include content-center;
+  }
+
   &__title {
     @include fieldset-title;
 

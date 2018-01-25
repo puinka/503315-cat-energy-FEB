@@ -4,8 +4,10 @@
 
   &__heading {
     @include heading;
-    margin-left: 5vw;
+    //@include content-center;
     margin-top: 2rem;
+    margin-left: 2rem;
+    margin-bottom: 2rem;
   }
 
   &__products {
@@ -16,5 +18,7 @@
 
   &__suplies {}
 
-  &__present {}
+  &__present {
+    min-height: 290px;
+  }
 }

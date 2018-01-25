@@ -35,41 +35,53 @@
 программу питания для вашего кота</p>
       <form action="https://echo.htmlacademy.ru" class="form-main__form request-form">
         <fieldset class="request-form__basics basics">
-          <label class="basics__label">Имя:*<input type="text"  class="basics__input" value="Барсик" required></label>
-          <label class="basics__label">Вес (кг):*<input type="number"  class="basics__input" value="7" required></label>
-          <label class="basics__label">Возраст (лет):<input type="number"  class="basics__input" value="7"></label>
+          <div class="basics__content-center">
+            <label class="basics__label">Имя:*<input type="text"  class="basics__input" value="Барсик" required></label>
+            <label class="basics__label">Вес (кг):*<input type="number"  class="basics__input" value="7" required></label>
+            <label class="basics__label">Возраст (лет):<input type="number"  class="basics__input" value="7"></label>
+          </div>
         </fieldset>
 
         <fieldset class="request-form__program program">
-          <label class="program__label"><input type="radio" class="program__choice visually-hidden" name="program" checked>Похудение</label>
-          <label class="program__label"><input type="radio" class="program__choice visually-hidden" name="program">Набор массы</label>
-          <label class="program__label"><input type="radio" class="program__choice visually-hidden" name="program">Не знаю (Нужен ваш совет)</label>
+          <div class="program__content-center">
+            <label class="program__label"><input type="radio" class="program__choice visually-hidden" name="program" checked>Похудение</label>
+            <label class="program__label"><input type="radio" class="program__choice visually-hidden" name="program">Набор массы</label>
+            <label class="program__label"><input type="radio" class="program__choice visually-hidden" name="program">Не знаю (Нужен ваш совет)</label>
+          </div>
         </fieldset>
 
         <fieldset class="request-form__contacts owner-contacts">
-          <legend class="owner-contacts__title">Контактные данные (владельца кота)</legend>
-          <label class="owner-contacts__label">E-mail:*
-            <input type="email" class="owner-contacts__input owner-contacts__input--email" value="kuklachev@gmail.com" required>
-          </label>
-          <label class="owner-contacts__label">Телефон:*
-            <input type="number" class="owner-contacts__input owner-contacts__input--phone" value="8 (960) 900-60-90" required>
-          </label>
+          <div class="owner-contacts__content-center">
+            <legend class="owner-contacts__title">Контактные данные (владельца кота)</legend>
+            <label class="owner-contacts__label">E-mail:*
+              <input type="email" class="owner-contacts__input owner-contacts__input--email" value="kuklachev@gmail.com" required>
+            </label>
+            <label class="owner-contacts__label">Телефон:*
+              <input type="number" class="owner-contacts__input owner-contacts__input--phone" value="8 (960) 900-60-90" required>
+            </label>
+          </div>
         </fieldset>
 
         <fieldset class="request-form__comment comment">
-          <legend class="comment__title">Комментарий</legend>
-          <textarea name="comment" id="comment" cols="30" rows="10" class="comment__input" placeholder="Расскажите обо всех повадках кота"></textarea>
+          <div class="comment__content-center">
+            <legend class="comment__title">Комментарий</legend>
+            <textarea name="comment" id="comment" cols="30" rows="10" class="comment__input" placeholder="Расскажите обо всех повадках кота"></textarea>
+          </div>
         </fieldset>
 
         <fieldset class="request-form__additional additional">
-          <legend class="additional__title">Дополнительно</legend>
-          <label class="additional__label"><input type="checkbox" class="additional__input visually-hidden" checked>Сахарозаменитель</label>
-          <label class="additional__label"><input type="checkbox" class="additional__input visually-hidden">Питьевая вода</label>
-          <label class="additional__label"><input type="checkbox" class="additional__input visually-hidden">Молоко</label>
-          <label class="additional__label"><input type="checkbox" class="additional__input visually-hidden">Витамины</label>
+          <div class="additional__content-center">
+            <legend class="additional__title">Дополнительно</legend>
+            <label class="additional__label"><input type="checkbox" class="additional__input visually-hidden" checked>Сахарозаменитель</label>
+            <label class="additional__label"><input type="checkbox" class="additional__input visually-hidden">Питьевая вода</label>
+            <label class="additional__label"><input type="checkbox" class="additional__input visually-hidden">Молоко</label>
+            <label class="additional__label"><input type="checkbox" class="additional__input visually-hidden">Витамины</label>
+          </div>
         </fieldset>
-        <button class="request-form__button btn btn--green" type="submit">Отправить заявку</button>
-        <span class="request-form__footnote">* — Обязательные поля</span>
+        <div class="request-form__content-center">
+          <button class="request-form__btn btn btn--green" type="submit">Отправить заявку</button>
+          <span class="request-form__footnote">* — Обязательные поля</span>
+        </div>
       </form>
 
       <section class="contacts contacts--form">

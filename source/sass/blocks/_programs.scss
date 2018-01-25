@@ -1,6 +1,8 @@
 .programs {
 
-  &__content-center {}
+  &__content-center {
+    @include content-center;
+  }
 
   &__teaser {}
 }

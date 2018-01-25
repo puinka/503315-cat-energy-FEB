@@ -2,7 +2,6 @@
   display: flex;
   justify-content: space-between;
 
-  margin-top: 3rem;
 
   &__wrapper {
     position: relative;
@@ -18,7 +17,7 @@
 
     width: 124px;
 
-    border: 1px solid var(--color-line-dark);
+    border: 1px solid $color-line-dark;
     border-radius: 4px;
     padding-top: 20px;
     padding-bottom: 20px;
@@ -30,7 +29,7 @@
     font-family: "Arial", sans-serif;
     font-size: 1.2rem;
     line-height: 1.2rem;
-    color: var(--color-text);
+    color: $color-text;
 
     display: block;
     width: 82px;
@@ -40,7 +39,7 @@
     top: 58px;
     left: 50%;
     transform: translateX(-41px);
-    background-color: var(--color-background-gray);
+    background-color: $color-background-gray;
 
   }
 }

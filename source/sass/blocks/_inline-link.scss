@@ -2,6 +2,9 @@
 
   &:link,
   &:visited {
+    font-size: 1.6rem;
+    line-height: 1.6rem;
+
     color: var(--color-black);
     text-decoration: none;
     text-transform: uppercase;
@@ -10,7 +13,7 @@
 
     position: relative;
 
-    &::after {
+    /* &::after {
       content: " ";
 
       position: absolute;
@@ -19,7 +22,7 @@
       width: 52px;
       height: 52px;
       background-color: var(--color-green);
-    }
+    } */
 
 
   }

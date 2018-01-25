@@ -1,7 +1,13 @@
+
 .program {
 
-  width: 90vw;
-  display: flex;
+  &__content-center {
+    @include content-center;
+    display: flex;
+    flex-direction: column;
+  }
+
+
 
   &__label {
 

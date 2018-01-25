@@ -1,7 +1,9 @@
 .contacts {
+  padding: 2rem 0;
 
   &__content-center {
-    padding: 2rem;
+    @include content-center;
+
     display: flex;
   }
 
@@ -10,7 +12,7 @@
     line-height: 2rem;
     font-weight: 400;
     text-transform: uppercase;
-    color: var(--color-black);
+    color: $color-black;
   }
 
   &__address {
@@ -20,6 +22,6 @@
   &__map {}
 
   &--form {
-    background-color: var(--color-background-gray);
+    background-color: $color-background-gray;
   }
 }

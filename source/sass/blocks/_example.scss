@@ -1,36 +1,37 @@
 .example {
-  padding: 2rem;
-  background-color: var(--color-background-gray);
 
-  &__content-center {}
+  background-color: $color-background-gray;
+  padding-top: 2rem;
+  padding-bottom: 3rem;
+
+  &__content-center {
+    @include content-center;
+  }
 
   &__heading {
     @include heading;
+    margin-bottom: 2rem;
   }
 
   &__text {
     @include text-formatting;
+    margin-bottom: 2rem;
   }
 
-  &__stats {}
+  &__stats {
+    margin-bottom: 4rem;
+  }
 
   &__expenses {
-    font-size: 1.4rem;
-    line-height: 2rem;
+
     text-transform: uppercase;
     text-align: center;
 
     display: block;
 
-    margin-top: 3rem;
+    margin-bottom: 4rem;
+
   }
-
-  &__wrapper {}
-
-
-  //for the slider
-
-  &__cat-pic {}
 
   &__before {}
 

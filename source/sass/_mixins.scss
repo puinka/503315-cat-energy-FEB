@@ -1,7 +1,6 @@
 @mixin content-center() {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
+  width: 32rem;
+  padding: 0 2rem;
 }
 
 @mixin text-formatting() {
@@ -9,15 +8,13 @@
   font-size: 1.4rem;
   line-height: 1.8rem;
 
-  color: var(--color-text);
+  color: $color-text;
 }
 
 @mixin heading() {
   font-size: 3.6rem;
   line-height: 6rem;
   font-weight: 400;
-
-  margin-bottom: 2rem;
 }
 
 @mixin fieldset-title() {

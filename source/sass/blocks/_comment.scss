@@ -1,12 +1,16 @@
 .comment {
 
+  &__content-center {
+    @include content-center;
+  }
+
   &__title {
     @include fieldset-title;
   }
 
   &__input {
-    width: 90vw;
 
-    border-color: var(--color-line-light);
+    min-width: 28rem;
+    border-color: $color-line-light;
   }
 }

@@ -1,5 +1,8 @@
 .basics {
 
+  &__content-center {
+    @include content-center;
+  }
 
   &__label {
     display: flex;

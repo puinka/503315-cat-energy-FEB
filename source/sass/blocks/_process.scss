@@ -1,22 +1,27 @@
 .process {
 
-  padding: 2rem;
+  padding-top: 2rem;
+  padding-bottom: 4.5rem;
 
-  &__content-center {}
+
+  &__content-center {
+    @include content-center;
+  }
 
   &__heading {
     @include heading;
+    margin-bottom: 2rem;
   }
 
-  &__list {}
+    &__list {
+      list-style: none;
+    }
 
-// the ITEM is somewhere else
-
-  &__text {
-    @include text-formatting;
-  }
-
+    &__text {
+      @include text-formatting;
+    }
 }
+
 
 // ITEM
 
@@ -34,7 +39,7 @@
     top: 0;
     width: 60px;
     height: 60px;
-    background-color: var(--color-green);
+    background-color: $color-primary;
 
     background-repeat: no-repeat;
     background-position: 4px 5px;

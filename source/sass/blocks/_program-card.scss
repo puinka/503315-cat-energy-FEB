@@ -1,5 +1,5 @@
 .program-card {
-  background-color: var(--color-background-gray);
+  background-color: $color-background-gray;
   padding: 2rem;
 
   &:not(:last-child) {
@@ -19,18 +19,18 @@
 
     padding-top: 2rem;
     margin-top: 2rem;
-    border-top: 1px solid var(--color-line-light);
+    border-top: 1px solid $color-line-medium;
 
   }
 }
 
 .program-card__title {
   font-size: 2.4rem;
-  line-height: 3.8rem;
+  line-height: 5.2rem;
   text-transform: uppercase;
   font-weight: inherit;
 
-  color: var(--color-black);
+  color: $color-black;
 
   margin-bottom: 2rem;
 
@@ -45,26 +45,36 @@
     top: 0;
     width: 52px;
     height: 52px;
-    background-color: var(--color-green);
+    background-color: $color-primary;
     border-radius: 50%;
 
-    background-repeat: no-repeat;
-
-
   }
 
-  &--slim::before {
+  &--slim::after {
+    content: " ";
+    position: absolute;
+    left: 12px;
+    top: 0;
+    width: 52px;
+    height: 52px;
     background-image: url("../img/icon-cat-slim.svg");
     background-position: 0 0;
+    background-repeat: no-repeat;
 
   }
 
-  &--pro::before {
+  &--pro::after {
+    content: " ";
+    position: absolute;
+    left: -6px;
+    top: 12px;
+    width: 66px;
+    height: 52px;
     background-image: url("../img/icon-cat-pro.svg");
-    background-position: -3px 15px;
+    background-position: 0 0;
+    background-repeat: no-repeat;
+
   }
-
-
 
 
 }

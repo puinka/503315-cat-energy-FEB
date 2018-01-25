@@ -1,6 +1,5 @@
 .btn {
   display: block;
-  //width: 90%;
 
   font-size: 1.6rem;
   line-height: 2rem;
@@ -17,15 +16,15 @@
   padding: 1.2rem;
 
   &--green {
-    background-color: var(--color-green);
-    color: var(--color-white);
+    background-color: $color-primary;
+    color: #fff;
 
     &:hover {
-      background-color: var(--color-green-dark);
+      background-color: $color-primary-dark;
     }
 
     &:active {
-      background-color: var(--color-green-dark);
+      background-color: $color-primary-dark;
       color: rgba(#fff, .3);
     }
   }
@@ -34,6 +33,6 @@
 
     color: inherit;
 
-    background-color: var(--color-background-gray);
+    background-color: $color-background-gray;
   }
 }

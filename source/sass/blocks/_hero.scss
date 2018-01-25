@@ -4,21 +4,21 @@
   background-repeat: no-repeat;
   background-size: contain;
 
-  padding: 3.2rem 0;
-
+  padding-top: 3rem;
+  padding-bottom: 2rem;
 
   &__content-center {
     @include content-center;
   }
-
-  &__text-wrapper {}
 
   &__heading {
     font-size: 3.6rem;
     line-height: 3.6rem;
     font-weight: inherit;
     text-align: center;
-    color: var(--color-white);
+    color: #fff;
+
+    margin-bottom: 3rem;
   }
 
   &__subline {
@@ -27,13 +27,17 @@
 
     text-transform: uppercase;
     text-align: center;
-    color: var(--color-white);
+    color: #fff;
 
-    margin-top: 2.8rem;
-    margin-bottom: 2.8rem;
+    margin-bottom: 2rem;
   }
+}
+
+/*
+.hero {
 
   &__product {}
 
   &__btn {}
 }
+*/
