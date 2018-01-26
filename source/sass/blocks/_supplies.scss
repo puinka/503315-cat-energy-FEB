@@ -38,12 +38,13 @@
     display: flex;
     justify-content: space-between;
     margin-bottom: 1.6rem;
+
     @include text-formatting;
   }
 
-  &__amount {}
+  //&__amount {}
 
-  &__price {}
+  //&__price {}
 
   &__btn {
     width: 100%;
