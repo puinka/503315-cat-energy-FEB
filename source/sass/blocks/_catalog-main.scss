@@ -1,0 +1,21 @@
+.catalog-main {
+  &__heading {
+    @include heading;
+    //@include content-center;
+    margin-top: 2rem;
+    margin-left: 2rem;
+    margin-bottom: 2rem;
+  }
+
+  &__products {
+    list-style: none;
+  }
+
+  //&__show-more {}
+
+  //&__suplies {}
+
+  &__present {
+    min-height: 290px;
+  }
+}

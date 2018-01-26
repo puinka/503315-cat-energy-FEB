@@ -1,0 +1,21 @@
+.basics {
+  &__content-center {
+    @include content-center;
+  }
+
+  &__label {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    @include form-label;
+    margin-bottom: 2rem;
+  }
+
+  &__input {
+    flex-grow: 1;
+    width: 50%;
+    padding: 1.6rem;
+    margin-left: 2rem;
+  }
+}

@@ -1,0 +1,65 @@
+.program-card {
+  background-color: $color-background-gray;
+  padding: 2rem;
+
+  &:not(:last-child) {
+    margin-bottom: 2rem;
+  }
+
+  &__description {
+    @include text-formatting;
+  }
+
+  &__link {
+    display: block;
+    padding-top: 2rem;
+    margin-top: 2rem;
+    border-top: 1px solid $color-line-medium;
+  }
+}
+
+.program-card__title {
+  font-size: 2.4rem;
+  line-height: 5.2rem;
+  text-transform: uppercase;
+  font-weight: inherit;
+  color: $color-black;
+  margin-bottom: 2rem;
+  position: relative;
+  padding-left: 7.2rem;
+
+  &::before {
+    content: " ";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 52px;
+    height: 52px;
+    background-color: $color-primary;
+    border-radius: 50%;
+  }
+
+  &--slim::after {
+    content: " ";
+    position: absolute;
+    left: 12px;
+    top: 0;
+    width: 52px;
+    height: 52px;
+    background-image: url("../img/icon-cat-slim.svg");
+    background-position: 0 0;
+    background-repeat: no-repeat;
+  }
+
+  &--pro::after {
+    content: " ";
+    position: absolute;
+    left: -6px;
+    top: 12px;
+    width: 66px;
+    height: 52px;
+    background-image: url("../img/icon-cat-pro.svg");
+    background-position: 0 0;
+    background-repeat: no-repeat;
+  }
+}

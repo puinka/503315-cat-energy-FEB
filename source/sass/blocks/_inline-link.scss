@@ -1,0 +1,28 @@
+.inline-link {
+  &:link,
+  &:visited {
+    font-size: 1.6rem;
+    line-height: 1.6rem;
+    color: $color-black;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding-right: 40px;
+    position: relative;
+    /* &::after {
+      content: " ";
+
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 52px;
+      height: 52px;
+      background-color: var(--color-green);
+    } */
+  }
+
+  //&:hover {}
+
+  &:active {
+    opacity: 0.3;
+  }
+}

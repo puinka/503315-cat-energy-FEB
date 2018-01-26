@@ -1,0 +1,15 @@
+.program {
+  &__content-center {
+    @include content-center;
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__label {
+    @include form-label;
+    margin-bottom: 1.6rem;
+    padding-left: 4.4rem;
+  }
+
+  //&__choice {}
+}

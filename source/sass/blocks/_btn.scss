@@ -1,0 +1,31 @@
+.btn {
+  display: block;
+  font-size: 1.6rem;
+  line-height: 2rem;
+  font-family: inherit;
+  font-weight: inherit;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
+  border: none;
+  padding: 1.2rem;
+
+  &--green {
+    background-color: $color-primary;
+    color: #ffffff;
+
+    &:hover {
+      background-color: $color-primary-dark;
+    }
+
+    &:active {
+      background-color: $color-primary-dark;
+      color: rgba(#ffffff, 0.3);
+    }
+  }
+
+  &--gray {
+    color: inherit;
+    background-color: $color-background-gray;
+  }
+}

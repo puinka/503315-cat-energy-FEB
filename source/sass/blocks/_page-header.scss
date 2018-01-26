@@ -1,0 +1,25 @@
+.page-header {
+  //&__content-center {}
+
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: nowrap;
+    padding: 5vw;
+    border-bottom: 1px solid $color-line-light;
+  }
+
+  &__logo {
+    flex-grow: 1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  //&__logo-pic {}
+
+  &__logo-text {
+    transform: translateX(-50%);
+  }
+}

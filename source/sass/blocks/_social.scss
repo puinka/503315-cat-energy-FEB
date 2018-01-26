@@ -1,0 +1,19 @@
+.social {
+  &__list {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+  }
+
+  &__item {
+    padding: 2rem;
+  }
+}
+
+.social__link {
+  //&--vkontakte {}
+
+  //&--instagram {}
+
+  //&--facebook {}
+}

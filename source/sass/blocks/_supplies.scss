@@ -1,0 +1,52 @@
+.supplies {
+  &__content-center {
+    @include content-center;
+  }
+
+  &__heading {
+    font-size: 2.4rem;
+    line-height: 2.4rem;
+    font-weight: inherit;
+    padding-left: 20px;
+    margin-top: 3rem;
+    margin-bottom: 3.5rem;
+  }
+
+  &__list {
+    list-style: none;
+    display: block;
+  }
+
+  &__item {
+    border-top: 1px solid $color-line-dark;
+
+    &:last-child {
+      border-bottom: 1px solid $color-line-dark;
+    }
+    padding: 2rem 0;
+  }
+
+  &__title {
+    font-size: 1.6rem;
+    line-height: 1.6rem;
+    font-weight: inherit;
+    text-transform: uppercase;
+    margin-bottom: 1.6rem;
+  }
+
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1.6rem;
+
+    @include text-formatting;
+  }
+
+  //&__amount {}
+
+  //&__price {}
+
+  &__btn {
+    width: 100%;
+  }
+}

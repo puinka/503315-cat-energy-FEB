@@ -1,0 +1,38 @@
+.page-footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: $color-background-gray;
+
+  &__logo-text {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
+
+  &__social {
+
+    max-width: 80%;
+    margin-left: 5rem;
+    margin-right: 5rem;
+
+    border-top: 1px solid $color-line-medium;
+    border-bottom: 1px solid $color-line-medium;
+  }
+
+  &__copyright {
+    font-family: "Arial", sans-serif;
+    font-size: 1.6rem;
+    line-height: 1.6rem;
+
+    width: 80vw;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    //color: var(--color-icon-dark);
+
+    margin-top: 2rem;
+    margin-bottom: 4rem;
+  }
+}

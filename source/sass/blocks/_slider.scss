@@ -1,0 +1,12 @@
+.slider {
+  &__cat-pic {
+    display: block;
+  }
+
+  &__after,
+  &__before {
+    font-size: 1.6rem;
+    line-height: 2rem;
+    text-transform: uppercase;
+  }
+}

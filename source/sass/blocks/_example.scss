@@ -1,0 +1,34 @@
+.example {
+  background-color: $color-background-gray;
+  padding-top: 2rem;
+  padding-bottom: 3rem;
+
+  &__content-center {
+    @include content-center;
+  }
+
+  &__heading {
+    @include heading;
+    margin-bottom: 2rem;
+  }
+
+  &__text {
+    @include text-formatting;
+    margin-bottom: 2rem;
+  }
+
+  &__stats {
+    margin-bottom: 4rem;
+  }
+
+  &__expenses {
+    text-transform: uppercase;
+    text-align: center;
+    display: block;
+    margin-bottom: 4rem;
+  }
+
+  //&__before {}
+
+  //&__after {}
+}
