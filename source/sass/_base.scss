@@ -1,17 +1,4 @@
-// VARIABLES
 
-$color-primary: #68b738;
-$color-primary-dark: #5eaa2f;
-
-$color-background-gray: #f2f2f2;
-
-$color-text: #444444;
-$color-black: #111111;
-
-//lines
-$color-line-light: #e6e6e6;
-$color-line-medium: #d9d9d9;
-$color-line-dark: #cfcfcf;
 
 * {
   margin: 0;
@@ -29,23 +16,20 @@ html {
   font-size: 62.5%; // 10px
 }
 
+
 /* oswald-regular - latin_cyrillic */
 @font-face {
-  font-family: 'Oswald';
+  font-family: "Oswald";
   font-style: normal;
   font-weight: 400;
-  src: local('Oswald Regular'), local('Oswald-Regular'),
-       url('../source/fonts/oswaldregular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
-       url('../source/fonts/oswaldregular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  src: local("Oswald Regular"), local("Oswald-Regular"), url("../fonts/oswald-v16-latin_cyrillic-regular.woff2") format("woff2"), /* Chrome 26+, Opera 23+, Firefox 39+ */ url("../fonts/oswald-v16-latin_cyrillic-regular.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
 /* oswald-500 - latin_cyrillic */
 @font-face {
-  font-family: 'Oswald';
+  font-family: "Oswald";
   font-style: normal;
   font-weight: 500;
-  src: local('Oswald Medium'), local('Oswald-Medium'),
-       url('../source/fonts/oswaldmedium.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
-       url('../source/fonts/oswaldmedium.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  src: local("Oswald Medium"), local("Oswald-Medium"), url("../fonts/oswald-v16-latin_cyrillic-500.woff2") format("woff2"), /* Chrome 26+, Opera 23+, Firefox 39+ */ url("../fonts/oswald-v16-latin_cyrillic-500.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
 
 
@@ -58,8 +42,8 @@ body {
 }
 
 .visually-hidden:not(:focus):not(:active),
-input[type="checkbox"].visually-hidden,
-input[type="radio"].visually-hidden {
+  input[type="checkbox"].visually-hidden,
+  input[type="radio"].visually-hidden {
   position: absolute;
 
   width: 1px;
@@ -74,4 +58,9 @@ input[type="radio"].visually-hidden {
   clip: rect(0 0 0 0);
   overflow: hidden;
 
+}
+
+img {
+  max-width: 100%;
+  height: auto;
 }
