@@ -3,11 +3,10 @@
     display: block;
   }
 
-  &__before,
-  &__after {
+  &__after,
+  &__before {
     font-size: 1.6rem;
     line-height: 2rem;
     text-transform: uppercase;
   }
-
 }

@@ -11,9 +11,9 @@
 
   &__social {
 
-    width: 80vw;
-    margin-left: 5vw;
-    margin-right: 5vw;
+    max-width: 80%;
+    margin-left: 5rem;
+    margin-right: 5rem;
 
     border-top: 1px solid $color-line-medium;
     border-bottom: 1px solid $color-line-medium;

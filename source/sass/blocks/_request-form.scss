@@ -1,5 +1,4 @@
 .request-form {
-
   &__content-center {
     @include content-center;
   }
@@ -18,39 +17,27 @@
 
   &__contacts {
     border: none;
-
-
-
     margin-bottom: 2rem;
-
-
   }
 
   &__comment {
     border: none;
-
-
     margin-bottom: 2rem;
-
   }
 
   &__additional {
     border: none;
-
     margin-bottom: 2rem;
   }
 
   &__btn {
     width: 100%;
-
   }
 
   &__footnote {
     @include text-formatting;
-
     display: block;
     text-align: center;
-
     margin-top: 2rem;
     margin-bottom: 3.4rem;
   }

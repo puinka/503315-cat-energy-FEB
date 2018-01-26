@@ -1,9 +1,7 @@
 .hero {
-
   background: url("../../img/index-background-mobile@1x.jpg");
   background-repeat: no-repeat;
   background-size: contain;
-
   padding-top: 3rem;
   padding-bottom: 2rem;
 
@@ -17,22 +15,18 @@
     font-weight: inherit;
     text-align: center;
     color: #fff;
-
     margin-bottom: 3rem;
   }
 
   &__subline {
     font-size: 1.4rem;
     line-height: 1.4rem;
-
     text-transform: uppercase;
     text-align: center;
     color: #fff;
-
     margin-bottom: 2rem;
   }
 }
-
 /*
 .hero {
 

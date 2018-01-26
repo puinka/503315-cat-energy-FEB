@@ -1,5 +1,4 @@
 .additional {
-
   &__content-center {
     @include content-center;
     display: flex;
@@ -8,16 +7,12 @@
 
   &__title {
     @include fieldset-title;
-
     max-width: 70vw;
   }
 
   &__label {
     @include form-label;
-
     display: block;
-
-
     margin-bottom: 1.6rem;
     padding-left: 4.6rem;
   }

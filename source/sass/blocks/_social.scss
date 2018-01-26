@@ -1,8 +1,6 @@
 .social {
-
   &__list {
     list-style: none;
-
     display: flex;
     justify-content: center;
   }
@@ -12,9 +10,7 @@
   }
 }
 
-
 .social__link {
-
   &--vkontakte {}
 
   &--instagram {}

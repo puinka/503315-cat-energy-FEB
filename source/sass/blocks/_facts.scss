@@ -2,10 +2,8 @@
   display: flex;
   justify-content: space-between;
 
-
   &__wrapper {
     position: relative;
-
   }
 
   &__value {
@@ -14,15 +12,11 @@
     line-height: 2.4rem;
     text-transform: uppercase;
     text-align: center;
-
     width: 124px;
-
     border: 1px solid $color-line-dark;
     border-radius: 4px;
     padding-top: 20px;
     padding-bottom: 20px;
-
-
   }
 
   &__type {
@@ -30,16 +24,13 @@
     font-size: 1.2rem;
     line-height: 1.2rem;
     color: $color-text;
-
     display: block;
     width: 82px;
     text-align: center;
-
     position: absolute;
     top: 58px;
     left: 50%;
     transform: translateX(-41px);
     background-color: $color-background-gray;
-
   }
 }

@@ -1,18 +1,13 @@
 .inline-link {
-
   &:link,
   &:visited {
     font-size: 1.6rem;
     line-height: 1.6rem;
-
-    color: var(--color-black);
+    color: $color-black;
     text-decoration: none;
     text-transform: uppercase;
     padding-right: 40px;
-
-
     position: relative;
-
     /* &::after {
       content: " ";
 
@@ -23,18 +18,11 @@
       height: 52px;
       background-color: var(--color-green);
     } */
-
-
   }
 
-  &:hover {
-
-  }
+  &:hover {}
 
   &:active {
-    opacity: .3;
+    opacity: 0.3;
   }
-
-
-
 }

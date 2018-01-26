@@ -1,18 +1,15 @@
 .product-card {
   @include content-center;
-
   border-bottom: 1px solid $color-line-light;
 
   &:first-child {
     border-top: 1px solid $color-line-light;
   }
 
-
   &__content-wrapper {
     display: flex;
     align-items: center;
     flex-wrap: wrap;
-
     margin-bottom: 2rem;
   }
 
@@ -20,34 +17,25 @@
     flex: 1 1 50%;
   }
 
-  &__pic {
-
-  }
+  &__pic {}
 
   &__text-wrapper {
     flex: 1 1 50%;
   }
 
   &__title {
-
     &:link,
     &:visited {
       color: $color-black;
     }
-
     font-size: 1.6rem;
     line-height: 2rem;
     text-transform: uppercase;
     text-decoration: none;
     font-weight: 400;
-
-
     display: block;
     width: 80%;
-
     margin-bottom: 1.5rem;
-
-
   }
 
   &__info {
@@ -55,7 +43,6 @@
     font-size: 1.2rem;
     line-height: 1.6rem;
     color: $color-text;
-
     width: 100%;
 
     tr {

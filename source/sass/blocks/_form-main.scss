@@ -1,5 +1,4 @@
 .form-main {
-
   &__heading {
     @include heading;
     margin-top: 2rem;
@@ -11,7 +10,6 @@
     font-size: 1.4rem;
     line-height: 1.8rem;
     text-transform: uppercase;
-
     margin-left: 2rem;
     margin-bottom: 3rem;
   }

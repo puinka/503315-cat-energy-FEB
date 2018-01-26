@@ -1,8 +1,6 @@
 .present {
   @include content-center;
-
   padding: 5rem 6rem;
-
   background-image: url("../img/gift-photo-mobile@1x.jpg");
   background-repeat: no-repeat;
   background-size: cover;
@@ -12,7 +10,6 @@
     font-size: 1.6rem;
     line-height: 1.8rem;
     color: #fff;
-
     text-align: center;
   }
 }
