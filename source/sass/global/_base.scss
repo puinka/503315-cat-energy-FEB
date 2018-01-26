@@ -14,11 +14,12 @@ html {
   font-size: 62.5%; // 10px
 }
 /* oswald-regular - latin_cyrillic */
+
 @font-face {
   font-family: "Oswald";
   font-style: normal;
   font-weight: 400;
-  src: local("Oswald Regular"), local("Oswald-Regular"), url("../fonts/oswald-v16-latin_cyrillic-regular.woff2") format("woff2"), /* Chrome 26+, Opera 23+, Firefox 39+ */ url("../fonts/oswald-v16-latin_cyrillic-regular.woff") format("woff"))
+  src: local("Oswald Regular"), local("Oswald-Regular"), url("../fonts/oswald-v16-latin_cyrillic-regular.woff2") format("woff2"), url("../fonts/oswald-v16-latin_cyrillic-regular.woff") format("woff")
   /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
 /* oswald-500 - latin_cyrillic */
@@ -26,16 +27,30 @@ html {
   font-family: "Oswald";
   font-style: normal;
   font-weight: 500;
-  src: local("Oswald Medium"), local("Oswald-Medium"), url("../fonts/oswald-v16-latin_cyrillic-500.woff2") format("woff2"), /* Chrome 26+, Opera 23+, Firefox 39+ */ url("../fonts/oswald-v16-latin_cyrillic-500.woff") format("woff"))
-  /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  src: local("Oswald Medium"), local("Oswald-Medium"), url("../fonts/oswald-v16-latin_cyrillic-500.woff2") format("woff2"), url("../fonts/oswald-v16-latin_cyrillic-500.woff") format("woff")
 }
+
 
 body {
   font-family: "Oswald", sans-serif;
   font-weight: 400;
   font-size: 1.4rem;
   line-height: 1.8rem;
+  background: url("../img/cat-energy-index-mobile.jpg") no-repeat 50% 0;
+
+  @media(min-width: $tablet-width) {
+    background: url("../img/cat-energy-index-tablet.jpg") no-repeat 50% 0;
+  }
+
+  @media(min-width: $desktop-width) {
+    background: url("../img/cat-energy-index-desktop.jpg") no-repeat 50% 0;
+  }
 }
+
+
+
+
+
 
 .visually-hidden:not(:focus):not(:active),
 input[type="checkbox"].visually-hidden,
