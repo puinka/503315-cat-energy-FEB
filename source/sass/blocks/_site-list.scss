@@ -10,6 +10,10 @@
       opacity: 0.6;
     }
   }
+
+  @media(min-width: $tablet-width) {
+
+  }
 }
 
 .site-list__item {

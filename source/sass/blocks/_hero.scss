@@ -2,8 +2,12 @@
   background: url("../../img/index-background-mobile@1x.jpg");
   background-repeat: no-repeat;
   background-size: contain;
+  background: url("../../img/index-can-mobile@1x.png");
+  background-repeat: no-repeat;
+  background-size: 280px 270px;
+  background-position: 50% 72%;
   padding-top: 3rem;
-  padding-bottom: 2rem;
+  padding-bottom: 2.2rem;
 
   &__content-center {
     @include content-center;
@@ -11,11 +15,11 @@
 
   &__heading {
     font-size: 3.6rem;
-    line-height: 3.6rem;
+    line-height: 4rem;
     font-weight: inherit;
     text-align: center;
     color: #ffffff;
-    margin-bottom: 3rem;
+    margin-bottom: 2.2rem;
   }
 
   &__subline {
@@ -24,14 +28,16 @@
     text-transform: uppercase;
     text-align: center;
     color: #ffffff;
-    margin-bottom: 2rem;
+    margin-bottom: 30rem;
   }
+
+
 }
 /*
 .hero {
 
   &__product {}
 
-  &__btn {}
+
 }
 */
