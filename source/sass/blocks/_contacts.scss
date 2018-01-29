@@ -1,10 +1,30 @@
 .contacts {
   padding-top: 4rem;
 
+  @media (min-width: $desktop-width) {
+    position: relative;
+    padding-top: 0;
+  }
+
+
   &__content-center {
     @include content-center;
     display: flex;
     margin-bottom: 2rem;
+
+    @media (min-width: $tablet-width) {
+      justify-content: space-between;
+      padding: 1.6rem 4rem;
+    }
+
+    @media (min-width: $desktop-width) {
+      width: 57rem;
+      padding: 5rem 8rem;
+      position: absolute;
+      left: 11rem;
+      top: 11rem;
+      z-index: 10;
+    }
   }
 
   &__title {
@@ -13,19 +33,44 @@
     font-weight: 400;
     text-transform: uppercase;
     color: $color-black;
+
+    @media (min-width: $tablet-width) {
+      width: 17rem;
+      font-size: 2rem;
+      line-height: 2.6rem;
+
+    }
   }
 
   &__address {
     @include text-formatting;
+
+    @media (min-width: $tablet-width) {
+      width: 17rem;
+      text-align: right;
+      line-height: 2.1rem;
+    }
+
+    @media (min-width: $desktop-width) {
+      text-align: left;
+    }
+
+    span {
+      @media (min-width: $tablet-width) {
+        display: block;
+        margin-top: 1em;
+      }
+    }
   }
 
   &__map {
-
+    z-index: 5;
   }
 
   &__map-content {
     width: 100%;
     min-height: 36rem;
+
   }
 
   &--form {

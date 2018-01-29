@@ -2,6 +2,10 @@
   display: flex;
   justify-content: space-between;
 
+  @media (min-width: $tablet-width) {
+    width: 36.6rem;
+  }
+
   &__wrapper {
     position: relative;
   }
@@ -15,8 +19,15 @@
     width: 124px;
     border: 1px solid $color-line-dark;
     border-radius: 4px;
-    padding-top: 20px;
-    padding-bottom: 20px;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+
+    @media (min-width: $tablet-width) {
+      width: 16.2rem;
+      font-size: 3rem;
+      padding-top: 2.4rem;
+      padding-bottom: 2.4rem;
+    }
   }
 
   &__type {
@@ -32,5 +43,17 @@
     left: 50%;
     transform: translateX(-41px);
     background-color: $color-background-gray;
+
+    @media (min-width: $tablet-width) {
+      background-color: #ffffff;
+      width: 14rem;
+      font-size: 1.4rem;
+      transform: translateX(-7rem);
+      top: 65px;
+    }
+
+    @media (min-width: $desktop-width) {
+      background-color: $color-background-gray;
+    }
   }
 }

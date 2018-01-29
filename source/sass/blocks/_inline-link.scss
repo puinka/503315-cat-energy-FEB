@@ -18,6 +18,11 @@
       height: 52px;
       background-color: var(--color-green);
     } */
+
+    @media (min-width: $tablet-width) {
+      font-size: 2rem;
+      line-height: 2rem;
+    }
   }
 
   //&:hover {}

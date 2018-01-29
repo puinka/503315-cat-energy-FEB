@@ -1,16 +1,35 @@
 .hero {
-  background: url("../../img/index-background-mobile@1x.jpg");
-  background-repeat: no-repeat;
-  background-size: contain;
-  background: url("../../img/index-can-mobile@1x.png");
-  background-repeat: no-repeat;
-  background-size: 280px 270px;
-  background-position: 50% 72%;
+  background: url("../../img/index-can-mobile@1x.png") 50% 75% no-repeat,
+              url("../../img/index-background-mobile@1x.jpg") 0 0 no-repeat;
+
   padding-top: 3rem;
   padding-bottom: 2.2rem;
 
+  @media (min-width: $tablet-width) {
+    background: url("../../img/index-can-mobile@1x.png") 60% 100% no-repeat;
+    background-size: 708px 608px;
+    padding-bottom: 51rem;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: -10rem;
+    background: url("../../img/index-can-mobile@1x.png") 65% 60% no-repeat,
+                url("../../img/index-background-mobile@1x.jpg") 100% 0 no-repeat;
+    background-size: 500px auto, 47% auto;
+    padding-bottom: 20rem;
+  }
+
   &__content-center {
     @include content-center;
+
+    @media (min-width: $tablet-width) {
+      padding: 3rem 8.5rem;
+    }
+
+    @media (min-width: $desktop-width) {
+      padding: 8rem;
+      padding-top: 18rem;
+    }
   }
 
   &__heading {
@@ -20,6 +39,18 @@
     text-align: center;
     color: #ffffff;
     margin-bottom: 2.2rem;
+
+    @media (min-width: $tablet-width) {
+      font-size: 6rem;
+      line-height: 6rem;
+      color: $color-black;
+      text-align: left;
+      margin-bottom: 4rem;
+    }
+
+    @media (min-width: $desktop-width) {
+      width: 50%;
+    }
   }
 
   &__subline {
@@ -29,15 +60,16 @@
     text-align: center;
     color: #ffffff;
     margin-bottom: 30rem;
+
+    @media (min-width: $tablet-width) {
+      font-size: 2rem;
+      line-height: 2rem;
+      color: $color-black;
+      text-align: left;
+      margin-bottom: 5rem;
+    }
   }
 
 
-}
-/*
-.hero {
-
-  &__product {}
-
 
 }
-*/

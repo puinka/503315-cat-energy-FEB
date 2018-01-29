@@ -4,6 +4,13 @@
   align-items: center;
   background-color: $color-background-gray;
 
+  @media (min-width: $tablet-width) {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 3rem;
+  }
+
   &__logo-text {
     margin-top: 2rem;
     margin-bottom: 2rem;
@@ -17,6 +24,10 @@
 
     border-top: 1px solid $color-line-medium;
     border-bottom: 1px solid $color-line-medium;
+
+    @media (min-width: $tablet-width) {
+      border: none;
+    }
   }
 
   &__copyright {
@@ -24,15 +35,18 @@
     font-size: 1.6rem;
     line-height: 1.6rem;
 
-    width: 80vw;
+    @media (min-width: $tablet-width) {
+      margin: 0;
+    }
+
+
 
     display: flex;
     justify-content: space-between;
     align-items: center;
 
-    //color: var(--color-icon-dark);
-
     margin-top: 2rem;
     margin-bottom: 4rem;
+    padding: 0 2rem;
   }
 }
