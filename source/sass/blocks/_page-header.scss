@@ -1,13 +1,29 @@
 .page-header {
-  //&__content-center {}
+
+    @media (min-width: $tablet-width) {
+      &__content-center {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 70.8rem;
+        margin: 0 auto;
+        padding-top: 4rem;
+      }
+    }
+
 
   &__wrapper {
     display: flex;
     justify-content: space-between;
     align-items: center;
     flex-wrap: nowrap;
-    padding: 5vw;
+    padding: 1.4rem 2rem;
     border-bottom: 1px solid $color-line-light;
+
+    @media (min-width: $tablet-width) {
+      padding: 0rem;
+      border: none;
+    }
   }
 
   &__logo {
