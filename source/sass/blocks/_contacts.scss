@@ -1,9 +1,10 @@
 .contacts {
-  padding: 3rem 0;
+  padding-top: 4rem;
 
   &__content-center {
     @include content-center;
     display: flex;
+    margin-bottom: 2rem;
   }
 
   &__title {
@@ -18,7 +19,14 @@
     @include text-formatting;
   }
 
-  //&__map {}
+  &__map {
+
+  }
+
+  &__map-content {
+    width: 100%;
+    min-height: 36rem;
+  }
 
   &--form {
     background-color: $color-background-gray;
