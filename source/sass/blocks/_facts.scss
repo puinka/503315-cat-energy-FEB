@@ -1,7 +1,6 @@
 .facts {
   display: flex;
   justify-content: space-between;
-
   @media (min-width: $tablet-width) {
     width: 36.6rem;
   }
@@ -21,7 +20,6 @@
     border-radius: 4px;
     padding-top: 2rem;
     padding-bottom: 2rem;
-
     @media (min-width: $tablet-width) {
       width: 16.2rem;
       font-size: 3rem;
@@ -43,7 +41,6 @@
     left: 50%;
     transform: translateX(-41px);
     background-color: $color-background-gray;
-
     @media (min-width: $tablet-width) {
       background-color: #ffffff;
       width: 14rem;
@@ -51,7 +48,6 @@
       transform: translateX(-7rem);
       top: 65px;
     }
-
     @media (min-width: $desktop-width) {
       background-color: $color-background-gray;
     }

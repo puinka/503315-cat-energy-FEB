@@ -1,7 +1,5 @@
 .page-header {
-
   &__content-center {
-
     @media (min-width: $tablet-width) {
       display: flex;
       justify-content: space-between;
@@ -10,14 +8,11 @@
       margin: 0 auto;
       padding-top: 4rem;
     }
-
     @media (min-width: $desktop-width) {
       width: 122rem;
       padding-top: 7rem;
     }
   }
-
-
 
   &__wrapper {
     display: flex;
@@ -26,9 +21,8 @@
     flex-wrap: nowrap;
     padding: 1.4rem 2rem;
     border-bottom: 1px solid $color-line-light;
-
     @media (min-width: $tablet-width) {
-      padding: 0rem;
+      padding: 0;
       border: none;
     }
   }
@@ -39,12 +33,9 @@
     justify-content: space-between;
     align-items: center;
   }
-
   //&__logo-pic {}
-
   &__logo-text {
     transform: translateX(-50%);
-
     @media(min-width: $tablet-width) {
       transform: translateX(0);
     }
@@ -52,7 +43,7 @@
 
   &__close {
     @media(min-width: $tablet-width) {
-        @include visually-hidden;
-      }
+      @include visually-hidden;
+    }
   }
 }

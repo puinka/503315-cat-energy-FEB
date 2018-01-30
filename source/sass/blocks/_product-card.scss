@@ -1,22 +1,18 @@
 .product-card {
   @include content-center;
   border-bottom: 1px solid $color-line-light;
-
   @media (min-width: $tablet-width) {
     width: 32.4rem;
     background-image: linear-gradient(to bottom, #ffffff 0%, #ffffff 20%, $color-background-gray 20%);
     padding-bottom: 3rem;
     margin-bottom: 6rem;
   }
-
   @media (min-width: $desktop-width) {
     width: 24.5rem;
   }
 
-
   &:first-child {
     border-top: 1px solid $color-line-light;
-
     @media (min-width: $tablet-width) {
       border: none;
     }
@@ -27,13 +23,11 @@
     align-items: center;
     flex-wrap: wrap;
     margin-bottom: 2rem;
-
     @media (min-width: $tablet-width) {
       flex-direction: column;
       width: 25rem;
       margin: 0 auto;
     }
-
     @media (min-width: $desktop-width) {
       width: 17rem;
     }
@@ -42,16 +36,12 @@
   &__pic-link {
     flex: 1 1 50%;
   }
-
   //&__pic {}
-
   &__text-wrapper {
     flex: 1 1 50%;
-
     @media (min-width: $tablet-width) {
       width: 100%;
     }
-
   }
 
   &__title {
@@ -67,11 +57,9 @@
     display: block;
     width: 80%;
     margin-bottom: 1.5rem;
-
     @media (min-width: $tablet-width) {
       width: 12rem;
-      margin: 0 auto;
-      margin-bottom: 1rem;
+      margin: 0 auto 1rem;
       text-align: center;
     }
   }
@@ -82,7 +70,6 @@
     line-height: 1.6rem;
     color: $color-text;
     width: 100%;
-
     @media (min-width: $tablet-width) {
       font-size: 1.6rem;
       line-height: 1.6rem;
@@ -92,7 +79,6 @@
     tr {
       display: flex;
       justify-content: space-between;
-
       @media (min-width: $tablet-width) {
         padding: 0.6rem 0;
         border-bottom: 1px solid $color-line-dark;
@@ -102,7 +88,6 @@
 
   &__btn {
     flex-grow: 1;
-
     @media (min-width: $tablet-width) {
       width: 100%;
     }

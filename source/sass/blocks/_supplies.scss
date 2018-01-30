@@ -1,7 +1,6 @@
 .supplies {
   &__content-center {
     @include content-center;
-
     @media (min-width: $desktop-width) {
       width: 89.5rem;
     }
@@ -14,14 +13,12 @@
     padding-left: 2rem;
     margin-top: 3rem;
     margin-bottom: 3.5rem;
-
-    @media (min-width: $tablet-width)  {
+    @media (min-width: $tablet-width) {
       font-size: 3.6rem;
       line-height: 3.6rem;
       padding-left: 4rem;
       margin-bottom: 7rem;
     }
-
     @media (min-width: $desktop-width) {
       padding-left: 4rem;
       margin-left: 7rem;
@@ -41,17 +38,14 @@
       border-bottom: 1px solid $color-line-dark;
     }
     padding: 2rem 0;
-
     @media (min-width: $tablet-width) {
       border-left: 1px solid $color-line-dark;
       border-right: 1px solid $color-line-dark;
       padding: 2.6rem 3.7rem 3rem;
-
       display: flex;
       flex-wrap: wrap;
       justify-content: space-between;
     }
-
     @media (min-width: $desktop-width) {
       align-items: baseline;
     }
@@ -63,7 +57,6 @@
     font-weight: inherit;
     text-transform: uppercase;
     margin-bottom: 1.6rem;
-
     @media (min-width: $tablet-width) {
       font-size: 2rem;
       line-height: 2rem;
@@ -74,22 +67,17 @@
     display: flex;
     justify-content: space-between;
     margin-bottom: 1.6rem;
-
     @include text-formatting;
   }
 
   &__amount {
-
-    @media (min-width: $tablet-width){
+    @media (min-width: $tablet-width) {
       margin-right: 5rem;
     }
   }
-
   //&__price {}
-
   &__btn {
     width: 100%;
-
     @media (min-width: $desktop-width) {
       width: 24.5rem;
     }

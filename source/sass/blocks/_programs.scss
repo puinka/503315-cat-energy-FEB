@@ -1,12 +1,10 @@
 .programs {
   &__content-center {
     @include content-center;
-
     @media (min-width: $desktop-width) {
       display: flex;
       justify-content: space-between;
     }
   }
-
   //&__teaser {}
 }
