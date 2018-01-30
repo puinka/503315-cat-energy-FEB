@@ -1,16 +1,16 @@
 .show-more {
+  padding: 0 2rem;
   padding-bottom: 2.5rem;
+  background-color: #ffffff;
 
   @media (min-width: $tablet-width) {
     width: 32.4rem;
-    min-height: 43rem;
+    margin: 0 auto;
     padding-bottom: 3rem;
-    //temp
-    background-color: red;
+    border: 1px solid $color-line-light;
   }
 
   &__content-center {
-    @include content-center;
 
     @media (min-width: $tablet-width) {
       width: auto;

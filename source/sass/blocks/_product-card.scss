@@ -6,10 +6,9 @@
     width: 32.4rem;
     background-image: linear-gradient(to bottom, #ffffff 0%, #ffffff 20%, $color-background-gray 20%);
     padding-bottom: 3rem;
-    &:last-child {
-      margin-left: 3rem;
-    }
+    margin-bottom: 6rem;
   }
+
 
   &:first-child {
     border-top: 1px solid $color-line-light;
@@ -26,7 +25,6 @@
     margin-bottom: 2rem;
 
     @media (min-width: $tablet-width) {
-      display: flex;
       flex-direction: column;
       width: 25rem;
       margin: 0 auto;

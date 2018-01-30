@@ -23,20 +23,15 @@
     @media (min-width: $tablet-width) {
       display: flex;
       flex-wrap: wrap;
-      justify-content: space-around;
+      justify-content: space-between;
       margin-bottom: 7rem;
     }
-  }
 
-  &__show-more {
+    @media (min-width: $desktop-width) {
 
-    @media (min-width: $tablet-width) {
-      position: absolute;
-      left: 41.4rem;
-      // temp
-      top: 125rem;
     }
   }
+
 
   //&__suplies {}
 
