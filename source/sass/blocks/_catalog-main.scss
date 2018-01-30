@@ -15,6 +15,10 @@
       margin-top: 6rem;
       margin-left: 3rem;
     }
+
+    @media (min-width: $desktop-width) {
+      margin-left: 11rem;
+    }
   }
 
   &__products {
@@ -28,7 +32,16 @@
     }
 
     @media (min-width: $desktop-width) {
+      @include content-center;
+    }
+  }
 
+  &__wrapper {
+    @media (min-width: $desktop-width) {
+      display: flex;
+      justify-content: space-between;
+      width: 122rem;
+      margin: 0 auto;
     }
   }
 

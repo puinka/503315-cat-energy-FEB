@@ -12,6 +12,14 @@
     padding: 7.5rem 12rem;
   }
 
+  @media (min-width: $desktop-width) {
+    width: 24.5rem;
+    margin-top: 0;
+    padding: 4rem;
+  }
+
+
+
   &__text {
     font-family: "Arial", sans-serif;
     font-size: 1.6rem;
@@ -22,6 +30,10 @@
     @media (min-width: $tablet-width) {
       padding-left: 28.5rem;
       text-align: left;
+    }
+
+    @media (min-width: $desktop-width) {
+      padding-left: 0;
     }
   }
 }

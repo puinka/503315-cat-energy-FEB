@@ -9,6 +9,10 @@
     margin-bottom: 6rem;
   }
 
+  @media (min-width: $desktop-width) {
+    width: 24.5rem;
+  }
+
 
   &:first-child {
     border-top: 1px solid $color-line-light;
@@ -28,6 +32,10 @@
       flex-direction: column;
       width: 25rem;
       margin: 0 auto;
+    }
+
+    @media (min-width: $desktop-width) {
+      width: 17rem;
     }
   }
 

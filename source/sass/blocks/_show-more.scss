@@ -10,6 +10,10 @@
     border: 1px solid $color-line-light;
   }
 
+  @media (min-width: $desktop-width) {
+    width: 24.5rem;
+  }
+
   &__content-center {
 
     @media (min-width: $tablet-width) {
