@@ -1,6 +1,11 @@
 .comment {
   &__content-center {
     @include content-center;
+
+    @media (min-width: $tablet-width) {
+      width: 63rem;
+      margin-bottom: 7rem;
+    }
   }
 
   &__title {
@@ -10,5 +15,9 @@
   &__input {
     min-width: 28rem;
     border-color: $color-line-light;
+
+    @media (min-width: $tablet-width) {
+      width: 63rem;
+    }
   }
 }

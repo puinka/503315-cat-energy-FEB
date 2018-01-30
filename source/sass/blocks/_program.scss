@@ -3,12 +3,24 @@
     @include content-center;
     display: flex;
     flex-direction: column;
+
+    @media (min-width: $tablet-width) {
+      width: 63rem;
+      border: 1px solid $color-line-light;
+      padding: 2.6rem;
+      margin-bottom: 7.5rem;
+    }
   }
 
   &__label {
     @include form-label;
     margin-bottom: 1.6rem;
     padding-left: 4.4rem;
+
+    @media (min-width: $tablet-width) {
+      font-size: 2rem;
+      line-height: 2rem;
+    }
   }
 
   //&__choice {}

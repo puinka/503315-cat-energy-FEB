@@ -1,6 +1,10 @@
 .basics {
   &__content-center {
     @include content-center;
+
+    @media (min-width: $tablet-width) {
+      width: 63rem;
+    }
   }
 
   &__label {
@@ -10,6 +14,11 @@
 
     @include form-label;
     margin-bottom: 2rem;
+
+    @media (min-width: $tablet-width) {
+      font-size: 2rem;
+      line-height: 2rem;
+    }
   }
 
   &__input {
