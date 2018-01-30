@@ -34,21 +34,23 @@
     <h1 class="form-main__heading">Подбор программы</h1>
     <p class="form-main__subline">Заполните анкету и мы подберем программу питания для вашего кота</p>
     <form action="https://echo.htmlacademy.ru" class="form-main__form request-form">
-      <fieldset class="request-form__basics basics">
-        <div class="basics__content-center">
-          <label class="basics__label">Имя:*<input type="text"  class="basics__input" value="Барсик" required></label>
-          <label class="basics__label">Вес (кг):*<input type="number"  class="basics__input" value="7" required></label>
-          <label class="basics__label">Возраст (лет):<input type="number"  class="basics__input" value="7"></label>
-        </div>
-      </fieldset>
+      <div class="request-form__wrapper">
+        <fieldset class="request-form__basics basics">
+          <div class="basics__content-center">
+            <label class="basics__label">Имя:*<input type="text"  class="basics__input" value="Барсик" required></label>
+            <label class="basics__label">Вес (кг):*<input type="number"  class="basics__input" value="7" required></label>
+            <label class="basics__label">Возраст (лет):<input type="number"  class="basics__input" value="7"></label>
+          </div>
+        </fieldset>
 
-      <fieldset class="request-form__program program">
-        <div class="program__content-center">
-          <label class="program__label"><input type="radio" class="program__choice visually-hidden" name="program" checked>Похудение</label>
-          <label class="program__label"><input type="radio" class="program__choice visually-hidden" name="program">Набор массы</label>
-          <label class="program__label"><input type="radio" class="program__choice visually-hidden" name="program">Не знаю (Нужен ваш совет)</label>
-        </div>
-      </fieldset>
+        <fieldset class="request-form__program program">
+          <div class="program__content-center">
+            <label class="program__label"><input type="radio" class="program__choice visually-hidden" name="program" checked>Похудение</label>
+            <label class="program__label"><input type="radio" class="program__choice visually-hidden" name="program">Набор массы</label>
+            <label class="program__label"><input type="radio" class="program__choice visually-hidden" name="program">Не знаю (Нужен ваш совет)</label>
+          </div>
+        </fieldset>
+      </div>
 
       <fieldset class="request-form__contacts owner-contacts">
         <div class="owner-contacts__content-center">

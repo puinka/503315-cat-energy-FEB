@@ -5,6 +5,10 @@
     @media (min-width: $tablet-width) {
       width: 63rem;
     }
+
+    @media (min-width: $desktop-width)  {
+      width: 57rem;
+    }
   }
 
   &__label {

@@ -8,6 +8,20 @@
       width: 54rem;
       margin-bottom: 7rem;
     }
+
+    @media (min-width: $desktop-width)  {
+      width: 122rem;
+      justify-content: flex-start;
+    }
+  }
+
+  &__wrapper {
+    @media (min-width: $desktop-width) {
+      width: 122rem;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+    }
   }
 
   &__basics {
@@ -59,5 +73,9 @@
     text-align: center;
     margin-top: 2rem;
     margin-bottom: 3.4rem;
+
+    @media (min-width: $desktop-width)  {
+      margin-left: 8rem;
+    }
   }
 }

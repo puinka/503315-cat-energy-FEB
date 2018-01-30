@@ -6,6 +6,11 @@
       width: 63rem;
       margin-bottom: 7rem;
     }
+
+    @media (min-width: $desktop-width)  {
+      width: 130rem;
+      padding: 0 4rem;
+    }
   }
 
   &__title {
@@ -18,6 +23,11 @@
 
     @media (min-width: $tablet-width) {
       width: 63rem;
+    }
+
+    @media (min-width: $desktop-width)  {
+      width: 122rem;
+
     }
   }
 }

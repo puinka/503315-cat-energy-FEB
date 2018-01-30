@@ -9,6 +9,11 @@
       flex-direction: row;
       flex-wrap: wrap;
     }
+
+    @media (min-width: $desktop-width)  {
+      width: 130rem;
+      padding: 0 4rem;
+    }
   }
 
   &__title {
@@ -30,6 +35,10 @@
       line-height: 2rem;
       width: 50%;
       margin-bottom: 4rem;
+    }
+
+    @media (min-width: $desktop-width)  {
+      width: 25%;
     }
   }
 

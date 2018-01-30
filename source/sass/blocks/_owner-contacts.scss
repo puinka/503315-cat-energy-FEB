@@ -8,6 +8,11 @@
       width: 63rem;
       margin-bottom: 7rem;
     }
+
+    @media (min-width: $desktop-width)  {
+      width: 130rem;
+      padding: 0 4rem;
+    }
   }
 
   &__title {
