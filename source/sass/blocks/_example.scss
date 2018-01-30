@@ -4,7 +4,6 @@
   padding-bottom: 3rem;
 
   @media (min-width: $tablet-width) {
-    background-color: transparent;
     padding-top: 4rem;
     background-image: linear-gradient(to bottom, #ffffff 0%, #ffffff 70%, $color-background-gray 70%);
     padding-bottom: 8rem;

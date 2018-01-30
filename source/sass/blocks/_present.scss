@@ -5,11 +5,23 @@
   background-repeat: no-repeat;
   background-size: cover;
 
+  @media (min-width: $tablet-width) {
+    margin-top: 7rem;
+    margin-bottom: 7rem;
+    min-height: 20rem;
+    padding: 7.5rem 12rem;
+  }
+
   &__text {
     font-family: "Arial", sans-serif;
     font-size: 1.6rem;
     line-height: 1.8rem;
     color: #ffffff;
     text-align: center;
+
+    @media (min-width: $tablet-width) {
+      padding-left: 28.5rem;
+      text-align: left;
+    }
   }
 }

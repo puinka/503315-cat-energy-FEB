@@ -1,6 +1,7 @@
 .main-nav {
   width: 320px;
   margin: 0 auto;
+  //ådisplay: none;
 
   @media (min-width: $tablet-width) {
     flex-grow: 1;
