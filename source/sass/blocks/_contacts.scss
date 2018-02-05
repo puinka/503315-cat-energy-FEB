@@ -1,9 +1,4 @@
 .contacts {
-  @media (min-width: $desktop-width) {
-    position: relative;
-    padding-top: 0;
-  }
-
   &--catalog {
     @media (min-width: $tablet-width) {
       background-color: $color-background-gray;
@@ -12,9 +7,9 @@
 
   &__content-center {
     @include content-center;
-    display: flex;
     padding-top: 4rem;
     margin-bottom: 2rem;
+    position: relative;
 
     @media (min-width: $tablet-width) {
       justify-content: space-between;
@@ -22,13 +17,19 @@
     }
 
     @media (min-width: $desktop-width) {
+      padding: 10rem 0;
+      z-index: 10;
+    }
+  }
+
+  &__card {
+    @media (min-width: $desktop-width) {
+      display: flex;
+      justify-content: space-between;
       background-color: #ffffff;
       width: 57rem;
-      padding: 5rem 8rem;
-      position: absolute;
-      left: 11rem;
-      top: 11rem;
-      z-index: 10;
+      padding: 7rem;
+      position: relative;
     }
   }
 
@@ -68,11 +69,19 @@
 
   &__map {
     z-index: 5;
+
+    @media (min-width: $desktop-width) {
+      margin-top: -44rem;
+    }
   }
 
   &__map-content {
     width: 100%;
     min-height: 36rem;
+
+    @media (min-width: $desktop-width) {
+      min-height: 42rem;
+    }
   }
 
   &--form {

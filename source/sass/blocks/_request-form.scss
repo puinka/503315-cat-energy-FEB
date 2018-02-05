@@ -4,19 +4,16 @@
     @media (min-width: $tablet-width) {
       display: flex;
       justify-content: space-between;
-      width: 54rem;
       margin-bottom: 7rem;
     }
     @media (min-width: $desktop-width) {
-      width: 122rem;
       justify-content: flex-start;
     }
   }
 
   &__wrapper {
     @media (min-width: $desktop-width) {
-      width: 122rem;
-      margin: 0 auto;
+      @include content-center;
       display: flex;
       justify-content: space-between;
     }
