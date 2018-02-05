@@ -5,16 +5,13 @@
     }
   }
 
+  &--form {
+    padding-top: 1rem;
+  }
+
   &__content-center {
     @include content-center;
-    padding-top: 4rem;
-    margin-bottom: 2rem;
     position: relative;
-
-    @media (min-width: $tablet-width) {
-      justify-content: space-between;
-      padding: 7rem 4rem;
-    }
 
     @media (min-width: $desktop-width) {
       padding: 10rem 0;
@@ -23,6 +20,14 @@
   }
 
   &__card {
+    display: flex;
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+    @media (min-width: $tablet-width) {
+      justify-content: space-between;
+      padding: 7rem 4rem;
+    }
+
     @media (min-width: $desktop-width) {
       display: flex;
       justify-content: space-between;

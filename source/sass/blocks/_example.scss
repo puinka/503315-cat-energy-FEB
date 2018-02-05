@@ -20,13 +20,16 @@
     @include content-center;
 
     @media (min-width: $desktop-width) {
-      margin-left: 11rem;
-      margin-right: auto;
       display: flex;
-      flex-direction: column;
-      width: 46rem;
-      position: relative;
     }
+  }
+
+  &__wrapper {
+    @media (min-width: $desktop-width) {
+      flex-grow: 1;
+      width: 50%;
+    }
+
   }
 
   &__heading {
@@ -83,7 +86,12 @@
       width: 19rem;
       padding-top: 1.6rem;
     }
+
+    @media (min-width: $desktop-width) {
+      width: 32.5rem;
+      text-align: left;
+    }
+    //&__before {}
+    //&__after {}
   }
-  //&__before {}
-  //&__after {}
 }
