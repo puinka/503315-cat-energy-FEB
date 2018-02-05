@@ -15,10 +15,12 @@
     display: flex;
     padding-top: 4rem;
     margin-bottom: 2rem;
+
     @media (min-width: $tablet-width) {
       justify-content: space-between;
       padding: 7rem 4rem;
     }
+
     @media (min-width: $desktop-width) {
       background-color: #ffffff;
       width: 57rem;
@@ -36,6 +38,7 @@
     font-weight: 400;
     text-transform: uppercase;
     color: $color-black;
+
     @media (min-width: $tablet-width) {
       width: 17rem;
       font-size: 2rem;
@@ -50,6 +53,7 @@
       text-align: right;
       line-height: 2.1rem;
     }
+
     @media (min-width: $desktop-width) {
       text-align: left;
     }
