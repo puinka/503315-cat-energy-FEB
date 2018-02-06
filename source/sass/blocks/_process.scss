@@ -1,46 +1,50 @@
 .process {
   padding-top: 2rem;
   padding-bottom: 4.5rem;
+
   @media (min-width: $tablet-width) {
     padding-top: 6.2rem;
     padding-bottom: 7.6rem;
     border-bottom: 1px solid $color-line-light;
   }
+
   @media (min-width: $desktop-width) {
     padding-top: 4rem;
     border: none;
   }
+}
 
-  &__content-center {
-    @include content-center;
-  }
+.process__content-center {
+  @include content-center;
+}
 
-  &__heading {
-    @include heading;
-    margin-bottom: 3rem;
-    @media (min-width: $tablet-width) {
-      margin-bottom: 7.5rem;
-    }
-  }
+.process__heading {
+  @include heading;
+  margin-bottom: 3rem;
 
-  &__list {
-    list-style: none;
-    @media (min-width: $tablet-width) {
-      width: 63.4rem;
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: space-between;
-    }
-    @media (min-width: $desktop-width) {
-      width: 122rem;
-    }
-  }
-
-  &__text {
-    @include text-formatting;
+  @media (min-width: $tablet-width) {
+    margin-bottom: 7.5rem;
   }
 }
-// ITEM
+
+.process__list {
+  list-style: none;
+
+  @media (min-width: $tablet-width) {
+    width: 63.4rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 122rem;
+  }
+}
+
+.process__text {
+  @include text-formatting;
+}
 
 .process__item {
   display: block;
@@ -51,6 +55,7 @@
   &:last-child {
     margin-bottom: 0;
   }
+
   @media (min-width: $tablet-width) {
     width: 25rem;
     padding-left: 0;
@@ -59,6 +64,7 @@
     &:nth-child(1) {
       margin-bottom: 14rem;
     }
+
     @media (min-width: $desktop-width) {
       width: 24.5rem;
 
@@ -78,6 +84,7 @@
     background-color: $color-primary;
     background-repeat: no-repeat;
     background-position: 4px 5px;
+
     @media (min-width: $tablet-width) {
       width: 74px;
       height: 74px;

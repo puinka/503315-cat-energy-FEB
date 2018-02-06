@@ -1,46 +1,42 @@
-.additional {
-  &__content-center {
-    @include content-center;
-    display: flex;
-    flex-direction: column;
+.additional__content-center {
+  @include content-center;
+  display: flex;
+  flex-direction: column;
 
-    @media (min-width: $tablet-width) {
-      width: 63rem;
-      flex-direction: row;
-      flex-wrap: wrap;
-    }
-
-    @media (min-width: $desktop-width) {
-      width: 130rem;
-      padding: 0 4rem;
-    }
+  @media (min-width: $tablet-width) {
+    width: 63rem;
+    flex-direction: row;
+    flex-wrap: wrap;
   }
 
-  &__title {
-    @include fieldset-title;
+  @media (min-width: $desktop-width) {
+    width: 130rem;
+    padding: 0 4rem;
+  }
+}
 
-    @media (min-width: $tablet-width) {
-      width: 100%;
-    }
+.additional__title {
+  @include fieldset-title;
+
+  @media (min-width: $tablet-width) {
+    width: 100%;
+  }
+}
+
+.additional__label {
+  @include form-label;
+  display: block;
+  margin-bottom: 1.6rem;
+  padding-left: 4.6rem;
+
+  @media (min-width: $tablet-width) {
+    font-size: 2rem;
+    line-height: 2rem;
+    width: 50%;
+    margin-bottom: 4rem;
   }
 
-  &__label {
-    @include form-label;
-    display: block;
-    margin-bottom: 1.6rem;
-    padding-left: 4.6rem;
-
-    @media (min-width: $tablet-width) {
-      font-size: 2rem;
-      line-height: 2rem;
-      width: 50%;
-      margin-bottom: 4rem;
-    }
-
-    @media (min-width: $desktop-width) {
-      width: 25%;
-    }
+  @media (min-width: $desktop-width) {
+    width: 25%;
   }
-
-  //&__input {}
 }

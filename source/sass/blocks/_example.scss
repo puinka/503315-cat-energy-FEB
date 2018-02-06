@@ -15,83 +15,82 @@
     background-color: #ffffff;
     background-image: linear-gradient(to bottom, transparent 0%, #ffffff 20%, $color-background-gray 20%);
   }
+}
 
-  &__content-center {
-    @include content-center;
+.example__content-center {
+  @include content-center;
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+  }
+}
+
+.example__wrapper {
+  @media (min-width: $desktop-width) {
+    flex-grow: 1;
+    width: 50%;
+  }
+}
+
+.example__heading {
+  @include heading;
+  margin-bottom: 2rem;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 6.6rem;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 15rem;
+  }
+}
+
+.example__text {
+  @include text-formatting;
+  margin-bottom: 2rem;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 5rem;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 6.6rem;
+  }
+}
+
+.example__stats-wrapper {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    justify-content: space-between;
 
     @media (min-width: $desktop-width) {
-      display: flex;
+      flex-direction: column;
     }
   }
+}
 
-  &__wrapper {
-    @media (min-width: $desktop-width) {
-      flex-grow: 1;
-      width: 50%;
-    }
+.example__stats {
+  margin-bottom: 4rem;
+}
 
+.example__expenses {
+  text-transform: uppercase;
+  text-align: center;
+  display: block;
+  margin-bottom: 4rem;
+
+  @media (min-width: $tablet-width) {
+    font-size: 2rem;
+    line-height: 2.2rem;
+    text-align: right;
+    width: 19rem;
+    padding-top: 1.6rem;
   }
 
-  &__heading {
-    @include heading;
-    margin-bottom: 2rem;
-
-    @media (min-width: $tablet-width) {
-      margin-bottom: 6.6rem;
-    }
-
-    @media (min-width: $desktop-width) {
-      margin-bottom: 15rem;
-    }
+  @media (min-width: $desktop-width) {
+    width: 32.5rem;
+    text-align: left;
   }
-
-  &__text {
-    @include text-formatting;
-    margin-bottom: 2rem;
-
-    @media (min-width: $tablet-width) {
-      margin-bottom: 5rem;
-    }
-
-    @media (min-width: $desktop-width) {
-      margin-bottom: 6.6rem;
-    }
-  }
-
-  &__stats-wrapper {
-    @media (min-width: $tablet-width) {
-      display: flex;
-      justify-content: space-between;
-
-      @media (min-width: $desktop-width) {
-        flex-direction: column;
-      }
-    }
-  }
-
-  &__stats {
-    margin-bottom: 4rem;
-  }
-
-  &__expenses {
-    text-transform: uppercase;
-    text-align: center;
-    display: block;
-    margin-bottom: 4rem;
-
-    @media (min-width: $tablet-width) {
-      font-size: 2rem;
-      line-height: 2.2rem;
-      text-align: right;
-      width: 19rem;
-      padding-top: 1.6rem;
-    }
-
-    @media (min-width: $desktop-width) {
-      width: 32.5rem;
-      text-align: left;
-    }
-    //&__before {}
-    //&__after {}
-  }
+  //&__before {}
+  //&__after {}
 }

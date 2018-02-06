@@ -1,39 +1,36 @@
-.form-main {
-  &__wrapper {
-    @include content-center;
+.form-main__wrapper {
+  @include content-center;
+}
+
+.form-main__heading {
+  @include heading;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 5.5rem;
   }
 
-  &__heading {
-    @include heading;
-    margin-top: 2rem;
-    margin-bottom: 2rem;
+  @media (min-width: $desktop-width) {
+    margin-top: 8rem;
+    margin-bottom: 5rem;
+  }
+}
 
-    @media (min-width: $tablet-width) {
-      margin-bottom: 5.5rem;
-    }
+.form-main__subline {
+  font-size: 1.4rem;
+  line-height: 1.8rem;
+  text-transform: uppercase;
+  margin-bottom: 3rem;
 
-    @media (min-width: $desktop-width) {
-      margin-top: 8rem;
-      margin-bottom: 5rem;
-    }
+  @media (min-width: $tablet-width) {
+    font-size: 2rem;
+    line-height: 3rem;
+    width: 35rem;
+    margin-bottom: 7.5rem;
   }
 
-  &__subline {
-    font-size: 1.4rem;
-    line-height: 1.8rem;
-    text-transform: uppercase;
-    margin-bottom: 3rem;
-
-    @media (min-width: $tablet-width) {
-      font-size: 2rem;
-      line-height: 3rem;
-      width: 35rem;
-      margin-bottom: 7.5rem;
-    }
-
-    @media (min-width: $desktop-width) {
-      margin-bottom: 7rem;
-    }
+  @media (min-width: $desktop-width) {
+    margin-bottom: 7rem;
   }
-  //&__form {}
 }

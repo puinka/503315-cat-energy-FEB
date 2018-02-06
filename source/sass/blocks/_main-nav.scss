@@ -1,15 +1,15 @@
 .main-nav {
   width: 320px;
   margin: 0 auto;
-  //ådisplay: none;
+  //display: none;
   @media (min-width: $tablet-width) {
     flex-grow: 1;
   }
+}
 
-  &__list {
-    @media (min-width: $tablet-width) {
-      display: flex;
-      justify-content: flex-end;
-    }
+.main-nav__list {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    justify-content: flex-end;
   }
 }
