@@ -9,10 +9,11 @@
   align-items: center;
 
   @media (min-width: $tablet-width) {
+    width: 76.8rem;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    padding: 2rem 3rem;
+    padding: 4rem 3rem;
   }
 }
 

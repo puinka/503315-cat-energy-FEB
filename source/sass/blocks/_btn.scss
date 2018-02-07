@@ -12,12 +12,9 @@
 
   @media (min-width: $tablet-width) {
     display: inline-block;
-  }
-
-  @media (min-width: $tablet-width) {
     font-size: 2rem;
     line-height: 2rem;
-    padding: 1.6rem 2rem;
+    padding: 1.6rem 3rem;
   }
 
   @media (min-width: $desktop-width) {

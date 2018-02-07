@@ -28,7 +28,8 @@
 
   @media (min-width: $tablet-width) {
     justify-content: space-between;
-    padding: 7rem 4rem;
+    padding: 2.6rem 4rem;
+    margin-bottom: 3rem;
   }
 
   @media (min-width: $desktop-width) {
@@ -87,6 +88,10 @@
 .contacts__map-content {
   width: 100%;
   min-height: 36rem;
+
+  @media (min-width: $tablet-width) {
+    min-height: 40rem;
+  }
 
   @media (min-width: $desktop-width) {
     min-height: 42rem;
