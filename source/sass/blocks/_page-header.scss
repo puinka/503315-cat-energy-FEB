@@ -19,7 +19,7 @@
   justify-content: space-between;
   align-items: center;
   flex-wrap: nowrap;
-  padding: 1.4rem 2rem;
+  padding: 1.3rem 2rem;
   border-bottom: 1px solid $color-line-light;
 
   @media (min-width: $tablet-width) {
@@ -37,7 +37,7 @@
 
 //.page-header__logo-pic {}
 .page-header__logo-text {
-  transform: translateX(-50%);
+  transform: translateX(-65%);
 
   @media (min-width: $tablet-width) {
     transform: translateX(0);
