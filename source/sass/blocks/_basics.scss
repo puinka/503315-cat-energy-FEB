@@ -1,21 +1,32 @@
-.basics {
-  &__content-center {
-    @include content-center;
+.basics__content-center {
+  @include content-center;
+
+  @media (min-width: $tablet-width) {
+    width: 63rem;
   }
 
-  &__label {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-
-    @include form-label;
-    margin-bottom: 2rem;
+  @media (min-width: $desktop-width) {
+    width: 57rem;
   }
+}
 
-  &__input {
-    flex-grow: 1;
-    width: 50%;
-    padding: 1.6rem;
-    margin-left: 2rem;
+.basics__label {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  @include form-label;
+  margin-bottom: 2rem;
+
+  @media (min-width: $tablet-width) {
+    font-size: 2rem;
+    line-height: 2rem;
   }
+}
+
+.basics__input {
+  flex-grow: 1;
+  width: 50%;
+  padding: 1.6rem;
+  margin-left: 2rem;
 }

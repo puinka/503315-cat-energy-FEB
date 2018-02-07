@@ -1,7 +1,8 @@
-.programs {
-  &__content-center {
-    @include content-center;
-  }
+.programs__content-center {
+  @include content-center;
 
-  //&__teaser {}
+  @media (min-width: $desktop-width) {
+    display: flex;
+    justify-content: space-between;
+  }
 }

@@ -5,11 +5,33 @@
   background-repeat: no-repeat;
   background-size: cover;
 
-  &__text {
-    font-family: "Arial", sans-serif;
-    font-size: 1.6rem;
-    line-height: 1.8rem;
-    color: #ffffff;
-    text-align: center;
+  @media (min-width: $tablet-width) {
+    margin-top: 7rem;
+    margin-bottom: 7rem;
+    min-height: 20rem;
+    padding: 7.5rem 12rem;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 24.5rem;
+    margin-top: 0;
+    padding: 4rem;
+  }
+}
+
+.present__text {
+  font-family: "Arial", sans-serif;
+  font-size: 1.6rem;
+  line-height: 1.8rem;
+  color: #ffffff;
+  text-align: center;
+
+  @media (min-width: $tablet-width) {
+    padding-left: 28.5rem;
+    text-align: left;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 0;
   }
 }

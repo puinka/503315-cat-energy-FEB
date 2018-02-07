@@ -1,52 +1,91 @@
-.supplies {
-  &__content-center {
-    @include content-center;
+.supplies__content-center {
+  @include content-center;
+
+  @media (min-width: $desktop-width) {
+    width: 89.5rem;
+  }
+}
+
+.supplies__heading {
+  font-size: 2.4rem;
+  line-height: 2.4rem;
+  font-weight: inherit;
+  padding-left: 2rem;
+  margin-top: 3rem;
+  margin-bottom: 3.5rem;
+
+  @media (min-width: $tablet-width) {
+    font-size: 3.6rem;
+    line-height: 3.6rem;
+    padding-left: 4rem;
+    margin-bottom: 7rem;
   }
 
-  &__heading {
-    font-size: 2.4rem;
-    line-height: 2.4rem;
-    font-weight: inherit;
-    padding-left: 20px;
-    margin-top: 3rem;
-    margin-bottom: 3.5rem;
+  @media (min-width: $desktop-width) {
+    padding-left: 4rem;
+    margin-left: 7rem;
+    margin-bottom: 7.5rem;
   }
+}
 
-  &__list {
-    list-style: none;
-    display: block;
+.supplies__list {
+  list-style: none;
+  display: block;
+}
+
+.supplies__item {
+  border-top: 1px solid $color-line-dark;
+
+  &:last-child {
+    border-bottom: 1px solid $color-line-dark;
   }
+  padding: 2rem 0;
 
-  &__item {
-    border-top: 1px solid $color-line-dark;
-
-    &:last-child {
-      border-bottom: 1px solid $color-line-dark;
-    }
-    padding: 2rem 0;
-  }
-
-  &__title {
-    font-size: 1.6rem;
-    line-height: 1.6rem;
-    font-weight: inherit;
-    text-transform: uppercase;
-    margin-bottom: 1.6rem;
-  }
-
-  &__wrapper {
+  @media (min-width: $tablet-width) {
+    border-left: 1px solid $color-line-dark;
+    border-right: 1px solid $color-line-dark;
+    padding: 2.6rem 3.7rem 3rem;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
-    margin-bottom: 1.6rem;
-
-    @include text-formatting;
   }
 
-  //&__amount {}
+  @media (min-width: $desktop-width) {
+    align-items: baseline;
+  }
+}
 
-  //&__price {}
+.supplies__title {
+  font-size: 1.6rem;
+  line-height: 1.6rem;
+  font-weight: inherit;
+  text-transform: uppercase;
+  margin-bottom: 1.6rem;
 
-  &__btn {
-    width: 100%;
+  @media (min-width: $tablet-width) {
+    font-size: 2rem;
+    line-height: 2rem;
+  }
+}
+
+.supplies__wrapper {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1.6rem;
+
+  @include text-formatting;
+}
+
+.supplies__amount {
+  @media (min-width: $tablet-width) {
+    margin-right: 5rem;
+  }
+}
+//&__price {}
+.supplies__btn {
+  width: 100%;
+
+  @media (min-width: $desktop-width) {
+    width: 24.5rem;
   }
 }

@@ -1,12 +1,28 @@
 .slider {
-  &__cat-pic {
-    display: block;
+  @media (min-width: $tablet-width) {
+    padding-top: 6rem;
   }
 
-  &__after,
-  &__before {
-    font-size: 1.6rem;
-    line-height: 2rem;
-    text-transform: uppercase;
+  @media (min-width: $desktop-width) {
+
+    height: auto;
   }
+}
+
+.slider__cat-pic {
+  display: block;
+  margin-bottom: 4rem;
+
+  @media (min-width: $tablet-width) {
+    width: 70rem;
+    height: auto;
+    margin: 0 auto;
+  }
+}
+
+.slider__after,
+.slider__before {
+  font-size: 1.6rem;
+  line-height: 2rem;
+  text-transform: uppercase;
 }

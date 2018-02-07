@@ -10,6 +10,21 @@
   border: none;
   padding: 1.2rem;
 
+  @media (min-width: $tablet-width) {
+    display: inline-block;
+  }
+
+  @media (min-width: $tablet-width) {
+    font-size: 2rem;
+    line-height: 2rem;
+    padding: 1.6rem 2rem;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 1.6rem;
+    line-height: 2rem;
+  }
+
   &--green {
     background-color: $color-primary;
     color: #ffffff;

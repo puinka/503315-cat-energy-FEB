@@ -3,18 +3,46 @@
   padding: 2rem;
 
   &:not(:last-child) {
-    margin-bottom: 2rem;
+    margin-bottom: 3rem;
   }
 
-  &__description {
-    @include text-formatting;
+  @media (min-width: $tablet-width) {
+    padding: 6rem 5rem;
   }
 
-  &__link {
-    display: block;
-    padding-top: 2rem;
-    margin-top: 2rem;
-    border-top: 1px solid $color-line-medium;
+  @media (min-width: $desktop-width) {
+    width: 57rem;
+    padding-top: 7rem;
+    padding-bottom: 6rem;
+    margin-bottom: 3rem;
+  }
+}
+
+.program-card__description {
+  @include text-formatting;
+
+  @media (min-width: $tablet-width) {
+    padding-right: 26rem;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-right: 0;
+  }
+}
+
+.program-card__link {
+  display: block;
+  padding-top: 2rem;
+  margin-top: 2rem;
+  border-top: 1px solid $color-line-medium;
+
+  @media (min-width: $tablet-width) {
+    border: none;
+    margin-top: 4rem;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 1rem;
   }
 }
 
@@ -28,6 +56,16 @@
   position: relative;
   padding-left: 7.2rem;
 
+  @media (min-width: $tablet-width) {
+    font-size: 3.6rem;
+    padding-left: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 16rem;
+    margin-bottom: 6.7rem;
+  }
+
   &::before {
     content: " ";
     position: absolute;
@@ -37,6 +75,21 @@
     height: 52px;
     background-color: $color-primary;
     border-radius: 50%;
+
+    @media (min-width: $tablet-width) {
+      position: absolute;
+      width: 200px;
+      height: 200px;
+      top: 2.4rem;
+      left: 39rem;
+    }
+
+    @media (min-width: $desktop-width) {
+      width: 100px;
+      height: 100px;
+      top: -2rem;
+      left: 0;
+    }
   }
 
   &--slim::after {
@@ -49,6 +102,21 @@
     background-image: url("../img/icon-cat-slim.svg");
     background-position: 0 0;
     background-repeat: no-repeat;
+
+    @media (min-width: $tablet-width) {
+      position: absolute;
+      width: 200px;
+      height: 200px;
+      top: 1.2rem;
+      left: 42rem;
+    }
+
+    @media (min-width: $desktop-width) {
+      width: 100px;
+      height: 100px;
+      top: -3rem;
+      left: 1.6rem;
+    }
   }
 
   &--pro::after {
@@ -61,5 +129,20 @@
     background-image: url("../img/icon-cat-pro.svg");
     background-position: 0 0;
     background-repeat: no-repeat;
+
+    @media (min-width: $tablet-width) {
+      position: absolute;
+      width: 280px;
+      height: 280px;
+      top: 7rem;
+      left: 35rem;
+    }
+
+    @media (min-width: $desktop-width) {
+      width: 140px;
+      height: 140px;
+      top: 0;
+      left: -2rem;
+    }
   }
 }
