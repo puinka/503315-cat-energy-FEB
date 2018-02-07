@@ -20,8 +20,8 @@
   width: 124px;
   border: 1px solid $color-line-dark;
   border-radius: 4px;
-  padding-top: 2rem;
-  padding-bottom: 2rem;
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
 
   @media (min-width: $tablet-width) {
     width: 16.2rem;
@@ -40,7 +40,7 @@
   width: 82px;
   text-align: center;
   position: absolute;
-  top: 58px;
+  top: 48px;
   left: 50%;
   transform: translateX(-41px);
   background-color: $color-background-gray;

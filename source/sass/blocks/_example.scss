@@ -1,6 +1,6 @@
 .example {
   background-color: $color-background-gray;
-  padding-top: 2rem;
+  padding-top: 1.8rem;
   padding-bottom: 3rem;
 
   @media (min-width: $tablet-width) {
@@ -47,7 +47,7 @@
 
 .example__text {
   @include text-formatting;
-  margin-bottom: 2rem;
+  margin-bottom: 2.5rem;
 
   @media (min-width: $tablet-width) {
     margin-bottom: 5rem;
@@ -70,7 +70,7 @@
 }
 
 .example__stats {
-  margin-bottom: 4rem;
+  margin-bottom: 3.6rem;
 }
 
 .example__expenses {

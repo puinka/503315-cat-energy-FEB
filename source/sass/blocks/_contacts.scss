@@ -23,13 +23,12 @@
 
 .contacts__card {
   display: flex;
-  margin-top: 4rem;
-  margin-bottom: 4rem;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
 
   @media (min-width: $tablet-width) {
     justify-content: space-between;
     padding: 2.6rem 4rem;
-    margin-bottom: 3rem;
   }
 
   @media (min-width: $desktop-width) {
