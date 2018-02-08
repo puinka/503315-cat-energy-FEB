@@ -71,3 +71,11 @@
     margin-bottom: 5.4rem;
   }
 }
+
+.hero__btn {
+  @media (min-width: $tablet-width) {
+    font-size: 2rem;
+    line-height: 2rem;
+    padding: 1.6rem 2.4rem;
+  }
+}

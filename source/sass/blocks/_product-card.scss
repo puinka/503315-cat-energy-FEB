@@ -4,10 +4,11 @@
   border-bottom: 1px solid $color-line-light;
 
   @media (min-width: $tablet-width) {
+    flex-grow: 1;
     width: 32.4rem;
     background-image: linear-gradient(to bottom, #ffffff 0%, #ffffff 20%, $color-background-gray 20%);
-    padding-bottom: 3rem;
-    margin-bottom: 6rem;
+    padding: 0 3rem 3.5rem;
+    margin-bottom: 4rem;
   }
 
   @media (min-width: $desktop-width) {
@@ -21,6 +22,12 @@
 
     @media (min-width: $tablet-width) {
       border: none;
+    }
+  }
+
+  &:nth-child(2n-1) {
+    @media (min-width: $tablet-width) {
+      margin-right: 5.5rem;
     }
   }
 }
@@ -45,12 +52,18 @@
 .product-card__pic-link {
   flex: 1 1 50%;
 }
-//&__pic {}
+
+.product-card__pic {
+  width: 140px;
+  height: 200px;
+}
+
 .product-card__text-wrapper {
   flex: 1 1 50%;
 
   @media (min-width: $tablet-width) {
     width: 100%;
+    margin-top: 5.4rem;
   }
 }
 
@@ -69,8 +82,10 @@
   margin-bottom: 1rem;
 
   @media (min-width: $tablet-width) {
+    font-size: 2rem;
+    line-height: 2rem;
     width: 12rem;
-    margin: 0 auto 1rem;
+    margin: 0 auto 2rem;
     text-align: center;
   }
 }
@@ -84,7 +99,7 @@
 
   @media (min-width: $tablet-width) {
     font-size: 1.6rem;
-    line-height: 1.6rem;
+    line-height: 1.8rem;
     margin-bottom: 3.5rem;
   }
 

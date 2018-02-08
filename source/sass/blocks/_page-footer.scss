@@ -1,6 +1,10 @@
 .page-footer {
   background-color: $color-background-gray;
   padding: 3rem 0 0;
+
+  @media (min-width: $tablet-width) {
+    padding: 4rem 0 0;
+  }
 }
 
 .page-footer__content-center {
@@ -9,6 +13,8 @@
   align-items: center;
 
   @media (min-width: $tablet-width) {
+    @include content-center;
+
     flex-direction: row;
     justify-content: space-between;
     align-items: center;

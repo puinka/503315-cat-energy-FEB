@@ -9,11 +9,11 @@
 
   @include content-center;
   margin-top: 1.6rem;
-  margin-bottom: 2.8rem;
+  margin-bottom: 3.8rem;
 
   @media (min-width: $tablet-width) {
-    margin-top: 6rem;
-    margin-left: 3rem;
+    margin-top: 5rem;
+    margin-bottom: 7rem;
   }
 
   @media (min-width: $desktop-width) {
@@ -25,10 +25,10 @@
   list-style: none;
 
   @media (min-width: $tablet-width) {
+    @include content-center;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    margin-bottom: 7rem;
   }
 
   @media (min-width: $desktop-width) {

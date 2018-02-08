@@ -1,6 +1,12 @@
 .contacts {
+
+  @media (min-width: $tablet-width) {
+    padding-top: 3rem;
+  }
+
   &--catalog {
     background-color: $color-background-gray;
+
   }
 
   &--form {

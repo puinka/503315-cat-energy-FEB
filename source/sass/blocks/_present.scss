@@ -7,10 +7,11 @@
   background-size: cover;
 
   @media (min-width: $tablet-width) {
+    width: 70.8rem;
     margin-top: 7rem;
     margin-bottom: 7rem;
     min-height: 20rem;
-    padding: 7.5rem 12rem;
+    padding: 5rem 7rem 1.6rem;
   }
 
   @media (min-width: $desktop-width) {
@@ -29,7 +30,8 @@
   padding: 19rem 6rem 5rem;
 
   @media (min-width: $tablet-width) {
-    padding-left: 28.5rem;
+    padding-top: 2rem;
+    padding-left: 35rem;
     text-align: left;
   }
 
