@@ -50,6 +50,10 @@
     margin-top: 0;
     margin-bottom: 7.6rem;
   }
+
+  @media (min-width: $desktop-width) {
+    padding: 0;
+  }
 }
 
 @mixin form-label() {

@@ -13,7 +13,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin-top: 8rem;
+    margin-top: 7rem;
     margin-bottom: 5rem;
   }
 }
@@ -33,6 +33,7 @@
   }
 
   @media (min-width: $desktop-width) {
+    margin-left: 0;
     margin-bottom: 7rem;
   }
 }
