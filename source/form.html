@@ -55,8 +55,10 @@
       </div>
 
       <fieldset class="request-form__contacts owner-contacts">
-        <div class="owner-contacts__content-center">
+        <div class="owner-contacts__wrapper">
           <legend class="owner-contacts__title">Контактные данные (владельца кота)</legend>
+        </div>
+        <div class="owner-contacts__content-center">
           <label class="owner-contacts__label">E-mail:*
               <input type="email" class="owner-contacts__input owner-contacts__input--email" value="kuklachev@gmail.com" required>
             </label>
@@ -67,15 +69,19 @@
       </fieldset>
 
       <fieldset class="request-form__comment comment">
-        <div class="comment__content-center">
+        <div class="comment__wrapper">
           <legend class="comment__title">Комментарий</legend>
+        </div>
+        <div class="comment__content-center">
           <textarea name="comment" id="comment" cols="30" rows="9" class="comment__input" placeholder="Расскажите обо всех повадках кота"></textarea>
         </div>
       </fieldset>
 
       <fieldset class="request-form__additional additional">
-        <div class="additional__content-center">
+        <div class="additional__wrapper">
           <legend class="additional__title">Дополнительно</legend>
+        </div>
+        <div class="additional__content-center">
           <label class="additional__label"><input type="checkbox" class="additional__input visually-hidden" checked>Сахарозаменитель</label>
           <label class="additional__label"><input type="checkbox" class="additional__input visually-hidden">Питьевая вода</label>
           <label class="additional__label"><input type="checkbox" class="additional__input visually-hidden">Молоко</label>
