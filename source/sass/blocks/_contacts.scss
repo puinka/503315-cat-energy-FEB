@@ -1,12 +1,21 @@
 .contacts {
+  @media (min-width: $tablet-width) {
+    padding-top: 3rem;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 0;
+  }
+
   &--catalog {
-    @media (min-width: $tablet-width) {
-      background-color: $color-background-gray;
+    background-color: $color-background-gray;
+
+    @media (min-width: $desktop-width) {
+      background-color: #ffffff;
     }
   }
 
   &--form {
-    padding-top: 1rem;
     background-color: $color-background-gray;
   }
 }
@@ -14,21 +23,21 @@
 .contacts__content-center {
   @include content-center;
   position: relative;
+  padding-top: 2.5rem;
 
   @media (min-width: $desktop-width) {
-    padding: 10rem 0;
+    padding-top: 7rem;
     z-index: 10;
   }
 }
 
 .contacts__card {
   display: flex;
-  margin-top: 4rem;
-  margin-bottom: 4rem;
+  margin-bottom: 3.2rem;
 
   @media (min-width: $tablet-width) {
     justify-content: space-between;
-    padding: 7rem 4rem;
+    padding: 3.5rem 4rem;
   }
 
   @media (min-width: $desktop-width) {
@@ -36,7 +45,8 @@
     justify-content: space-between;
     background-color: #ffffff;
     width: 57rem;
-    padding: 7rem;
+    padding: 6rem 7.5rem;
+    margin: 0;
     position: relative;
   }
 }
@@ -80,7 +90,7 @@
   z-index: 5;
 
   @media (min-width: $desktop-width) {
-    margin-top: -44rem;
+    margin-top: -29rem;
   }
 }
 
@@ -88,7 +98,11 @@
   width: 100%;
   min-height: 36rem;
 
+  @media (min-width: $tablet-width) {
+    min-height: 40rem;
+  }
+
   @media (min-width: $desktop-width) {
-    min-height: 42rem;
+    min-height: 40rem;
   }
 }

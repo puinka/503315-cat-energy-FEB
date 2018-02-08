@@ -5,38 +5,51 @@
 
   @media (min-width: $tablet-width) {
     width: 63rem;
+    padding: 0;
     flex-direction: row;
+    justify-content: space-between;
     flex-wrap: wrap;
   }
 
   @media (min-width: $desktop-width) {
     width: 130rem;
     padding: 0 4rem;
+    margin-bottom: 1rem;
+  }
+}
+
+.additional__wrapper {
+  @media (min-width: $tablet-width) {
+    @include content-center;
   }
 }
 
 .additional__title {
   @include fieldset-title;
+  margin-bottom: 4.2rem;
 
   @media (min-width: $tablet-width) {
     width: 100%;
+    margin-bottom: 6rem;
   }
 }
 
 .additional__label {
   @include form-label;
   display: block;
-  margin-bottom: 1.6rem;
+  margin-bottom: 2.4rem;
   padding-left: 4.6rem;
 
   @media (min-width: $tablet-width) {
     font-size: 2rem;
     line-height: 2rem;
-    width: 50%;
-    margin-bottom: 4rem;
+    padding-left: 5.8rem;
+    margin-bottom: 5.8rem;
+    width: 28.5rem;
   }
 
   @media (min-width: $desktop-width) {
+    padding-top: 1rem;
     width: 25%;
   }
 }

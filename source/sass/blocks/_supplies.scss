@@ -2,29 +2,34 @@
   @include content-center;
 
   @media (min-width: $desktop-width) {
+    padding: 0;
+    margin: 0;
     width: 89.5rem;
   }
 }
 
 .supplies__heading {
+  @include content-center;
   font-size: 2.4rem;
   line-height: 2.4rem;
   font-weight: inherit;
-  padding-left: 2rem;
-  margin-top: 3rem;
+  padding-left: 7rem;
+  margin-top: 5rem;
   margin-bottom: 3.5rem;
 
   @media (min-width: $tablet-width) {
     font-size: 3.6rem;
     line-height: 3.6rem;
     padding-left: 4rem;
-    margin-bottom: 7rem;
+    margin-top: 2.5rem;
+    margin-bottom: 8rem;
   }
 
   @media (min-width: $desktop-width) {
     padding-left: 4rem;
+    margin-top: 3.5rem;
     margin-left: 7rem;
-    margin-bottom: 7.5rem;
+    margin-bottom: 8rem;
   }
 }
 
@@ -39,12 +44,12 @@
   &:last-child {
     border-bottom: 1px solid $color-line-dark;
   }
-  padding: 2rem 0;
+  padding: 1.2rem 0;
 
   @media (min-width: $tablet-width) {
     border-left: 1px solid $color-line-dark;
     border-right: 1px solid $color-line-dark;
-    padding: 2.6rem 3.7rem 3rem;
+    padding: 2.6rem 3.7rem 2.8rem;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -52,6 +57,9 @@
 
   @media (min-width: $desktop-width) {
     align-items: baseline;
+    border-left: none;
+    border-right: none;
+    padding: 1.6rem 0;
   }
 }
 
@@ -60,20 +68,29 @@
   line-height: 1.6rem;
   font-weight: inherit;
   text-transform: uppercase;
-  margin-bottom: 1.6rem;
+  margin-bottom: 1.2rem;
 
   @media (min-width: $tablet-width) {
     font-size: 2rem;
     line-height: 2rem;
+    margin-bottom: 2.5rem;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 0;
   }
 }
 
 .supplies__wrapper {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 1.6rem;
+  margin-bottom: 1.5rem;
 
   @include text-formatting;
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 0;
+  }
 }
 
 .supplies__amount {

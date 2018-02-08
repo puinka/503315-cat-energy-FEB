@@ -3,6 +3,7 @@
 
   @media (min-width: $tablet-width) {
     width: 63rem;
+    padding: 0;
   }
 
   @media (min-width: $desktop-width) {
@@ -16,17 +17,18 @@
   align-items: center;
 
   @include form-label;
-  margin-bottom: 2rem;
+  margin-bottom: 1.6rem;
 
   @media (min-width: $tablet-width) {
     font-size: 2rem;
     line-height: 2rem;
+    margin-bottom: 2.4rem;
   }
 }
 
 .basics__input {
   flex-grow: 1;
   width: 50%;
-  padding: 1.6rem;
+  padding: 1.4rem;
   margin-left: 2rem;
 }

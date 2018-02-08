@@ -4,17 +4,19 @@
   }
 
   @media (min-width: $desktop-width) {
-
+    padding: 0;
+    margin-top: -3rem;
+    width: 700px;
     height: auto;
   }
 }
 
 .slider__cat-pic {
   display: block;
-  margin-bottom: 4rem;
+  margin-bottom: 6rem;
 
   @media (min-width: $tablet-width) {
-    width: 70rem;
+    width: 67rem;
     height: auto;
     margin: 0 auto;
   }

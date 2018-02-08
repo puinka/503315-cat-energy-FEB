@@ -6,17 +6,17 @@
 
 .catalog-main__heading {
   @include heading;
-  margin-top: 2rem;
-  margin-left: 2rem;
-  margin-bottom: 2rem;
+  @include content-center;
+  margin-top: 1.6rem;
+  margin-bottom: 3.8rem;
 
   @media (min-width: $tablet-width) {
-    margin-top: 6rem;
-    margin-left: 3rem;
+    margin-top: 5rem;
+    margin-bottom: 7rem;
   }
 
   @media (min-width: $desktop-width) {
-    margin-left: 11rem;
+    margin-top: 7rem;
   }
 }
 
@@ -24,10 +24,10 @@
   list-style: none;
 
   @media (min-width: $tablet-width) {
+    @include content-center;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    margin-bottom: 7rem;
   }
 
   @media (min-width: $desktop-width) {
@@ -37,13 +37,9 @@
 
 .catalog-main__wrapper {
   @media (min-width: $desktop-width) {
+    @include content-center;
     display: flex;
     justify-content: space-between;
-    width: 122rem;
-    margin: 0 auto;
+    margin-bottom: 2rem;
   }
-}
-
-.catalog-main__present {
-  min-height: 290px;
 }

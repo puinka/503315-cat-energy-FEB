@@ -3,13 +3,13 @@
   padding-bottom: 4.5rem;
 
   @media (min-width: $tablet-width) {
-    padding-top: 6.2rem;
+    padding-top: 4.2rem;
     padding-bottom: 7.6rem;
     border-bottom: 1px solid $color-line-light;
   }
 
   @media (min-width: $desktop-width) {
-    padding-top: 4rem;
+    padding-top: 4.4rem;
     border: none;
   }
 }
@@ -23,7 +23,7 @@
   margin-bottom: 3rem;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 7.5rem;
+    margin-bottom: 7.4rem;
   }
 }
 
@@ -62,7 +62,7 @@
     padding-top: 11rem;
 
     &:nth-child(1) {
-      margin-bottom: 14rem;
+      margin-bottom: 13.5rem;
     }
 
     @media (min-width: $desktop-width) {
@@ -86,9 +86,9 @@
     background-position: 4px 5px;
 
     @media (min-width: $tablet-width) {
-      width: 74px;
-      height: 74px;
-      background-position: 11px 14px;
+      width: 80px;
+      height: 80px;
+      background-position: 14px 14px;
     }
   }
 
