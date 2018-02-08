@@ -1,19 +1,19 @@
 .hero {
   background: url("../../img/index-can-mobile@1x.png") 50% 72% no-repeat, url("../../img/index-background-mobile@1x.jpg") 0 0 no-repeat;
-  padding-top: 3rem;
+  padding-top: 2.8rem;
   padding-bottom: 2.2rem;
 
   @media (min-width: $tablet-width) {
     background: url("../../img/index-can-mobile@1x.png") 80% 95% no-repeat;
     background-size: 630px 600px;
-    padding-bottom: 50.5rem;
+    padding-bottom: 51rem;
   }
 
   @media (min-width: $desktop-width) {
-    margin-top: -10rem;
-    background: url("../../img/index-can-mobile@1x.png") 65% 60% no-repeat, url("../../img/index-background-mobile@1x.jpg") 100% 0 no-repeat;
-    background-size: 500px auto, 47% auto;
-    padding-bottom: 20rem;
+    margin-top: -12rem;
+    background: url("../../img/index-can-mobile@1x.png") 65% 50% no-repeat, url("../../img/index-background-mobile@1x.jpg") 100% 0 no-repeat;
+    background-size: 520px auto, 47% 90%;
+    padding-bottom: 19rem;
   }
 }
 
@@ -21,11 +21,11 @@
   @include content-center;
 
   @media (min-width: $tablet-width) {
-    padding: 3rem 8.5rem;
+    padding: 2.2rem 11.5rem;
   }
 
   @media (min-width: $desktop-width) {
-    padding: 18rem 8rem 8rem;
+    padding: 19rem 19rem 8rem;
   }
 }
 
@@ -47,6 +47,7 @@
 
   @media (min-width: $desktop-width) {
     width: 50%;
+    margin-bottom: 4.4rem;
   }
 }
 
@@ -64,5 +65,9 @@
     color: $color-black;
     text-align: left;
     margin-bottom: 4.4rem;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 5.4rem;
   }
 }

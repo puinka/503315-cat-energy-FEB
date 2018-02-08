@@ -1,5 +1,13 @@
 .page-footer {
   background-color: $color-background-gray;
+
+  @media (min-width: $tablet-width) {
+    padding: 3rem 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 3rem 0;
+  }
 }
 
 .page-footer__content-center {
@@ -9,17 +17,18 @@
   align-items: center;
 
   @media (min-width: $tablet-width) {
-    width: 76.8rem;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    padding: 4rem 3rem;
   }
 }
 
 .page-footer__logo-text {
-  margin-top: 3.4rem;
-  margin-bottom: 3.1rem;
+  margin: 0;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 1rem;
+  }
 }
 
 .page-footer__social {
