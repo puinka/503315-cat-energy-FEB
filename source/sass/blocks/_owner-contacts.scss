@@ -15,6 +15,7 @@
   @include fieldset-title;
   max-width: 70vw;
   position: relative;
+  margin-top: 1rem;
   /* .owner-contacts::after {
     content: "";
     display: block;
@@ -39,7 +40,7 @@
   align-items: center;
 
   @include form-label;
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
 
   @media (min-width: $tablet-width) {
     font-size: 2rem;

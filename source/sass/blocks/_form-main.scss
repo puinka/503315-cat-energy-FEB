@@ -4,8 +4,8 @@
 
 .form-main__heading {
   @include heading;
-  margin-top: 2rem;
-  margin-bottom: 2rem;
+  margin-top: 1.6rem;
+  margin-bottom: 2.4rem;
 
   @media (min-width: $tablet-width) {
     margin-bottom: 5.5rem;
@@ -21,7 +21,7 @@
   font-size: 1.4rem;
   line-height: 1.8rem;
   text-transform: uppercase;
-  margin-bottom: 3rem;
+  margin-bottom: 4rem;
 
   @media (min-width: $tablet-width) {
     font-size: 2rem;
