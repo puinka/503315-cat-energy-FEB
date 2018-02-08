@@ -1,6 +1,7 @@
 .present {
-  @include content-center;
-  padding: 5rem 6rem;
+  width: 28rem;
+  min-height: 290px;
+  margin: 4rem auto 3rem;
   background-image: url("../img/gift-photo-mobile@1x.jpg");
   background-repeat: no-repeat;
   background-size: cover;
@@ -25,6 +26,7 @@
   line-height: 1.8rem;
   color: #ffffff;
   text-align: center;
+  padding: 19rem 6rem 5rem;
 
   @media (min-width: $tablet-width) {
     padding-left: 28.5rem;

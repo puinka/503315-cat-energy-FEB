@@ -7,11 +7,12 @@
 }
 
 .supplies__heading {
+  @include content-center;
   font-size: 2.4rem;
   line-height: 2.4rem;
   font-weight: inherit;
   padding-left: 2rem;
-  margin-top: 3rem;
+  margin-top: 5rem;
   margin-bottom: 3.5rem;
 
   @media (min-width: $tablet-width) {
@@ -39,7 +40,7 @@
   &:last-child {
     border-bottom: 1px solid $color-line-dark;
   }
-  padding: 2rem 0;
+  padding: 1.2rem 0;
 
   @media (min-width: $tablet-width) {
     border-left: 1px solid $color-line-dark;
@@ -60,7 +61,7 @@
   line-height: 1.6rem;
   font-weight: inherit;
   text-transform: uppercase;
-  margin-bottom: 1.6rem;
+  margin-bottom: 1.2rem;
 
   @media (min-width: $tablet-width) {
     font-size: 2rem;
@@ -71,7 +72,7 @@
 .supplies__wrapper {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 1.6rem;
+  margin-bottom: 1.5rem;
 
   @include text-formatting;
 }
