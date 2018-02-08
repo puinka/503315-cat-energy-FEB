@@ -17,7 +17,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin-left: 11rem;
+    margin-top: 7rem;
   }
 }
 
@@ -38,9 +38,9 @@
 
 .catalog-main__wrapper {
   @media (min-width: $desktop-width) {
+    @include content-center;
     display: flex;
     justify-content: space-between;
-    width: 122rem;
-    margin: 0 auto;
+    margin-bottom: 2rem;
   }
 }

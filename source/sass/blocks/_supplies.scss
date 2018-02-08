@@ -2,6 +2,8 @@
   @include content-center;
 
   @media (min-width: $desktop-width) {
+    padding: 0;
+    margin: 0;
     width: 89.5rem;
   }
 }
@@ -25,8 +27,9 @@
 
   @media (min-width: $desktop-width) {
     padding-left: 4rem;
+    margin-top: 3.5rem;
     margin-left: 7rem;
-    margin-bottom: 7.5rem;
+    margin-bottom: 8rem;
   }
 }
 
@@ -54,6 +57,9 @@
 
   @media (min-width: $desktop-width) {
     align-items: baseline;
+    border-left: none;
+    border-right: none;
+    padding: 1.6rem 0;
   }
 }
 
@@ -69,6 +75,10 @@
     line-height: 2rem;
     margin-bottom: 2.5rem;
   }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 0;
+  }
 }
 
 .supplies__wrapper {
@@ -77,6 +87,10 @@
   margin-bottom: 1.5rem;
 
   @include text-formatting;
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 0;
+  }
 }
 
 .supplies__amount {

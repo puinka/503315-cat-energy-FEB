@@ -17,11 +17,6 @@
     padding: 1rem 3rem;
   }
 
-  @media (min-width: $desktop-width) {
-    font-size: 2rem;
-    line-height: 2rem;
-  }
-
   &--green {
     background-color: $color-primary;
     color: #ffffff;

@@ -4,9 +4,16 @@
     padding-top: 3rem;
   }
 
+  @media (min-width: $desktop-width) {
+    padding-top: 0;
+  }
+
   &--catalog {
     background-color: $color-background-gray;
 
+    @media (min-width: $desktop-width) {
+      background-color: #ffffff;
+    }
   }
 
   &--form {
@@ -21,7 +28,7 @@
   padding-top: 3rem;
 
   @media (min-width: $desktop-width) {
-    padding-top: 12rem;
+    padding-top: 7rem;
     z-index: 10;
   }
 }
@@ -85,7 +92,7 @@
   z-index: 5;
 
   @media (min-width: $desktop-width) {
-    margin-top: -34rem;
+    margin-top: -29rem;
   }
 }
 
@@ -98,6 +105,6 @@
   }
 
   @media (min-width: $desktop-width) {
-    min-height: 45rem;
+    min-height: 40rem;
   }
 }

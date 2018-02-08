@@ -53,10 +53,15 @@
   @media (min-width: $tablet-width) {
     margin-bottom: 8rem;
   }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 4rem;
+  }
 }
 
 .show-more__btn {
   @media (min-width: $tablet-width) {
     width: 100%;
   }
+
 }
