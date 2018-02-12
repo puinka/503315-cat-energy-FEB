@@ -5,10 +5,11 @@
 
   @media (min-width: $tablet-width) {
     flex-grow: 1;
-    width: 32.4rem;
-    background-image: linear-gradient(to bottom, #ffffff 0%, #ffffff 20%, $color-background-gray 20%);
+    max-width: 32.4rem;
+    background-image: linear-gradient(to bottom, #ffffff 0%, #ffffff 15%, $color-background-gray 15%);
     padding: 0 3rem 3.5rem;
     margin-bottom: 4rem;
+    border: none;
 
     &:nth-child(2n-1) {
       margin-right: 5.5rem;
@@ -45,6 +46,7 @@
 
   @media (min-width: $tablet-width) {
     flex-direction: column;
+    justify-content: flex-end;
     width: 25rem;
     margin: 0 auto;
   }
@@ -60,7 +62,21 @@
 
 .product-card__pic {
   width: 140px;
-  height: 200px;
+  height: auto;
+
+  &--small {
+    @media (min-width: $tablet-width) {
+      margin-top: 2.7rem;
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    width: 324px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 245px;
+  }
 }
 
 .product-card__text-wrapper {
@@ -68,7 +84,7 @@
 
   @media (min-width: $tablet-width) {
     width: 100%;
-    margin-top: 5.4rem;
+    margin-top: 3rem;
   }
 }
 
