@@ -14,11 +14,15 @@
   <header class="page-header">
     <div class="page-header__content-center">
       <div class="page-header__wrapper">
-        <a href="#" class="page-header__logo">
-          <img src="../img/icon-logo-mobile.svg" alt="Cat Energy Logo" class="page-header__logo-pic" width="34" height="42">
-          <img src="../img/logo-mobile-header.svg" alt="Cat Energy Logo" class="page-header__logo-text" width="102" height="19">
+        <a href="index.html" class="page-header__logo">
+          <picture>
+            <source media="(min-width: 1200px)" srcset="img/logo-desktop.svg">
+            <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
+            <img src="img/icon-logo-mobile.svg" alt="Cat Energy Logo" class="page-header__logo-pic" alt="Logo picture" width="34" height="42">
+          </picture>
+          <img src="img/logo-mobile-header.svg" alt="Cat Energy Logo" class="page-header__logo-text" width="102" height="19">
           </a>
-        <a class="page-header__close" href="#"><img src="../img/icon-close.svg" alt="close" width="24" height="24"></a>
+        <a class="page-header__close" href="#"><img src="img/icon-close.svg" alt="close" width="20" height="20"></a>
       </div>
       <nav class="main-nav">
         <ul class="main-nav__list site-list">
@@ -47,9 +51,12 @@
 
         <fieldset class="request-form__program program">
           <div class="program__content-center">
-            <label class="program__label"><input type="radio" class="program__choice visually-hidden" name="program" checked>Похудение</label>
-            <label class="program__label"><input type="radio" class="program__choice visually-hidden" name="program">Набор массы</label>
-            <label class="program__label"><input type="radio" class="program__choice visually-hidden" name="program">Не знаю (Нужен ваш совет)</label>
+            <input type="radio" class="program__choice visually-hidden" name="program" id="slim" checked>
+            <label class="program__label" for="slim">Похудение</label>
+            <input type="radio" class="program__choice visually-hidden" name="program" id="gain">
+            <label class="program__label" for="gain">Набор массы</label>
+            <input type="radio" class="program__choice visually-hidden" name="program" id="noidea">
+            <label class="program__label" for="noidea">Не знаю (Нужен ваш совет)</label>
           </div>
         </fieldset>
       </div>
@@ -82,10 +89,14 @@
           <legend class="additional__title">Дополнительно</legend>
         </div>
         <div class="additional__content-center">
-          <label class="additional__label"><input type="checkbox" class="additional__input visually-hidden" checked>Сахарозаменитель</label>
-          <label class="additional__label"><input type="checkbox" class="additional__input visually-hidden">Питьевая вода</label>
-          <label class="additional__label"><input type="checkbox" class="additional__input visually-hidden">Молоко</label>
-          <label class="additional__label"><input type="checkbox" class="additional__input visually-hidden">Витамины</label>
+          <input type="checkbox" class="additional__input visually-hidden" id="sugar" checked>
+          <label class="additional__label" for="sugar">Сахарозаменитель</label>
+          <input type="checkbox" class="additional__input visually-hidden" id="water">
+          <label class="additional__label" for="water">Питьевая вода</label>
+          <input type="checkbox" class="additional__input visually-hidden" id="milk">
+          <label class="additional__label" for="milk">Молоко</label>
+          <input type="checkbox" class="additional__input visually-hidden" id="vitamins">
+          <label class="additional__label" for="vitamins">Витамины</label>
         </div>
       </fieldset>
       <div class="request-form__content-center">

@@ -13,20 +13,19 @@ html {
   box-sizing: border-box;
   font-size: 62.5%; // 10px
 }
-/* oswald-regular - latin_cyrillic */
+
 @font-face {
   font-family: "Oswald";
+  src: url("../../fonts/oswaldregular.woff2") format("woff2"), url("../../fonts/oswaldregular.woff") format("woff");
+  font-weight: normal;
   font-style: normal;
-  font-weight: 400;
-  /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
-  src: local("Oswald Regular"), local("Oswald-Regular"), url("../fonts/oswald-v16-latin_cyrillic-regular.woff2") format("woff2"), url("../fonts/oswald-v16-latin_cyrillic-regular.woff") format("woff");
 }
-/* oswald-500 - latin_cyrillic */
+
 @font-face {
   font-family: "Oswald";
-  font-style: normal;
+  src: url("../../fonts/oswaldmeduim.woff2") format("woff2"), url("../../fonts/oswaldmeduim.woff") format("woff");
   font-weight: 500;
-  src: local("Oswald Medium"), local("Oswald-Medium"), url("../fonts/oswald-v16-latin_cyrillic-500.woff2") format("woff2"), url("../fonts/oswald-v16-latin_cyrillic-500.woff") format("woff");
+  font-style: normal;
 }
 
 body {

@@ -43,13 +43,21 @@
   &::before {
     content: "";
     position: absolute;
-    left: 90px;
-    top: 0;
-    width: 60px;
-    height: 60px;
     background-repeat: no-repeat;
     background-position: center;
     background-image: url("../img/icon-plus.svg");
+
+    @media (min-width: $tablet-width) {
+      left: 90px;
+      top: 0;
+      width: 60px;
+      height: 60px;
+    }
+
+    @media (min-width: $tablet-width) {
+      left: 55px;
+      top: 0;
+    }
   }
 }
 

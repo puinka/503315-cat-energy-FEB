@@ -16,13 +16,72 @@
 
 .program__label {
   @include form-label;
-  margin-bottom: 2.6rem;
   padding-left: 4.4rem;
+  padding-top: 1.2rem;
+  padding-bottom: 1.2rem;
+  cursor: pointer;
+  position: relative;
 
   @media (min-width: $tablet-width) {
     font-size: 2rem;
     line-height: 2rem;
-    padding-top: 1rem;
-    margin-bottom: 2.2rem;
+    padding-top: 1.4rem;
+    padding-bottom: 1.4rem;
+    padding-left: 6.5rem;
   }
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 6px;
+    left: 0;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: solid 1px $color-line-light;
+    cursor: pointer;
+
+    @media (min-width: $tablet-width) {
+      width: 40px;
+      height: 40px;
+      top: 2px;
+    }
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 15px;
+    left: 9px;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: $color-primary;
+    display: none;
+
+    @media (min-width: $tablet-width) {
+      width: 18px;
+      height: 18px;
+      top: 13px;
+      left: 11px;
+    }
+  }
+}
+
+.program__choice:checked + .program__label::after {
+  display: block;
+}
+
+.program__choice:not(:disabled):focus + .program__label::before,
+.program__choice:not(:disabled):hover + .program__label::before {
+  border-color: $color-line-dark;
+}
+
+.program__choice:disabled + .program__label {
+  cursor: auto;
+  opacity: 0.3;
+}
+
+.program__choice:disabled + .program__label::before {
+  cursor: auto;
 }
