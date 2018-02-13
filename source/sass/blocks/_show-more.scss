@@ -46,22 +46,24 @@
     background-repeat: no-repeat;
     background-position: center;
     background-image: url("../img/icon-plus.svg");
+    left: 120px;
+    top: 30px;
+    width: 30px;
+    height: 30px;
+    opacity: 0.5;
 
     @media (min-width: $tablet-width) {
       left: 90px;
       top: 0;
       width: 60px;
       height: 60px;
-    }
-
-    @media (min-width: $tablet-width) {
-      left: 90px;
-      top: 0;
+      opacity: 1;
     }
 
     @media (min-width: $desktop-width) {
       left: 55px;
       top: 0;
+      opacity: 1;
     }
   }
 }
