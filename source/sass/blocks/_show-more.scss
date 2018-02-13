@@ -11,6 +11,7 @@
     width: 24.5rem;
     margin-left: 0;
     margin-right: 0;
+    margin-bottom: 6.5rem;
   }
 }
 
@@ -19,7 +20,7 @@
 
   @media (min-width: $tablet-width) {
     width: auto;
-    padding: 4rem;
+    padding: 3.5rem;
   }
 }
 
@@ -38,6 +39,10 @@
     font-size: 2rem;
     padding-top: 12.4rem;
     margin-bottom: 2.4rem;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 11.5rem;
   }
 
   &::before {
@@ -61,8 +66,8 @@
     }
 
     @media (min-width: $desktop-width) {
-      left: 55px;
-      top: 0;
+      left: 56px;
+      top: 10px;
       opacity: 1;
     }
   }

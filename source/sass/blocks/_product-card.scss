@@ -17,8 +17,10 @@
   }
 
   @media (min-width: $desktop-width) {
+    background-image: linear-gradient(to bottom, #ffffff 0%, #ffffff 16%, $color-background-gray 16%);
     width: 24.5rem;
     padding: 0 0 4rem;
+    margin-bottom: 6rem;
 
     &:nth-child(2n),
     &:nth-child(2n-1) {
@@ -95,6 +97,7 @@
 
   @media (min-width: $desktop-width) {
     max-width: 17rem;
+    padding: 0;
   }
 }
 
