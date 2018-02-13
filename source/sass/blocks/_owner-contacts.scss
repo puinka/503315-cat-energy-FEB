@@ -16,6 +16,10 @@
 
 .owner-contacts__wrapper {
   @include green-line;
+
+  &::before {
+    top: 30%;
+  }
 }
 
 .owner-contacts__title {
