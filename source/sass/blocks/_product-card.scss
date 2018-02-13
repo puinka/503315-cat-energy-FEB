@@ -18,6 +18,7 @@
 
   @media (min-width: $desktop-width) {
     width: 24.5rem;
+    padding: 0 0 4rem;
 
     &:nth-child(2n),
     &:nth-child(2n-1) {
@@ -52,7 +53,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    width: 17rem;
+    width: 24.5rem;
   }
 }
 
@@ -67,6 +68,10 @@
   &--small {
     @media (min-width: $tablet-width) {
       margin-top: 2.7rem;
+    }
+
+    @media (min-width: $desktop-width) {
+      margin-top: 3.5rem;
     }
   }
 
@@ -85,6 +90,10 @@
   @media (min-width: $tablet-width) {
     width: 100%;
     margin-top: 3rem;
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: 17rem;
   }
 }
 
@@ -140,5 +149,9 @@
 
   @media (min-width: $tablet-width) {
     width: 100%;
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: 17rem;
   }
 }
