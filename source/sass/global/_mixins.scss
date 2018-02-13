@@ -42,6 +42,8 @@
   line-height: 2.4rem;
   font-weight: inherit;
   margin-bottom: 3rem;
+  display: block;
+  background-color: #ffffff;
 
   @media (min-width: $tablet-width) {
     font-size: 3.6rem;
@@ -75,38 +77,31 @@
   overflow: hidden;
 }
 
-@mixin heading-line-right {
-  &::after {
+@mixin green-line {
+  position: relative;
+
+  &::before {
     content: "";
-    display: inline-block;
-    vertical-align: middle;
-    top: 0;
+    position: absolute;
+    top: 58%;
     left: 0;
-    width: 100%;
+    right: 0;
     height: 3px;
     background-color: $color-primary;
-    border: solid #fff;
-    border-width: 0 25px;
-    margin-right: -100%;
-
-    @media (min-width: $tablet-width) {
-      border-width: 0 40px;
-    }
+    z-index: -1;
   }
 }
 
-@mixin heading-line-left {
-  &::before {
-    content: "";
-    display: inline-block;
-    vertical-align: middle;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 3px;
-    background-color: $color-primary;
-    border: solid #fff;
-    border-width: 0 40px;
-    margin-left: -100%;
+@mixin heading-alignment {
+  padding-left: 2rem;
+  transform: translate(-2rem);
+
+  @media (min-width: $tablet-width) {
+    padding-left: 4rem;
+    transform: translateX(0rem);
+  }
+
+  @media (min-width: $desktop-width) {
+    transform: translateX(-6rem);
   }
 }

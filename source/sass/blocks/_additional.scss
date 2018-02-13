@@ -19,18 +19,22 @@
 }
 
 .additional__wrapper {
-  @media (min-width: $tablet-width) {
-    @include content-center;
-  }
+  @include green-line;
 }
 
 .additional__title {
-  @include fieldset-title;
+  @include content-center;
   margin-bottom: 4.2rem;
+}
+
+.additional__title-text {
+  @include fieldset-title;
+  width: 18.4rem;
+
+  @include heading-alignment;
 
   @media (min-width: $tablet-width) {
-    width: 100%;
-    margin-bottom: 6rem;
+    width: 29rem;
   }
 }
 

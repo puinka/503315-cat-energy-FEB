@@ -15,32 +15,23 @@
 }
 
 .owner-contacts__wrapper {
-  @media (min-width: $tablet-width) {
-    @include content-center;
-  }
+  @include green-line;
 }
 
 .owner-contacts__title {
-  @include fieldset-title;
-  max-width: 70vw;
-  position: relative;
-  margin-top: 1rem;
-  /* .owner-contacts::after {
-    content: "";
-    display: block;
-    border-top: 2px solid var(--color-green);
 
-    position: absolute;
-    top: 0;
-    right: 0;
-  } */
+  @include content-center;
+  margin-top: 1rem;
+}
+
+.owner-contacts__title-text {
+  @include fieldset-title;
+  width: 22rem;
+
+  @include heading-alignment;
 
   @media (min-width: $tablet-width) {
-    max-width: 100vw;
-  }
-
-  @media (min-width: $desktop-width) {
-    padding: 0;
+    width: 59.2rem;
   }
 }
 
