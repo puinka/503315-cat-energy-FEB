@@ -6,9 +6,9 @@
   @media (min-width: $tablet-width) {
     flex-grow: 1;
     max-width: 32.4rem;
-    background-image: linear-gradient(to bottom, #ffffff 0%, #ffffff 15%, $color-background-gray 15%);
-    padding: 0 3rem 3.5rem;
-    margin-bottom: 4rem;
+    background-image: linear-gradient(to bottom, #ffffff 0%, #ffffff 18%, $color-background-gray 18%);
+    padding: 1rem 0 3.5rem;
+    margin-bottom: 5rem;
     border: none;
 
     &:nth-child(2n-1) {
@@ -48,7 +48,7 @@
   @media (min-width: $tablet-width) {
     flex-direction: column;
     justify-content: flex-end;
-    width: 25rem;
+    width: 32.4rem;
     margin: 0 auto;
   }
 
@@ -67,7 +67,7 @@
 
   &--small {
     @media (min-width: $tablet-width) {
-      margin-top: 2.7rem;
+      margin-top: 3.7rem;
     }
 
     @media (min-width: $desktop-width) {
@@ -89,7 +89,8 @@
 
   @media (min-width: $tablet-width) {
     width: 100%;
-    margin-top: 3rem;
+    padding: 0 3.7rem;
+    margin-top: 3.5rem;
   }
 
   @media (min-width: $desktop-width) {
@@ -115,7 +116,7 @@
     font-size: 2rem;
     line-height: 2rem;
     width: 12rem;
-    margin: 0 auto 2rem;
+    margin: 0 auto 1.6rem;
     text-align: center;
   }
 }
@@ -148,7 +149,7 @@
   flex-grow: 1;
 
   @media (min-width: $tablet-width) {
-    width: 100%;
+    width: 25rem;
   }
 
   @media (min-width: $desktop-width) {
