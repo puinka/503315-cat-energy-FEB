@@ -32,3 +32,7 @@
   padding: 1.4rem;
   margin-left: 1.2rem;
 }
+
+.basics__input:focus {
+  border: 2px solid $color-black;
+}
