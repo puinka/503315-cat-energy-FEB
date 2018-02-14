@@ -6,4 +6,40 @@
 
 .social__item {
   padding: 2rem;
+
+  @media (min-width: $tablet-width) {
+    padding: 1.5rem;
+  }
+}
+
+.social__icon {
+  fill: $color-text;
+
+  @media (min-width: $tablet-width) {
+    &--vkontakte {
+      width: 34px;
+      height: 18px;
+      margin-top: 2px;
+    }
+
+    &--instagram {
+      width: 23px;
+      height: 23px;
+    }
+
+    &--facebook {
+      width: 14px;
+      height: 28px;
+      margin-top: -2px;
+    }
+  }
+}
+
+.social__icon:hover {
+  fill: $color-primary;
+}
+
+.social__icon:active {
+  fill: $color-primary;
+  opacity: 0.3;
 }
