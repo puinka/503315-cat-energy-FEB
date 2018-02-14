@@ -5,10 +5,11 @@
 
   @media (min-width: $tablet-width) {
     flex-grow: 1;
-    width: 32.4rem;
-    background-image: linear-gradient(to bottom, #ffffff 0%, #ffffff 20%, $color-background-gray 20%);
-    padding: 0 3rem 3.5rem;
-    margin-bottom: 4rem;
+    max-width: 32.4rem;
+    background-image: linear-gradient(to bottom, #ffffff 0%, #ffffff 18%, $color-background-gray 18%);
+    padding: 1rem 0 3.5rem;
+    margin-bottom: 5rem;
+    border: none;
 
     &:nth-child(2n-1) {
       margin-right: 5.5rem;
@@ -16,7 +17,10 @@
   }
 
   @media (min-width: $desktop-width) {
+    background-image: linear-gradient(to bottom, #ffffff 0%, #ffffff 16%, $color-background-gray 16%);
     width: 24.5rem;
+    padding: 0 0 4rem;
+    margin-bottom: 6rem;
 
     &:nth-child(2n),
     &:nth-child(2n-1) {
@@ -45,12 +49,13 @@
 
   @media (min-width: $tablet-width) {
     flex-direction: column;
-    width: 25rem;
+    justify-content: flex-end;
+    width: 32.4rem;
     margin: 0 auto;
   }
 
   @media (min-width: $desktop-width) {
-    width: 17rem;
+    width: 24.5rem;
   }
 }
 
@@ -60,7 +65,25 @@
 
 .product-card__pic {
   width: 140px;
-  height: 200px;
+  height: auto;
+
+  &--small {
+    @media (min-width: $tablet-width) {
+      margin-top: 3.7rem;
+    }
+
+    @media (min-width: $desktop-width) {
+      margin-top: 3.5rem;
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    width: 324px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 245px;
+  }
 }
 
 .product-card__text-wrapper {
@@ -68,7 +91,13 @@
 
   @media (min-width: $tablet-width) {
     width: 100%;
-    margin-top: 5.4rem;
+    padding: 0 3.7rem;
+    margin-top: 3.5rem;
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: 17rem;
+    padding: 0;
   }
 }
 
@@ -90,7 +119,7 @@
     font-size: 2rem;
     line-height: 2rem;
     width: 12rem;
-    margin: 0 auto 2rem;
+    margin: 0 auto 1.6rem;
     text-align: center;
   }
 }
@@ -123,6 +152,10 @@
   flex-grow: 1;
 
   @media (min-width: $tablet-width) {
-    width: 100%;
+    width: 25rem;
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: 17rem;
   }
 }

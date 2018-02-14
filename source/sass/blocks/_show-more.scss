@@ -3,7 +3,7 @@
 
   @media (min-width: $tablet-width) {
     width: 32.4rem;
-    margin: 3.8rem auto;
+    margin: 9rem auto 4.4rem;
     border: 1px solid $color-line-light;
   }
 
@@ -11,6 +11,7 @@
     width: 24.5rem;
     margin-left: 0;
     margin-right: 0;
+    margin-bottom: 6.5rem;
   }
 }
 
@@ -19,7 +20,7 @@
 
   @media (min-width: $tablet-width) {
     width: auto;
-    padding: 4rem;
+    padding: 3.5rem;
   }
 }
 
@@ -36,12 +37,39 @@
 
   @media (min-width: $tablet-width) {
     font-size: 2rem;
-    padding-top: 20rem;
-    margin-bottom: 2rem;
+    padding-top: 12.4rem;
+    margin-bottom: 2.4rem;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 11.5rem;
   }
 
   &::before {
     content: "";
+    position: absolute;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url("../img/icon-plus.svg");
+    left: 125px;
+    top: 30px;
+    width: 30px;
+    height: 30px;
+    opacity: 0.5;
+
+    @media (min-width: $tablet-width) {
+      left: 93px;
+      top: 16px;
+      width: 60px;
+      height: 60px;
+      opacity: 1;
+    }
+
+    @media (min-width: $desktop-width) {
+      left: 56px;
+      top: 10px;
+      opacity: 1;
+    }
   }
 }
 
@@ -51,11 +79,12 @@
   margin-bottom: 2.2rem;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 8rem;
+    margin-bottom: 8.4rem;
+    line-height: 2rem;
   }
 
   @media (min-width: $desktop-width) {
-    margin-bottom: 4rem;
+    margin-bottom: 9rem;
   }
 }
 

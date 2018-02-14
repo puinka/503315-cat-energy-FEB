@@ -19,32 +19,39 @@
 }
 
 .additional__wrapper {
-  @media (min-width: $tablet-width) {
-    @include content-center;
-  }
+  @include green-line;
 }
 
 .additional__title {
+  @include content-center;
+}
+
+.additional__title-text {
   @include fieldset-title;
-  margin-bottom: 4.2rem;
+  width: 18.4rem;
+
+  @include heading-alignment;
 
   @media (min-width: $tablet-width) {
-    width: 100%;
-    margin-bottom: 6rem;
+    width: 29rem;
+    margin-bottom: 5.5rem;
   }
 }
 
 .additional__label {
   @include form-label;
   display: block;
-  margin-bottom: 2.4rem;
   padding-left: 4.6rem;
+  padding-top: 1.1rem;
+  padding-bottom: 1.4rem;
+  cursor: pointer;
+  position: relative;
 
   @media (min-width: $tablet-width) {
     font-size: 2rem;
     line-height: 2rem;
     padding-left: 5.8rem;
-    margin-bottom: 5.8rem;
+    margin-bottom: 2.6rem;
     width: 28.5rem;
   }
 
@@ -52,4 +59,65 @@
     padding-top: 1rem;
     width: 25%;
   }
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 10px;
+    left: 0;
+    width: 30px;
+    height: 30px;
+    border: solid 1px $color-line-light;
+    cursor: pointer;
+
+    @media (min-width: $tablet-width) {
+      width: 40px;
+      height: 40px;
+      top: 6px;
+    }
+
+    @media (min-width: $desktop-width) {
+      top: 0;
+    }
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    width: 12px;
+    height: 20px;
+    border: solid $color-primary;
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg);
+    display: none;
+
+    @media (min-width: $tablet-width) {
+      left: 16px;
+      top: 12px;
+    }
+
+    @media (min-width: $desktop-width) {
+      top: 6px;
+    }
+  }
+}
+
+.additional__input:checked + .additional__label::after {
+  display: block;
+}
+
+.additional__input:not(:disabled):focus + .additional__label::before,
+.additional__input:not(:disabled):hover + .additional__label::before {
+  border-color: $color-line-dark;
+}
+
+.additional__input:disabled + .additional_label {
+  cursor: auto;
+  opacity: 0.3;
+}
+
+.additional__input:disabled + .additional_label::before {
+  cursor: auto;
 }

@@ -9,8 +9,8 @@
   }
 
   @media (min-width: $desktop-width) {
-    width: 144rem;
-    padding: 0 11rem;
+    width: 130rem;
+    padding: 0 4rem;
   }
 }
 
@@ -41,7 +41,9 @@
   font-size: 2.4rem;
   line-height: 2.4rem;
   font-weight: inherit;
-  margin-bottom: 3rem;
+  margin-bottom: 2.8rem;
+  display: block;
+  background-color: #ffffff;
 
   @media (min-width: $tablet-width) {
     font-size: 3.6rem;
@@ -73,4 +75,33 @@
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
+}
+
+@mixin green-line {
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 58%;
+    left: 0;
+    right: 0;
+    height: 3px;
+    background-color: $color-primary;
+    z-index: -1;
+  }
+}
+
+@mixin heading-alignment {
+  padding-left: 2rem;
+  transform: translate(-2rem);
+
+  @media (min-width: $tablet-width) {
+    padding-left: 4rem;
+    transform: translateX(0rem);
+  }
+
+  @media (min-width: $desktop-width) {
+    transform: translateX(-4rem);
+  }
 }

@@ -13,13 +13,23 @@
 }
 
 .comment__wrapper {
-  @media (min-width: $tablet-width) {
-    @include content-center;
-  }
+  @include green-line;
 }
 
 .comment__title {
+  @include content-center;
+  margin-top: 0.5rem;
+}
+
+.comment__title-text {
   @include fieldset-title;
+  width: 16rem;
+
+  @include heading-alignment;
+
+  @media (min-width: $tablet-width) {
+    width: 25.8rem;
+  }
 }
 
 .comment__input {
