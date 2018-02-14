@@ -7,3 +7,16 @@
 .social__item {
   padding: 2rem;
 }
+
+.social__icon {
+  fill: $color-text;
+}
+
+.social__icon:hover {
+  fill: $color-primary;
+}
+
+.social__icon:active {
+  fill: $color-primary;
+  opacity: 0.3;
+}

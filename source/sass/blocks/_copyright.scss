@@ -1,5 +1,39 @@
 .copyright {
-  //&__text {}
-  //&__link {}
-  //&__logo {}
+  @include content-center;
+  margin-top: 2rem;
+  margin-bottom: 4rem;
+  padding: 0 2rem;
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+  }
+}
+
+.copyright__link {
+  text-decoration: none;
+  color: $color-text;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.copyright__logo {
+  fill: $color-text;
+}
+
+.copyright__link:hover .copyright__logo {
+  fill: $color-primary;
+}
+
+.copyright__link:active .copyright__logo {
+  fill: $color-primary;
+  opacity: 0.5;
+}
+
+.copyright__link:hover {
+  opacity: 0.8;
+}
+
+.copyright__link:active {
+  opacity: 0.6;
 }

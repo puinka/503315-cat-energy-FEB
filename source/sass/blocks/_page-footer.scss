@@ -45,14 +45,4 @@
   font-family: "Arial", sans-serif;
   font-size: 1.6rem;
   line-height: 1.6rem;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-top: 2rem;
-  margin-bottom: 4rem;
-  padding: 0 2rem;
-
-  @media (min-width: $tablet-width) {
-    margin: 0;
-  }
 }
