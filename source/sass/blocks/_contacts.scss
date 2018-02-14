@@ -1,6 +1,6 @@
 .contacts {
   @media (min-width: $tablet-width) {
-    padding-top: 3rem;
+    padding-top: 2.5rem;
   }
 
   @media (min-width: $desktop-width) {
@@ -26,7 +26,7 @@
   padding-top: 3rem;
 
   @media (min-width: $desktop-width) {
-    padding-top: 7rem;
+    padding-top: 10rem;
     z-index: 10;
   }
 }
@@ -38,6 +38,7 @@
   @media (min-width: $tablet-width) {
     justify-content: space-between;
     padding: 3.5rem 4rem;
+    margin-bottom: 2.6rem;
   }
 
   @media (min-width: $desktop-width) {
@@ -88,19 +89,21 @@
 
 .contacts__map {
   z-index: 5;
+  height: 36rem;
 
   @media (min-width: $tablet-width) {
     height: 40rem;
   }
 
   @media (min-width: $desktop-width) {
-    margin-top: -29rem;
+    margin-top: -30rem;
   }
 }
 
 .contacts__map-content {
   width: 100%;
   min-height: 36rem;
+  border: none;
 
   @media (min-width: $tablet-width) {
     min-height: 40rem;
