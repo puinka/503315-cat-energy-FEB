@@ -114,17 +114,39 @@
           </div>
         </div>
         <div class="example__wrapper slider">
-          <picture>
-            <source type="image/webp" media="(min-width: 1200px)" srcset="img/before-desktop@1x.webp 1x, img/before-desktop@2x.webp 2x">
-            <source type="image/webp" media="(min-width: 768px)" srcset="img/before-tablet@1x.webp 1x, img/before-tablet@2x.webp 2x">
-            <source type="image/webp" srcset="img/before-mobile@1x.webp 1x, img/before-mobile@2x.webp 2x">
+          <input type="radio" class="visually-hidden slider__before" name="slider-toggle" id="before" checked>
+          <input type="radio" class="visually-hidden slider__after" name="slider-toggle" id="after">
+          <div class="slider__images">
+            <div class="slider__image slider__image--before">
+              <picture>
+                <source type="image/webp" media="(min-width: 1200px)" srcset="img/before-desktop@1x.webp 1x, img/before-desktop@2x.webp 2x">
+                <source type="image/webp" media="(min-width: 768px)" srcset="img/before-tablet@1x.webp 1x, img/before-tablet@2x.webp 2x">
+                <source type="image/webp" srcset="img/before-mobile@1x.webp 1x, img/before-mobile@2x.webp 2x">
 
-            <source media="(min-width: 1200px)" srcset="img/before-desktop@1x.png 1x, img/before-desktop@2x.png 2x">
-            <source media="(min-width: 768px)" srcset="img/before-tablet@1x.png 1x, img/before-tablet@2x.png 2x">
-            <img class="example__cat-pic slider__cat-pic" src="img/before-mobile@1x.png" alt="Boris cat" width="320" height="240" srcset="img/before-mobile@2x.png 2x">
-          </picture>
-          <label class="example__before slider__before"><input type="radio" class="visually-hidden" name="weight" checked>Было</label>
-          <label class="example__after slider__after"><input type="radio" class="visually-hidden" name="weight">Стало</label>
+                <source media="(min-width: 1200px)" srcset="img/before-desktop@1x.png 1x, img/before-desktop@2x.png 2x">
+                <source media="(min-width: 768px)" srcset="img/before-tablet@1x.png 1x, img/before-tablet@2x.png 2x">
+                <img class="example__cat-pic slider__cat-pic" src="img/before-mobile@1x.png" alt="Fat cat" width="320" height="240" srcset="img/before-mobile@2x.png 2x">
+              </picture>
+            </div>
+            <div class="slider__image slider__image--after">
+              <picture>
+                <source type="image/webp" media="(min-width: 1200px)" srcset="img/after-desktop@1x.webp 1x, img/after-desktop@2x.webp 2x">
+                <source type="image/webp" media="(min-width: 768px)" srcset="img/after-tablet@1x.webp 1x, img/after-tablet@2x.webp 2x">
+                <source type="image/webp" srcset="img/after-mobile@1x.webp 1x, img/after-mobile@2x.webp 2x">
+
+                <source media="(min-width: 1200px)" srcset="img/after-desktop@1x.png 1x, img/after-desktop@2x.png 2x">
+                <source media="(min-width: 768px)" srcset="img/after-tablet@1x.png 1x, img/after-tablet@2x.png 2x">
+                <img class="example__cat-pic slider__cat-pic" src="img/after-mobile@1x.png" alt="Slim cat" width="320" height="240" srcset="img/after-mobile@2x.png 2x">
+              </picture>
+            </div>
+          </div>
+          <div class="slider__controls">
+            <label class="slider__label" for="before">Было</label>
+            <div class="slider__scale">
+              <div class="slider__indicator"></div>
+            </div>
+            <label class="slider__label" for="after">Стало</label>
+          </div>
         </div>
       </div>
     </section>
