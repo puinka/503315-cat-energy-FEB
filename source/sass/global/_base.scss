@@ -98,7 +98,8 @@ textarea {
 
 input[type="text"],
 input[type="tel"],
-input[type="number"] {
+input[type="number"],
+input[type="email"] {
   height: 4.5rem;
 
   @media (min-width: $tablet-width) {

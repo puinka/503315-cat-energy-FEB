@@ -28,6 +28,8 @@
 
   @include heading-alignment;
 
+  margin-bottom: 3.8rem;
+
   @media (min-width: $tablet-width) {
     width: 25.8rem;
   }
@@ -35,9 +37,11 @@
 
 .comment__input {
   min-width: 28rem;
+  height: 15rem;
 
   @media (min-width: $tablet-width) {
     width: 63rem;
+    height: 17rem;
   }
 
   @media (min-width: $desktop-width) {
