@@ -60,6 +60,16 @@
   right: 114px;
   background-image: url("../../img/icon-right-arrow-long.svg");
   background-repeat: no-repeat;
+
+  @media (min-width: $tablet-width) {
+    right: 460px;
+    top: 25px;
+  }
+
+  @media (min-width: $desktop-width) {
+    right: 320px;
+    top: 25px;
+  }
 }
 
 .program-card__link:active::after,
@@ -67,6 +77,14 @@
   width: 33px;
   right: 105px;
   background-image: url("../../img/icon-right-arrow-verylong.svg");
+
+  @media (min-width: $tablet-width) {
+    right: 451px;
+  }
+
+  @media (min-width: $desktop-width) {
+    right: 311px;
+  }
 }
 
 .program-card__title {
