@@ -75,36 +75,29 @@
 .owner-contacts__input {
   flex-grow: 1;
   width: 50%;
-  padding: 1.6rem;
   margin-left: 2rem;
 }
 
-.owner-contacts__input:focus {
-  border: 2px solid $color-black;
-}
-
-.owner-contacts__input:invalid {
-  border: 1px solid $color-red;
-}
-
-.owner-contacts__input:focus + .owner-contacts__icon {
+.owner-contacts__input:focus + .owner-contacts__icon,
+.owner-contacts__input:invalid:focus + .owner-contacts__icon {
   fill: $color-primary;
 }
 
-.owner-contacts__input:invalid + .owner-contacts__icon {
+.owner-contacts__input:not(:placeholder-shown):invalid + .owner-contacts__icon {
   fill: $color-red;
 }
 
 .owner-contacts__icon {
   position: absolute;
+  fill: $color-text;
 
   &--mail {
-    top: 18px;
-    right: 20px;
+    top: 14px;
+    right: 12px;
   }
 
   &--phone {
-    top: 16px;
-    right: 16px;
+    top: 14px;
+    right: 8px;
   }
 }
