@@ -115,6 +115,10 @@
         </div>
         <div class="example__wrapper slider">
           <picture>
+            <source type="image/webp" media="(min-width: 1200px)" srcset="img/before-desktop@1x.webp 1x, img/before-desktop@2x.webp 2x">
+            <source type="image/webp" media="(min-width: 768px)" srcset="img/before-tablet@1x.webp 1x, img/before-tablet@2x.webp 2x">
+            <source type="image/webp" srcset="img/before-mobile@1x.webp 1x, img/before-mobile@2x.webp 2x">
+
             <source media="(min-width: 1200px)" srcset="img/before-desktop@1x.png 1x, img/before-desktop@2x.png 2x">
             <source media="(min-width: 768px)" srcset="img/before-tablet@1x.png 1x, img/before-tablet@2x.png 2x">
             <img class="example__cat-pic slider__cat-pic" src="img/before-mobile@1x.png" alt="Boris cat" width="320" height="240" srcset="img/before-mobile@2x.png 2x">

@@ -35,7 +35,6 @@
 
 .comment__input {
   min-width: 28rem;
-  border: 1px solid $color-line-dark;
 
   @media (min-width: $tablet-width) {
     width: 63rem;
@@ -44,8 +43,4 @@
   @media (min-width: $desktop-width) {
     width: 122rem;
   }
-}
-
-.comment__input:focus {
-  border: 2px solid $color-black;
 }
