@@ -1,6 +1,6 @@
 .site-list {
-  //display: none;
   list-style: none;
+  flex-direction: column;
 
   &__link:link,
   &__link:visited {
@@ -12,7 +12,14 @@
     }
   }
 
+  @media (min-width: $tablet-width) {
+    flex-direction: row;
+    justify-content: flex-end;
+    padding-top: 1rem;
+  }
+
   @media (min-width: $desktop-width) {
+    display: flex;
     font-size: 2rem;
     line-height: 2.5rem;
   }

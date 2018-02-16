@@ -68,6 +68,7 @@
 
 .contacts__address {
   @include text-formatting;
+  line-height: 2rem;
 
   @media (min-width: $tablet-width) {
     width: 17rem;

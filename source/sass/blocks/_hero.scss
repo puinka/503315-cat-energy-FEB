@@ -5,6 +5,7 @@
 
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
     background: url("../img/index-can-mobile@2x.png") 50% 72% no-repeat, url("../img/index-background-mobile@2x.jpg") 0 0 no-repeat;
+    background-size: 280px 271px, 320px 305px;
   }
 
   @media (min-width: $tablet-width) {
@@ -19,12 +20,12 @@
 
   @media (min-width: $desktop-width) {
     margin-top: -12rem;
-    background: url("../img/index-can-desktop@1x.png") 65% 50% no-repeat, url("../img/index-background-desktop@1x.jpg") 100% 0 no-repeat;
+    background: url("../img/index-can-desktop@1x.png") 63% 50% no-repeat, url("../img/index-background-desktop@1x.jpg") 100% 0 no-repeat;
     background-size: 552px 499px, 47% 90%;
     padding-bottom: 19rem;
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-      background: url("../img/index-can-desktop@2x.png") 65% 50% no-repeat, url("../img/index-background-desktop@2x.jpg") 100% 0 no-repeat;
+      background: url("../img/index-can-desktop@2x.png") 63% 50% no-repeat, url("../img/index-background-desktop@2x.jpg") 100% 0 no-repeat;
       background-size: 552px 499px, 47% 90%;
     }
   }
@@ -90,5 +91,6 @@
     font-size: 2rem;
     line-height: 2rem;
     padding: 1.6rem 2.4rem;
+    width: 25rem;
   }
 }
