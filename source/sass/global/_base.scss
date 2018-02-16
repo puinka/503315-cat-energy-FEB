@@ -16,20 +16,20 @@ html {
 
 @font-face {
   font-family: "Oswald";
-  src: url("../fonts/oswaldregular.woff2") format("woff2"), url("../fonts/oswaldregular.woff") format("woff");
+  src: url("../../fonts/oswaldregular.woff2") format("woff2"), url("../../fonts/oswaldregular.woff") format("woff");
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: "Oswald";
-  src: url("../fonts/oswaldmeduim.woff2") format("woff2"), url("../fonts/oswaldmeduim.woff") format("woff");
+  src: url("../../fonts/oswaldmeduim.woff2") format("woff2"), url("../../fonts/oswaldmeduim.woff") format("woff");
   font-weight: 500;
   font-style: normal;
 }
 
 body {
-  font-family: "Oswald", "Arial Narrow" sans-serif;
+  font-family: "Oswald", sans-serif;
   font-weight: 400;
   font-size: 1.4rem;
   line-height: 1.8rem;
