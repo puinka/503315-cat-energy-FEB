@@ -1,5 +1,5 @@
 .hero {
-  background: url("../img/index-can-mobile@1x.png") 50% 72% no-repeat, url("../../img/index-background-mobile@1x.jpg") 0 0 no-repeat;
+  background: url("../img/index-can-mobile@1x.png") 50% 72% no-repeat, url("../img/index-background-mobile@1x.jpg") 0 0 no-repeat;
   padding-top: 2.8rem;
   padding-bottom: 2.2rem;
 
@@ -15,12 +15,12 @@
 
   @media (min-width: $desktop-width) {
     margin-top: -12rem;
-    background: url("../img/index-can-desktop@1x.png") 65% 50% no-repeat, url("../../img/index-background-desktop@1x.jpg") 100% 0 no-repeat;
+    background: url("../img/index-can-desktop@1x.png") 65% 50% no-repeat, url("../img/index-background-desktop@1x.jpg") 100% 0 no-repeat;
     background-size: 552px 499px, 47% 90%;
     padding-bottom: 19rem;
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-      background: url("../img/index-can-desktop@2x.png") 65% 50% no-repeat, url("../../img/index-background-desktop@2x.jpg") 100% 0 no-repeat;
+      background: url("../img/index-can-desktop@2x.png") 65% 50% no-repeat, url("../img/index-background-desktop@2x.jpg") 100% 0 no-repeat;
       background-size: 552px 499px, 47% 90%;
     }
   }
