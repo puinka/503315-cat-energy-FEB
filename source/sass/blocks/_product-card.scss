@@ -42,9 +42,9 @@
 }
 
 .product-card__content-wrapper {
-  //display: flex;
-  //align-items: center;
-  //flex-wrap: wrap;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
   margin-bottom: 1.8rem;
 
   @media (min-width: $tablet-width) {
@@ -152,7 +152,8 @@
   flex-grow: 1;
 
   @media (min-width: $tablet-width) {
-    width: 25rem;
+    min-width: 24rem;
+    max-width: 25rem;
     margin: 0 auto;
     display: block;
     margin-top: 3.5rem;
