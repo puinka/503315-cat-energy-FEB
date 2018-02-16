@@ -19,7 +19,7 @@
   justify-content: space-between;
   align-items: center;
   flex-wrap: nowrap;
-  padding: 1.5rem 2rem;
+  padding: 1.5rem 4rem 1.5rem 2rem;
   border-bottom: 1px solid $color-line-light;
 
   @media (min-width: $tablet-width) {
@@ -65,11 +65,5 @@
 
   @media (min-width: $tablet-width) {
     display: none;
-  }
-}
-
-.page-header__close {
-  @media (min-width: $tablet-width) {
-    @include visually-hidden;
   }
 }

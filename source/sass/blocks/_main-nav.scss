@@ -1,9 +1,28 @@
 .main-nav {
   width: 320px;
   margin: 0 auto;
+  position: relative;
   //display: none;
   @media (min-width: $tablet-width) {
     flex-grow: 1;
+  }
+}
+
+.main-nav__toggle {
+  position: absolute;
+  top: -44px;
+  right: 23px;
+  width: 18px;
+  height: 18px;
+  font-size: 0;
+  border: none;
+  background-color: #ffffff;
+  cursor: pointer;
+  background-repeat: no-repeat;
+  background-position: center;
+
+  @media (min-width: $tablet-width) {
+    @include visually-hidden;
   }
 }
 
@@ -12,4 +31,24 @@
     display: flex;
     justify-content: flex-end;
   }
+}
+
+.main-nav--closed .main-nav__toggle {
+  background-image: url("../../img/icon-mobile-menu.svg");
+}
+
+.main-nav--open .main-nav__toggle {
+  background-image: url("../../img/icon-close.svg");
+}
+
+.main-nav--closed .main-nav__list {
+  display: none;
+}
+
+.main-nav--nojs .main-nav__list {
+  display: block;
+}
+
+.main-nav--nojs .main-nav__toggle {
+  display: none;
 }
