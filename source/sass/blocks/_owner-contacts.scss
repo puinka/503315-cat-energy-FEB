@@ -97,17 +97,18 @@
     top: 14px;
     right: 12px;
 
-    @media (min-width: $desktop-width) {
+    @media (min-width: $tablet-width) {
       top: 20px;
     }
+
   }
 
   &--phone {
     top: 14px;
     right: 8px;
 
-    @media (min-width: $desktop-width) {
-      top: 18px;
+    @media (min-width: $tablet-width) {
+      top: 20px;
     }
   }
 }
