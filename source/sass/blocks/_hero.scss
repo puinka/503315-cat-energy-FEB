@@ -21,12 +21,12 @@
   @media (min-width: $desktop-width) {
     margin-top: -12rem;
     background: url("../img/index-can-desktop@1x.png") 63% 50% no-repeat, url("../img/index-background-desktop@1x.jpg") 100% 0 no-repeat, linear-gradient(to left, $color-primary 0%, $color-primary 47%, #ffffff 47%) no-repeat;
-    background-size: 552px 499px, 47% 90%,100% 90%;
+    background-size: 552px 499px, 47% 90%, 100% 90%;
     padding-bottom: 19rem;
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
       background: url("../img/index-can-desktop@2x.png") 63% 50% no-repeat, url("../img/index-background-desktop@2x.jpg") 100% 0 no-repeat, linear-gradient(to left, $color-primary 0%, $color-primary 47%, #ffffff 47%) no-repeat;
-      background-size: 552px 499px, 47% 90%,100% 90%;
+      background-size: 552px 499px, 47% 90%, 100% 90%;
     }
   }
 }
