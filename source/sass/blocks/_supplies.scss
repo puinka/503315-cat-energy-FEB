@@ -62,7 +62,7 @@
   &:last-child {
     border-bottom: 1px solid $color-line-dark;
   }
-  padding: 1.2rem 0;
+  padding: 1.2rem 0 1.4rem;
 
   @media (min-width: $tablet-width) {
     border-left: 1px solid $color-line-dark;
@@ -119,7 +119,7 @@
     margin-right: 5rem;
   }
 }
-//&__price {}
+
 .supplies__btn {
   width: 100%;
 

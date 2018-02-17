@@ -8,22 +8,13 @@
     text-transform: uppercase;
     padding-right: 40px;
     position: relative;
-    /* &::after {
-      content: " ";
 
-      position: absolute;
-      left: 0;
-      top: 0;
-      width: 52px;
-      height: 52px;
-      background-color: var(--color-green);
-    } */
     @media (min-width: $tablet-width) {
       font-size: 2rem;
       line-height: 2rem;
     }
   }
-  //&:hover {}
+
   &:active {
     opacity: 0.3;
   }

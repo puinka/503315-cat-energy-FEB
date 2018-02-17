@@ -47,6 +47,10 @@
   }
 }
 
+.page-header__logo--active {
+  pointer-events: none;
+}
+
 .page-header__logo-pic {
   width: 3.3rem;
   height: 3.8rem;

@@ -38,11 +38,15 @@
   @media (min-width: $tablet-width) {
     font-size: 2rem;
     padding-top: 13.4rem;
+    padding-left: 4rem;
+    padding-right: 4rem;
     margin-bottom: 2.4rem;
   }
 
   @media (min-width: $desktop-width) {
     padding-top: 11.5rem;
+    padding-left: 0;
+    padding-right: 0;
   }
 
   &::before {
@@ -58,8 +62,8 @@
     opacity: 0.5;
 
     @media (min-width: $tablet-width) {
-      left: 93px;
-      top: 16px;
+      left: 99px;
+      top: 24px;
       width: 60px;
       height: 60px;
       opacity: 1;
@@ -81,10 +85,14 @@
   @media (min-width: $tablet-width) {
     margin-bottom: 8.4rem;
     line-height: 2rem;
+    padding-left: 4rem;
+    padding-right: 4rem;
   }
 
   @media (min-width: $desktop-width) {
     margin-bottom: 9rem;
+    padding-left: 0;
+    padding-right: 0;
   }
 }
 

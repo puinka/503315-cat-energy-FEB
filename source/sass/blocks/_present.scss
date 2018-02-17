@@ -1,7 +1,7 @@
 .present {
   width: 28rem;
   min-height: 290px;
-  margin: 4rem auto 3rem;
+  margin: 3.2rem auto 3rem;
   background-image: url("../img/gift-photo-mobile@1x.jpg");
   background-repeat: no-repeat;
   background-size: cover;
@@ -42,7 +42,7 @@
   position: absolute;
   left: 50%;
   transform: translateX(-30px);
-  top: 65px;
+  top: 68px;
 
   @media (min-width: $tablet-width) {
     left: 88px;
