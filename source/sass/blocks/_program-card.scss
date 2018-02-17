@@ -7,7 +7,7 @@
   }
 
   @media (min-width: $tablet-width) {
-    padding: 6.5rem 5rem;
+    padding: 7rem 5rem 6rem;
   }
 
   @media (min-width: $desktop-width) {
@@ -57,12 +57,12 @@
   width: 24px;
   height: 11px;
   top: 22px;
-  right: 114px;
+  right: 119px;
   background-image: url("../../img/icon-right-arrow-long.svg");
   background-repeat: no-repeat;
 
   @media (min-width: $tablet-width) {
-    right: 460px;
+    right: 450px;
     top: 25px;
   }
 
@@ -79,7 +79,7 @@
   background-image: url("../../img/icon-right-arrow-verylong.svg");
 
   @media (min-width: $tablet-width) {
-    right: 451px;
+    right: 441px;
   }
 
   @media (min-width: $desktop-width) {
@@ -100,6 +100,7 @@
   @media (min-width: $tablet-width) {
     font-size: 3.6rem;
     padding-left: 0;
+    margin-bottom: 1.6rem;
   }
 
   @media (min-width: $desktop-width) {

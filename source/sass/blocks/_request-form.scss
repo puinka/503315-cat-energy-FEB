@@ -33,11 +33,11 @@
 
   @media (min-width: $tablet-width) {
     border: none;
-    margin-bottom: 4.6rem;
+    margin-bottom: 3.5rem;
   }
 
   @media (min-width: $desktop-width) {
-    margin-bottom: 3rem;
+    margin-bottom: 2.5rem;
   }
 }
 
@@ -53,7 +53,7 @@
 
 .request-form__contacts {
   border: none;
-  margin-bottom: 1.2rem;
+  margin-bottom: 1rem;
 
   @media (min-width: $tablet-width) {
     margin-bottom: 3rem;
@@ -66,16 +66,20 @@
 
 .request-form__comment {
   border: none;
-  margin-bottom: 2.2rem;
+  margin-bottom: 3rem;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 8rem;
+    margin-bottom: 6.5rem;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 7rem;
   }
 }
 
 .request-form__additional {
   border: none;
-  margin-bottom: 2.4rem;
+  margin-bottom: 3rem;
 }
 
 .request-form__submit-wrapper {
@@ -88,7 +92,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin-bottom: 8rem;
+    margin-bottom: 6rem;
     padding-left: 4rem;
   }
 }
@@ -123,5 +127,6 @@
 
   @media (min-width: $desktop-width) {
     margin-left: 8rem;
+    margin-top: 1rem;
   }
 }

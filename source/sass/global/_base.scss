@@ -16,32 +16,23 @@ html {
 
 @font-face {
   font-family: "Oswald";
-  src: url("../../fonts/oswaldregular.woff2") format("woff2"), url("../../fonts/oswaldregular.woff") format("woff");
+  src: url("../fonts/oswaldregular.woff2") format("woff2"), url("../fonts/oswaldregular.woff") format("woff");
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: "Oswald";
-  src: url("../../fonts/oswaldmeduim.woff2") format("woff2"), url("../../fonts/oswaldmeduim.woff") format("woff");
+  src: url("../fonts/oswaldmeduim.woff2") format("woff2"), url("../fonts/oswaldmeduim.woff") format("woff");
   font-weight: 500;
   font-style: normal;
 }
 
 body {
-  font-family: "Oswald", sans-serif;
+  font-family: "Oswald", "Arial", sans-serif;
   font-weight: 400;
   font-size: 1.4rem;
   line-height: 1.8rem;
-  /*background: url("../img/cat-energy-catalog-mobile.jpg") no-repeat 50% 0;
-
-  @media(min-width: $tablet-width) {
-    background: url("../img/cat-energy-catalog-tablet.jpg") no-repeat 50% 0;
-  }
-
-  @media(min-width: $desktop-width) {
-    background: url("../img/cat-energy-catalog-desktop.jpg") no-repeat 50% 0;
-  } */
 }
 
 .visually-hidden:not(:focus):not(:active),
@@ -63,7 +54,7 @@ textarea {
   font-family: inherit;
   text-transform: uppercase;
   outline: none;
-  padding: 1rem;
+  padding: 1rem 1.4rem 0.8rem;
   border: 1px solid $color-line-light;
   box-sizing: border-box;
   overflow: visible;
@@ -98,7 +89,8 @@ textarea {
 
 input[type="text"],
 input[type="tel"],
-input[type="number"] {
+input[type="number"],
+input[type="email"] {
   height: 4.5rem;
 
   @media (min-width: $tablet-width) {

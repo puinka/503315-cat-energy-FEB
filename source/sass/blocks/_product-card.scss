@@ -92,7 +92,7 @@
   @media (min-width: $tablet-width) {
     width: 100%;
     padding: 0 3.7rem;
-    margin-top: 3.5rem;
+    margin: 3.5rem auto 0;
   }
 
   @media (min-width: $desktop-width) {
@@ -118,9 +118,17 @@
   @media (min-width: $tablet-width) {
     font-size: 2rem;
     line-height: 2rem;
-    width: 12rem;
+    width: 60%;
     margin: 0 auto 1.6rem;
     text-align: center;
+
+    & br {
+      display: none;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 90%;
   }
 }
 
@@ -134,7 +142,7 @@
   @media (min-width: $tablet-width) {
     font-size: 1.6rem;
     line-height: 1.8rem;
-    margin-bottom: 3.5rem;
+    margin: 0 auto;
   }
 
   tr {
@@ -152,10 +160,15 @@
   flex-grow: 1;
 
   @media (min-width: $tablet-width) {
-    width: 25rem;
+    min-width: 25rem;
+    max-width: 26rem;
+    margin: 0 auto;
+    display: block;
+    margin-top: 3.5rem;
   }
 
   @media (min-width: $desktop-width) {
+    min-width: 17rem;
     max-width: 17rem;
   }
 }

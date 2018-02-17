@@ -17,17 +17,17 @@
   align-items: center;
 
   @include form-label;
-  margin-bottom: 1.2rem;
+  margin-bottom: 1.4rem;
 
   @media (min-width: $tablet-width) {
     font-size: 2rem;
     line-height: 2rem;
-    margin-bottom: 2.4rem;
+    margin-bottom: 2rem;
   }
 }
 
 .basics__input {
   flex-grow: 1;
   width: 50%;
-  margin-left: 1.2rem;
+  margin-left: 1.5rem;
 }

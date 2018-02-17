@@ -1,9 +1,13 @@
 .page-footer {
   background-color: $color-background-gray;
-  padding: 3rem 0 0;
+  padding: 4rem 0 2rem;
 
   @media (min-width: $tablet-width) {
-    padding: 4rem 0;
+    padding-bottom: 4rem;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 4.5rem;
   }
 }
 
@@ -22,7 +26,7 @@
 }
 
 .page-footer__logo-text {
-  padding-bottom: 3.2rem;
+  padding-bottom: 3rem;
 
   @media (min-width: $tablet-width) {
     border: none;
@@ -59,7 +63,8 @@
   padding-top: 2rem;
 
   @media (min-width: $tablet-width) {
-    padding: 0;
+    padding-left: 0;
+    padding-right: 0;
     width: 16.2rem;
   }
 }

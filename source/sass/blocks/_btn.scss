@@ -34,5 +34,14 @@
   &--gray {
     color: inherit;
     background-color: $color-background-gray;
+
+    &:hover {
+      background-color: $color-line-light;
+    }
+
+    &:active {
+      background-color: $color-line-light;
+      color: rgba($color-text, 0.3);
+    }
   }
 }
