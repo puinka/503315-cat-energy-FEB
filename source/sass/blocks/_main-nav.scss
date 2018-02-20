@@ -1,5 +1,6 @@
 .main-nav {
   position: relative;
+  color: $color-black;
 
   @media (min-width: $tablet-width) {
     display: flex;
@@ -7,6 +8,18 @@
     align-items: center;
 
     @include content-center;
+  }
+}
+
+//Inverted Nav
+
+@media (min-width: $tablet-width) {
+  .main-nav--inverse {
+    color: #ffffff;
+  }
+
+  .main-nav--inverse .site-list__item--active {
+    border-color: #ffffff;
   }
 }
 

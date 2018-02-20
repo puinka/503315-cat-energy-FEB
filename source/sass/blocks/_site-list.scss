@@ -8,15 +8,17 @@
     justify-content: flex-end;
     flex-wrap: wrap;
     padding-top: 1rem;
-    width: 44.5rem;
+    max-width: calc(70% - 2rem);
+    flex-grow: 1;
     margin-right: 0;
   }
 
   @media (min-width: $desktop-width) {
-    display: flex;
     font-size: 2rem;
     line-height: 2.5rem;
-    width: 61rem;
+    flex-grow: 1;
+    align-items: flex-start;
+    max-width: calc(50% - 4rem);
   }
 }
 
@@ -31,7 +33,7 @@
 }
 
 .site-list__link {
-  color: $color-black;
+  color: inherit;
   text-decoration: none;
 
   &[href]:hover {
@@ -57,20 +59,13 @@
     line-height: 2.5rem;
     font-weight: 400;
     padding: 0 0 0.6rem;
-
-    &:not(:nth-child(3n)) {
-      margin-right: 3.5rem;
-    }
     border: none;
+    margin-left: 3.5rem;
   }
 
   @media (min-width: $desktop-width) {
     font-size: 2rem;
     line-height: 2.5rem;
-
-    &:not(:last-child) {
-      margin-right: 3.4rem;
-    }
   }
 
   &--active {
