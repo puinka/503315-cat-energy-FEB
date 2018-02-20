@@ -36,12 +36,13 @@
 }
 
 .comment__input {
+  @include input;
   min-width: 28rem;
   height: 15rem;
 
   @media (min-width: $tablet-width) {
     width: 63rem;
-    height: 17rem;
+    height: 17.4rem;
   }
 
   @media (min-width: $desktop-width) {

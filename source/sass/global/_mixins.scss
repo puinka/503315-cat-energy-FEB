@@ -117,3 +117,37 @@
     transform: translateX(-4rem);
   }
 }
+
+@mixin input {
+  display: inline-block;
+  font-size: 1.6rem;
+  line-height: 1.6rem;
+  font-family: inherit;
+  text-transform: uppercase;
+  outline: none;
+  padding: 1rem 1.4rem 0.8rem;
+  border: 1px solid $color-line-light;
+  box-sizing: border-box;
+  overflow: visible;
+
+  &:hover {
+    border: 1px solid $color-line-dark;
+  }
+
+  &:focus {
+    border: 2px solid $color-black;
+  }
+
+  &:not(:placeholder-shown):invalid {
+    border: 2px solid $color-red;
+  }
+
+  &::placeholder {
+    color: $color-text;
+    opacity: 1;
+  }
+
+  &:focus::placeholder {
+    opacity: 0;
+  }
+}
