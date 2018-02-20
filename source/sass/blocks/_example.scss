@@ -46,7 +46,7 @@
 }
 
 .example__text {
-  @include text-formatting;
+  @include medium-text-formatting;
   margin-bottom: 2.5rem;
 
   @media (min-width: $tablet-width) {
@@ -79,6 +79,8 @@
 }
 
 .example__expenses {
+  font-size: 1.4rem;
+  line-height: 2rem;
   text-transform: uppercase;
   text-align: center;
   display: block;
@@ -86,7 +88,7 @@
 
   @media (min-width: $tablet-width) {
     font-size: 2rem;
-    line-height: 2.5rem;
+    line-height: 2rem;
     text-align: right;
     width: 19rem;
     padding-top: 1rem;

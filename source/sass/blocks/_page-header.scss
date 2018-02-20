@@ -1,4 +1,6 @@
 .page-header__content-center {
+  @include content-center;
+
   @media (min-width: $tablet-width) {
     display: flex;
     justify-content: space-between;
@@ -19,8 +21,9 @@
   justify-content: space-between;
   align-items: center;
   flex-wrap: nowrap;
-  padding: 1.4rem 4rem 1rem 2rem;
+  padding: 1.4rem 1rem 2rem;
   border-bottom: 1px solid $color-line-light;
+  padding-right: calc(10% + 4rem);
 
   @media (min-width: $tablet-width) {
     padding: 0;
@@ -69,7 +72,6 @@
 .page-header__logo-text {
   width: 10.2rem;
   height: 1.9rem;
-  transform: translateX(-65%);
 
   @media (min-width: $tablet-width) {
     display: none;

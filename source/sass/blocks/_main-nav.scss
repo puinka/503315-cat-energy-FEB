@@ -1,11 +1,5 @@
 .main-nav {
-  width: 320px;
-  margin: 0 auto;
   position: relative;
-
-  @media (min-width: $tablet-width) {
-    flex-grow: 1;
-  }
 }
 
 .main-nav__toggle {

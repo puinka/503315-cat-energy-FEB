@@ -133,15 +133,15 @@
 }
 
 .product-card__info {
-  font-family: "Arial", sans-serif;
-  font-size: 1.2rem;
-  line-height: 1.6rem;
+  @include small-text-formatting;
+
   color: $color-text;
   width: 100%;
+  border-collapse: collapse;
 
   @media (min-width: $tablet-width) {
     font-size: 1.6rem;
-    line-height: 1.8rem;
+    line-height: 1.6rem;
     margin: 0 auto;
   }
 
@@ -153,6 +153,10 @@
       padding: 0.6rem 0;
       border-bottom: 1px solid $color-line-dark;
     }
+  }
+
+  td {
+    padding: 0;
   }
 }
 

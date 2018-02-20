@@ -62,18 +62,18 @@
   @media (min-width: $tablet-width) {
     width: 17rem;
     font-size: 2rem;
-    line-height: 2.6rem;
+    line-height: 2.5rem;
   }
 }
 
 .contacts__address {
-  @include text-formatting;
+  @include medium-text-formatting;
   line-height: 2rem;
 
   @media (min-width: $tablet-width) {
     width: 17rem;
     text-align: right;
-    line-height: 2.1rem;
+    line-height: 2rem;
   }
 
   @media (min-width: $desktop-width) {
