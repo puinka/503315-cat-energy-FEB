@@ -1,4 +1,6 @@
 .product-card {
+  display: block;
+
   @include content-center;
   padding-bottom: 0.1rem;
   border-bottom: 1px solid $color-line-light;
