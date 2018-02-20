@@ -8,12 +8,15 @@
     justify-content: flex-end;
     flex-wrap: wrap;
     padding-top: 1rem;
+    width: 44.5rem;
+    margin-right: 0;
   }
 
   @media (min-width: $desktop-width) {
     display: flex;
     font-size: 2rem;
     line-height: 2.5rem;
+    width: 61rem;
   }
 }
 
