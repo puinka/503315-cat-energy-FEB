@@ -41,3 +41,8 @@
 .basics__input[type="number"] {
   -moz-appearance: textfield;
 }
+
+.basics__input::-webkit-inner-spin-button,
+.basics__input::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+}

@@ -1,13 +1,9 @@
 .show-more {
-  // @include content-center;
-  // background-color: #ffffff;
-  // padding-bottom: 2rem;
-  // margin: 0;
   position: relative;
   padding-bottom: 2.4rem;
 
   @media (max-width: $mobile-only) {
-    &:after {
+    &::after {
       content: "";
       position: absolute;
       left: 50%;
@@ -20,7 +16,6 @@
 
   @media (min-width: $tablet-width) {
     width: 32.4rem;
-    // margin: 9rem auto 4.4rem;
     border: 1px solid $color-line-light;
     margin-top: auto;
     margin-bottom: 2rem;
@@ -34,15 +29,6 @@
     margin: 9rem 0 auto;
   }
 }
-
-// .show-more__content-center {
-//   @include content-center;
-//
-//   @media (min-width: $tablet-width) {
-//     width: auto;
-//     padding: 3.5rem;
-//   }
-// }
 
 .show-more__title {
   font-size: 1.6rem;
@@ -119,10 +105,5 @@
 .show-more__btn {
   @media (min-width: $tablet-width) {
     width: 100%;
-  }
-
-  @media (min-width: $desktop-width) {
-    // max-width: 17rem;
-    // min-width: 17rem;
   }
 }
