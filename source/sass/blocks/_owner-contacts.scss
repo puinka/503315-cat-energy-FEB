@@ -61,7 +61,7 @@
   @media (min-width: $tablet-width) {
     font-size: 2rem;
     line-height: 2rem;
-    margin-bottom: 2.4rem;
+    margin-bottom: 1.8rem;
   }
 
   @media (min-width: $desktop-width) {
@@ -100,7 +100,7 @@
 
   &--mail {
     top: 18px;
-    right: 12px;
+    right: 15px;
 
     @media (min-width: $tablet-width) {
       top: 20px;
@@ -109,7 +109,7 @@
 
   &--phone {
     top: 14px;
-    right: 8px;
+    right: 12px;
 
     @media (min-width: $tablet-width) {
       top: 20px;

@@ -13,7 +13,7 @@
 
 //Inverted Nav
 
-@media (min-width: $tablet-width) {
+@media (min-width: $desktop-width) {
   .main-nav--inverse {
     color: #ffffff;
   }
@@ -27,8 +27,8 @@
   position: absolute;
   top: 20px;
   right: 23px;
-  width: 20px;
-  height: 20px;
+  width: 24px;
+  height: 24px;
   font-size: 0;
   border: none;
   background-color: #ffffff;

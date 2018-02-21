@@ -17,8 +17,8 @@
   font-size: 2.4rem;
   line-height: 2.4rem;
   font-weight: inherit;
-  margin-top: 5rem;
-  margin-bottom: 3rem;
+  margin-top: 2.8rem;
+  margin-bottom: 3.5rem;
 
   @media (min-width: $tablet-width) {
     font-size: 3.6rem;
@@ -62,12 +62,12 @@
   &:last-child {
     border-bottom: 1px solid $color-line-dark;
   }
-  padding: 1.2rem 0 1.4rem;
+  padding: 1.2rem 0 1.8rem;
 
   @media (min-width: $tablet-width) {
     border-left: 1px solid $color-line-dark;
     border-right: 1px solid $color-line-dark;
-    padding: 2.6rem 3.7rem;
+    padding: 2.7rem 3.7rem 2.6rem;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;

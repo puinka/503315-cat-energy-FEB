@@ -1,5 +1,5 @@
 .process {
-  padding-top: 2rem;
+  padding-top: 1.8rem;
   padding-bottom: 4.5rem;
 
   @media (min-width: $tablet-width) {
@@ -94,7 +94,7 @@
     content: " ";
     position: absolute;
     left: 0;
-    top: 0;
+    top: -2px;
     width: 60px;
     height: 60px;
     background-color: $color-primary;
