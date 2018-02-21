@@ -27,9 +27,9 @@
 
   @media (min-width: $desktop-width) {
     width: 24.5rem;
-    margin-left: 0;
-    margin-right: 0;
-    margin-bottom: 6.5rem;
+    padding-left: 4rem;
+    padding-right: 4rem;
+    margin: 10rem 0 0;
   }
 }
 
@@ -117,5 +117,10 @@
 .show-more__btn {
   @media (min-width: $tablet-width) {
     width: 100%;
+  }
+
+  @media (min-width: $desktop-width) {
+    // max-width: 17rem;
+    // min-width: 17rem;
   }
 }

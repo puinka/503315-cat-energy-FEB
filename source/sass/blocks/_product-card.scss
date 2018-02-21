@@ -8,6 +8,10 @@
     justify-content: space-between;
     //     padding: 0;
   }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 4rem;
+  }
 }
 
 .product-card {
@@ -48,7 +52,6 @@
     // &:nth-child(2n-1) {
     //   margin-right: 5.5rem;
     // }
-
     // margin: 1rem 3rem 3rem;
     padding: 0 0 3rem;
     width: 32.4rem;
@@ -85,9 +88,8 @@
     // margin-left: 4rem;
     // margin-right: 4rem;
 
-    display: block;
     width: 24.5rem;
-    padding: 0 4rem 4rem;
+    padding: 0 0 4rem;
     background-image: linear-gradient(to bottom, #ffffff 0%, #ffffff 18%, $color-background-gray 18%);
     background-position: center;
     background-size: 100%;
@@ -169,8 +171,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    max-width: 17rem;
-    padding: 0;
+    width: 100%;
   }
 }
 
