@@ -1,10 +1,28 @@
 .show-more {
-  background-color: #ffffff;
+  // @include content-center;
+  // background-color: #ffffff;
+  // padding-bottom: 2rem;
+  // margin: 0;
+  position: relative;
+  padding-bottom: 2rem;
+
+  @media (max-width: $mobile-only) {
+    &:after {
+      content: "";
+      position: absolute;
+      left: 50%;
+      bottom: 0;
+      width: 100vw;
+      margin-left: -50vw;
+      border-top: 1px solid $color-line-light;
+    }
+  }
 
   @media (min-width: $tablet-width) {
     width: 32.4rem;
-    margin: 9rem auto 4.4rem;
+    // margin: 9rem auto 4.4rem;
     border: 1px solid $color-line-light;
+    margin: auto 3rem 3rem;
   }
 
   @media (min-width: $desktop-width) {
@@ -15,14 +33,14 @@
   }
 }
 
-.show-more__content-center {
-  @include content-center;
-
-  @media (min-width: $tablet-width) {
-    width: auto;
-    padding: 3.5rem;
-  }
-}
+// .show-more__content-center {
+//   @include content-center;
+//
+//   @media (min-width: $tablet-width) {
+//     width: auto;
+//     padding: 3.5rem;
+//   }
+// }
 
 .show-more__title {
   font-size: 1.6rem;
