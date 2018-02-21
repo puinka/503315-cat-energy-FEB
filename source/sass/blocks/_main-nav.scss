@@ -1,25 +1,41 @@
 .main-nav {
-  width: 320px;
-  margin: 0 auto;
   position: relative;
+  color: $color-black;
 
   @media (min-width: $tablet-width) {
-    flex-grow: 1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    @include content-center;
+  }
+}
+
+//Inverted Nav
+
+@media (min-width: $desktop-width) {
+  .main-nav--inverse {
+    color: #ffffff;
+  }
+
+  .main-nav--inverse .site-list__item--active {
+    border-color: #ffffff;
   }
 }
 
 .main-nav__toggle {
   position: absolute;
-  top: -44px;
+  top: 20px;
   right: 23px;
-  width: 20px;
-  height: 20px;
+  width: 24px;
+  height: 24px;
   font-size: 0;
   border: none;
   background-color: #ffffff;
   cursor: pointer;
   background-repeat: no-repeat;
   background-position: center;
+  flex-grow: 1;
 
   @media (min-width: $tablet-width) {
     @include visually-hidden;

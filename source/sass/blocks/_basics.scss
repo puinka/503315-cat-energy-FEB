@@ -27,7 +27,22 @@
 }
 
 .basics__input {
+  @include input;
+  height: 4.5rem;
   flex-grow: 1;
   width: 50%;
   margin-left: 1.5rem;
+
+  @media (min-width: $tablet-width) {
+    height: 5.2rem;
+  }
+}
+
+.basics__input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+.basics__input::-webkit-inner-spin-button,
+.basics__input::-webkit-outer-spin-button {
+  -webkit-appearance: none;
 }

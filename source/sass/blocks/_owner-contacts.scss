@@ -61,7 +61,7 @@
   @media (min-width: $tablet-width) {
     font-size: 2rem;
     line-height: 2rem;
-    margin-bottom: 2.4rem;
+    margin-bottom: 1.8rem;
   }
 
   @media (min-width: $desktop-width) {
@@ -74,9 +74,15 @@
 }
 
 .owner-contacts__input {
+  @include input;
+  height: 4.5rem;
   flex-grow: 1;
   width: 50%;
   margin-left: 1rem;
+
+  @media (min-width: $tablet-width) {
+    height: 5.2rem;
+  }
 }
 
 .owner-contacts__input:focus + .owner-contacts__icon,
@@ -93,8 +99,8 @@
   fill: $color-text;
 
   &--mail {
-    top: 14px;
-    right: 12px;
+    top: 18px;
+    right: 15px;
 
     @media (min-width: $tablet-width) {
       top: 20px;
@@ -103,7 +109,7 @@
 
   &--phone {
     top: 14px;
-    right: 8px;
+    right: 12px;
 
     @media (min-width: $tablet-width) {
       top: 20px;

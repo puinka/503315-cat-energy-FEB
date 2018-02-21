@@ -1,4 +1,6 @@
 .catalog-main {
+  overflow: hidden;
+
   @media (min-width: $tablet-width) {
     position: relative;
   }
@@ -8,33 +10,33 @@
   @include heading;
   @include content-center;
   margin-top: 1.6rem;
-  margin-bottom: 2.5rem;
+  margin-bottom: 2.7rem;
 
   @media (min-width: $tablet-width) {
     margin-top: 5.5rem;
-    margin-bottom: 7rem;
+    margin-bottom: 8rem;
   }
 
   @media (min-width: $desktop-width) {
-    margin-top: 7.2rem;
+    margin-top: 7rem;
     margin-bottom: 8.2rem;
   }
 }
 
-.catalog-main__products {
-  list-style: none;
-
-  @media (min-width: $tablet-width) {
-    @include content-center;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-  }
-
-  @media (min-width: $desktop-width) {
-    @include content-center;
-  }
-}
+// .catalog-main__products {
+//   list-style: none;
+//
+//   @media (min-width: $tablet-width) {
+//     @include content-center;
+//     display: flex;
+//     flex-wrap: wrap;
+//     justify-content: space-between;
+//   }
+//
+//   @media (min-width: $desktop-width) {
+//     justify-content: center;
+//   }
+// }
 
 .catalog-main__wrapper {
   @media (min-width: $desktop-width) {
@@ -44,3 +46,73 @@
     margin-bottom: 2rem;
   }
 }
+
+// //TEST
+//
+// .catalog__list {
+//   padding: 0;
+//   margin: 0 auto;
+//   min-width: 32rem;
+//
+//   @media (min-width: $tablet-width) {
+//     display: flex;
+//     justify-content: center;
+//     flex-wrap: wrap;
+//   }
+// }
+//
+// .catalog__item {
+//   display: flex;
+//   flex-direction: column;
+//   padding: 0 2rem 2rem;
+//   border-top: 1px solid red;
+//
+//   @media (min-width: $tablet-width) {
+//     margin: 11rem 3rem 3rem;
+//     padding: 4rem;
+//     border-top: none;
+//     width: 32rem;
+//     background-color: gray;
+//   }
+// }
+//
+// .product {
+//   display: flex;
+//   align-items: center;
+//
+//   @media (min-width: $tablet-width) {
+//     flex-direction: column;
+//   }
+// }
+//
+// .product__image {
+//   display: flex;
+//   justify-content: center;
+//   flex-grow: 1;
+//   min-width: 50%;
+//   height: 14rem;
+//
+//   @media (min-width: $tablet-width) {
+//     width: 100%;
+//     align-items: flex-end;
+//     height: 8rem;
+//     padding-bottom: 3rem;
+//   }
+// }
+//
+// .product__content {
+//   flex-grow: 1;
+// }
+//
+// .product__name {
+//   width: 60%;
+//   padding-bottom: 1rem;
+// }
+//
+// .product__details {
+//   width: 100%;
+// }
+//
+// .product__details td:last-child {
+//   text-align: right;
+// }

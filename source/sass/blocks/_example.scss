@@ -1,7 +1,7 @@
 .example {
   background-color: $color-background-gray;
   padding-top: 1.8rem;
-  padding-bottom: 3.2rem;
+  padding-bottom: 3.5rem;
 
   @media (min-width: $tablet-width) {
     padding-top: 4.4rem;
@@ -11,9 +11,8 @@
 
   @media (min-width: $desktop-width) {
     padding-top: 2.4rem;
-    padding-bottom: 3.5rem;
     background-color: #ffffff;
-    background-image: linear-gradient(to bottom, #ffffff 0%, #ffffff 25%, $color-background-gray 25%);
+    background-image: linear-gradient(to bottom, #ffffff 0%, #ffffff 26%, $color-background-gray 26%);
   }
 }
 
@@ -34,10 +33,10 @@
 
 .example__heading {
   @include heading;
-  margin-bottom: 2rem;
+  margin-bottom: 2.2rem;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 6.6rem;
+    margin-bottom: 6.5rem;
   }
 
   @media (min-width: $desktop-width) {
@@ -46,16 +45,19 @@
 }
 
 .example__text {
-  @include text-formatting;
+  @include medium-text-formatting;
   margin-bottom: 2.5rem;
+  width: 95%;
 
   @media (min-width: $tablet-width) {
     margin-bottom: 5.2rem;
+    width: 97%;
   }
 
   @media (min-width: $desktop-width) {
     margin-bottom: 6.6rem;
     padding-right: 14rem;
+    width: 102%;
   }
 }
 
@@ -71,22 +73,24 @@
 }
 
 .example__stats {
-  margin-bottom: 3.6rem;
+  margin-bottom: 3.3rem;
 
   @media (min-width: $desktop-width) {
-    margin-bottom: 4.6rem;
+    margin-bottom: 3.5rem;
   }
 }
 
 .example__expenses {
+  font-size: 1.4rem;
+  line-height: 2rem;
   text-transform: uppercase;
   text-align: center;
   display: block;
-  margin-bottom: 4rem;
+  margin-bottom: 3.5rem;
 
   @media (min-width: $tablet-width) {
     font-size: 2rem;
-    line-height: 2.5rem;
+    line-height: 2rem;
     text-align: right;
     width: 19rem;
     padding-top: 1rem;
@@ -99,6 +103,11 @@
 }
 
 .example__rub {
+  @media (min-width: $tablet-width) {
+    display: inline-block;
+    padding-top: 1rem;
+  }
+
   @media (min-width: $desktop-width) {
     display: inline-block;
     margin-left: 6rem;
