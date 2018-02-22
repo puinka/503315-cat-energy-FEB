@@ -1,0 +1,14 @@
+.products {
+  @include content-center;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 4.8rem;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 2rem;
+  }
+}
