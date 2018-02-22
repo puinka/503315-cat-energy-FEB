@@ -4,5 +4,7 @@
   @media (min-width: $desktop-width) {
     display: flex;
     justify-content: space-between;
+    padding: 0;
+    width: 122rem;
   }
 }
